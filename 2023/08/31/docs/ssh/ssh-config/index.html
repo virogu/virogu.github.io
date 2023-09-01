@@ -1,0 +1,995 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Virogu">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="ssh配置文件详解 1、&#x2F;etc&#x2F;ssh&#x2F;ssh_config配置文件    选项参数 说明    Host * 选项“Host”只对能够匹配后面字串的计算机有效。“*”表示所有的计算机。   ForwardAgent no 设置连接是否经过验证代理（如果存在）转发给远程计算机。   ForwardX11 no 设置X11连接是否被自动重定向到安全的通道和显示集（DISPLAY set）   Rh">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ssh-config">
+<meta property="og:url" content="http://virogu.github.io/2023/08/31/docs/ssh/ssh-config/index.html">
+<meta property="og:site_name" content="半漠清风">
+<meta property="og:description" content="ssh配置文件详解 1、&#x2F;etc&#x2F;ssh&#x2F;ssh_config配置文件    选项参数 说明    Host * 选项“Host”只对能够匹配后面字串的计算机有效。“*”表示所有的计算机。   ForwardAgent no 设置连接是否经过验证代理（如果存在）转发给远程计算机。   ForwardX11 no 设置X11连接是否被自动重定向到安全的通道和显示集（DISPLAY set）   Rh">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-08-31T12:00:00.000Z">
+<meta property="article:modified_time" content="2023-08-31T12:00:00.000Z">
+<meta property="article:author" content="Virogu">
+<meta property="article:tag" content="ssh">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>ssh-config - 半漠清风</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"virogu.github.io","root":"/","version":"1.9.5-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"|","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="半漠清风" type="application/atom+xml">
+</head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>半漠清风</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle">ssh-config</span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        Virogu
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-08-31 20:00" pubdate>
+          2023年8月31日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.9k 字
+        
+      </span>
+    
+
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar category-bar" style="margin-right: -1rem">
+    
+
+
+
+
+
+<div class="category-list">
+  
+  
+    
+    
+    
+    <div class="category row nomargin-x">
+      <a class="category-item 
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="ssh"
+        id="heading-1787d7646304c5d987cf4e64a3973dc7" role="tab" data-toggle="collapse" href="#collapse-1787d7646304c5d987cf4e64a3973dc7"
+        aria-expanded="true"
+      >
+        ssh
+        <span class="list-group-count">(2)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse show" id="collapse-1787d7646304c5d987cf4e64a3973dc7"
+           role="tabpanel" aria-labelledby="heading-1787d7646304c5d987cf4e64a3973dc7">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2023/08/31/docs/ssh/ssh-agent/" title="ssh-agent"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">ssh-agent</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/ssh/ssh-config/" title="ssh-config"
+           class="list-group-item list-group-item-action
+           active">
+          <span class="category-post">ssh-config</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+</div>
+
+
+  </aside>
+
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">ssh-config</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>ssh配置文件详解</p>
+<p>1、/etc/ssh/ssh_config配置文件</p>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>选项参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Host *</td>
+<td>选项“Host”只对能够匹配后面字串的计算机有效。“*”表示所有的计算机。</td>
+</tr>
+<tr>
+<td>ForwardAgent no</td>
+<td>设置连接是否经过验证代理（如果存在）转发给远程计算机。</td>
+</tr>
+<tr>
+<td>ForwardX11 no</td>
+<td>设置X11连接是否被自动重定向到安全的通道和显示集（DISPLAY set）</td>
+</tr>
+<tr>
+<td>RhostsAuthentication no</td>
+<td>设置是否使用基于rhosts的安全验证</td>
+</tr>
+<tr>
+<td>RhostsRSAAuthentication no</td>
+<td>设置是否使用用RSA算法的基于rhosts的安全验证</td>
+</tr>
+<tr>
+<td>RSAAuthentication yes</td>
+<td>设置是否使用RSA算法进行安全验证</td>
+</tr>
+<tr>
+<td>PasswordAuthentication yes</td>
+<td>设置是否使用口令验证</td>
+</tr>
+<tr>
+<td>FallBackToRsh no</td>
+<td>设置如果用ssh连接出现错误是否自动使用rsh</td>
+</tr>
+<tr>
+<td>UseRsh no</td>
+<td>设置是否在这台计算机上使用“rlogin/rsh”</td>
+</tr>
+<tr>
+<td>BatchMode no</td>
+<td>如果设为“yes”，passphrase/password（交互式输入口令）的提示将被禁止。当不能交互式输入口令的时候，这个选项对脚本文件和批处理任务十分有用</td>
+</tr>
+<tr>
+<td>CheckHostIP yes</td>
+<td>设置ssh是否查看连接到服务器的主机的IP地址以防止DNS欺骗。建议设置为“yes”</td>
+</tr>
+<tr>
+<td>StrictHostKeyChecking no</td>
+<td>如果设置成“yes”，ssh就不会自动把计算机的密匙加入“$HOME/.ssh/known_hosts”文件，并且一旦计算机的密匙发生了变化，就拒绝连接</td>
+</tr>
+<tr>
+<td>IdentityFile ~/.ssh/identity</td>
+<td>设置从哪个文件读取用户的RSA安全验证标识</td>
+</tr>
+<tr>
+<td>Port 22</td>
+<td>设置连接到远程主机的端口</td>
+</tr>
+<tr>
+<td>Cipher blowfish</td>
+<td>设置加密用的密码</td>
+</tr>
+<tr>
+<td>EscapeChar ~</td>
+<td>设置escape字符</td>
+</tr>
+</tbody></table></div>
+<p>2、/etc/ssh/sshd_config配置文件</p>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>参数选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Port 22</td>
+<td>SH 预设使用 22 这个 port，您也可以使用多的 port ！</td>
+</tr>
+<tr>
+<td>Protocol 2,1</td>
+<td>选择的 SSH 协议版本，可以是 1 也可以是 2 ，如果要同时支持两者，就必须要使用 2,1 这个分隔了！</td>
+</tr>
+<tr>
+<td>ListenAddress 0.0.0.0</td>
+<td>监听的主机适配卡！举个例子来说，如果您有两个 IP，分别是 192.168.0.100 及 192.168.2.20 ，那么只想要开放 192.168.0.100 时，就可以写如同下面的样式：</td>
+</tr>
+<tr>
+<td>ListenAddress 192.168.0.100</td>
+<td>只监听来自 192.168.0.100 这个 IP 的SSH联机。如果不使用设定的话，则预设所有接口均接受 SSH</td>
+</tr>
+<tr>
+<td>PidFile /var/run/sshd.pid</td>
+<td>可以放置 SSHD 这个 PID 的档案！左列为默认值</td>
+</tr>
+<tr>
+<td>LoginGraceTime 600</td>
+<td>当使用者连上 SSH server 之后，会出现输入密码的画面，在该画面中，在多久时间内没有成功连上 SSH server ，就断线！时间为秒！</td>
+</tr>
+<tr>
+<td>Compression yes</td>
+<td>是否可以使用压缩指令？</td>
+</tr>
+<tr>
+<td>HostKey /etc/ssh/ssh_host_key</td>
+<td>SH version 1 使用的私钥</td>
+</tr>
+<tr>
+<td>HostKey /etc/ssh/ssh_host_rsa_key</td>
+<td>SH version 2 使用的 RSA 私钥</td>
+</tr>
+<tr>
+<td>HostKey /etc/ssh/ssh_host_dsa_key</td>
+<td>SH version 2 使用的 DSA 私钥</td>
+</tr>
+<tr>
+<td>KeyRegenerationInterval 3600</td>
+<td>由前面联机的说明可以知道， version 1 会使用 server 的 Public Key ，每隔一段时间来重新建立一次！时间为秒！</td>
+</tr>
+<tr>
+<td>ServerKeyBits 768</td>
+<td>erver key 的长度！</td>
+</tr>
+<tr>
+<td>SyslogFacility AUTH</td>
+<td>当有人使用 SSH 登入系统的时候，SSH会记录信息</td>
+</tr>
+<tr>
+<td>LogLevel INFO</td>
+<td>登录记录的等级—》全部</td>
+</tr>
+<tr>
+<td>PermitRootLogin no</td>
+<td>是否允许 root 登入！预设是允许的，但是建议设定成 no！</td>
+</tr>
+<tr>
+<td>UserLogin no</td>
+<td>在 SSH 底下本来就不接受 login 这个程序的登入！</td>
+</tr>
+<tr>
+<td>StrictModes yes</td>
+<td>当使用者的 host key 改变之后，Server 就不接受联机</td>
+</tr>
+<tr>
+<td>RSAAuthentication yes</td>
+<td>是否使用纯的 RSA 认证！？仅针对 version 1 ！</td>
+</tr>
+<tr>
+<td>PubkeyAuthentication yes</td>
+<td>是否允许 Public Key ？只有 version 2</td>
+</tr>
+<tr>
+<td>AuthorizedKeysFile   .ssh/authorized_keys</td>
+<td>设定若要使用不需要密码登入的账号时，那么那个账号的存放档案所在档名！</td>
+</tr>
+<tr>
+<td>RhostsAuthentication no</td>
+<td>本机系统不使用 .rhosts ， .rhosts 不安全！</td>
+</tr>
+<tr>
+<td>IgnoreRhosts yes</td>
+<td>是否取消使用 ~/.ssh/.rhosts 来做为认证！</td>
+</tr>
+<tr>
+<td>RhostsRSAAuthentication no</td>
+<td>针对 version 1 ，使用 rhosts 档案在/etc/hosts.equiv配合 RSA 演算方式来进行认证！</td>
+</tr>
+<tr>
+<td>HostbasedAuthentication no</td>
+<td>这个项目与上面的项目类似，不过是给 version 2 使用的！</td>
+</tr>
+<tr>
+<td>IgnoreUserKnownHosts no</td>
+<td>是否忽略家目录内的 ~/.ssh/known_hosts 这个档案所记录的主机内容</td>
+</tr>
+<tr>
+<td>PasswordAuthentication yes</td>
+<td>密码验证当然是需要的！</td>
+</tr>
+<tr>
+<td>PermitEmptyPasswords no</td>
+<td>上面那一项如果设定为 yes 的话，这一项就最好设定为 no ，这个项目在是否允许以空的密码登入！</td>
+</tr>
+<tr>
+<td>ChallengeResponseAuthentication yes</td>
+<td>挑战任何的密码认证！所以，任何 login.conf 规定的认证方式，均可适用！</td>
+</tr>
+<tr>
+<td>PAMAuthenticationViaKbdInt yes</td>
+<td>是否启用其它的 PAM 模块！启用这个模块将会导致 PasswordAuthentication 设定失效！</td>
+</tr>
+<tr>
+<td>与Kerberos 有关的参数设定！底下不用设定</td>
+<td></td>
+</tr>
+<tr>
+<td>KerberosAuthentication no</td>
+<td></td>
+</tr>
+<tr>
+<td>KerberosOrLocalPasswd yes</td>
+<td></td>
+</tr>
+<tr>
+<td>KerberosTicketCleanup yes</td>
+<td></td>
+</tr>
+<tr>
+<td>KerberosTgtPassing no</td>
+<td></td>
+</tr>
+<tr>
+<td>有关在 X-Window 底下使用的相关设定</td>
+<td></td>
+</tr>
+<tr>
+<td>X11Forwarding yes</td>
+<td></td>
+</tr>
+<tr>
+<td>X11DisplayOffset 10</td>
+<td></td>
+</tr>
+<tr>
+<td>X11UseLocalhost yes</td>
+<td></td>
+</tr>
+<tr>
+<td>PrintMotd no</td>
+<td>登入后是否显示出一些信息呢？例如上次登入的时间、地点等，预设是 yes ，但是，如果为了安全，可以考虑改为 no ！</td>
+</tr>
+<tr>
+<td>PrintLastLog yes</td>
+<td>显示上次登入的信息！预设也是 yes</td>
+</tr>
+<tr>
+<td>KeepAlive yes</td>
+<td>一般而言，如果设定这项目的话，那么 SSH Server 会传送KeepAlive 的讯息给 Client 端，以确保两者的联机正常！在这个情况下，任何一端死掉后， SSH 可以立刻知道！而不会有僵尸程序的发生！</td>
+</tr>
+<tr>
+<td>UsePrivilegeSeparation yes</td>
+<td>使用者的权限设定项目！</td>
+</tr>
+<tr>
+<td>MaxStartups 10</td>
+<td>同时允许几个尚未登入的联机画面</td>
+</tr>
+<tr>
+<td>DenyUsers *</td>
+<td>设定受抵挡的使用者名称</td>
+</tr>
+<tr>
+<td>AllowUsers *</td>
+<td>设定允许的使用者名称</td>
+</tr>
+</tbody></table></div>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/ssh/" class="category-chain-item">ssh</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/ssh/" class="print-no-link">#ssh</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>ssh-config</div>
+      <div>http://virogu.github.io/2023/08/31/docs/ssh/ssh-config/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Virogu</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年8月31日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/08/31/docs/ssh/ssh-agent/" title="ssh-agent">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">ssh-agent</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/08/31/docs/others/zhua-bao/" title="抓包">
+                        <span class="hidden-mobile">抓包</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+      <span>Copyright&nbsp;&copy;2023</span>&nbsp;
+<a href="https://github.com/virogu" target="_blank" rel="nofollow noopener"><span>Virogu</span></a>
+<span>&nbsp;|&nbsp;</span>
+<a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+<i class="iconfont icon-love"></i>
+<a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

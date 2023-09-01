@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>半漠清风</title>
+  
+  <subtitle>半漠清风</subtitle>
+  <link href="http://virogu.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://virogu.github.io/"/>
+  <updated>2023-08-31T12:00:00.000Z</updated>
+  <id>http://virogu.github.io/</id>
+  
+  <author>
+    <name>Virogu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ADB 其他命令</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-qi-ta-ming-ling/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-qi-ta-ming-ling/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;CPU温度&lt;/p&gt;
+&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</summary>
+        
+      
+    
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/categories/ADB/"/>
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/tags/ADB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ADB 执行可执行文件</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-zhi-xing-ke-zhi-xing-wen-jian/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-zhi-xing-ke-zhi-xing-wen-jian/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;1-推送文件到-data-local-tmp&quot;&gt;
+          &lt;a href=&quot;#1-推送文件到-data-local-tmp&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/categories/ADB/"/>
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/tags/ADB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ADB 文件操作</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-wen-jian-cao-zuo/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-wen-jian-cao-zuo/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;删除文件&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-cmd&quot; data-language=&quot;cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;adb shell rm -rf /dir1/test1/test&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/categories/ADB/"/>
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/tags/ADB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ADB 打开设置界面</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;adb命令打开手机设置页面&quot;&gt;
+          &lt;a href=&quot;#adb命令打开手机设置页面&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#adb命令打开手机设置页面&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/categories/ADB/"/>
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/tags/ADB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ADB 查看电池记录</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-cha-kan-dian-chi-ji-lu/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-cha-kan-dian-chi-ji-lu/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;adb shell dumpsys batterystats --reset
+
+adb shell dumpsys batterystats</summary>
+        
+      
+    
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/categories/ADB/"/>
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/tags/ADB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ADB 查看音量</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-cha-kan-yin-liang/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-cha-kan-yin-liang/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;获取设备音频流信息&quot;&gt;
+          &lt;a href=&quot;#获取设备音频流信息&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#获取设备音频流信息&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/categories/ADB/"/>
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/tags/ADB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ADB 模拟命令</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-mo-ni-ming-ling/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-mo-ni-ming-ling/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;模拟开关机广播&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-cmd&quot; data-language=&quot;cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;adb shell am broadcast -a</summary>
+        
+      
+    
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/categories/ADB/"/>
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/tags/ADB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>打开网络ADB调试</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/adb/da-kai-wang-luo-adb-diao-shi/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/adb/da-kai-wang-luo-adb-diao-shi/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;service.adb.tcp.port=5555
+
+adb tcpip 5555
+
+adb shell su -c setprop</summary>
+        
+      
+    
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/categories/ADB/"/>
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/tags/ADB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ADB 远程调试</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-cmd&quot; data-language=&quot;cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;service.adb.tcp.port=5555
+
+adb tcpip 5555&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/categories/ADB/"/>
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/tags/ADB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GIT</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/git/git/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/git/git/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;版本控制的作用&quot;&gt;
+          &lt;a href=&quot;#版本控制的作用&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#版本控制的作用&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="http://virogu.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="http://virogu.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git免密拉取(包括ssh,http方式)</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/git/git-mian-mi-la-qu-bao-gua-ssh-http-fang-shi/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/git/git-mian-mi-la-qu-bao-gua-ssh-http-fang-shi/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;配置Git免密拉取&quot;&gt;
+          &lt;a href=&quot;#配置Git免密拉取&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#配置Git免密拉取&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="http://virogu.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="http://virogu.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git删除某个文件的所有提交记录</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/git/git-shan-chu-mou-ge-wen-jian-de-suo-you-ti-jiao-ji-lu/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/git/git-shan-chu-mou-ge-wen-jian-de-suo-you-ti-jiao-ji-lu/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Git删除某个文件的所有提交记录&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-cmd&quot; data-language=&quot;cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;git filter-branch</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="http://virogu.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="http://virogu.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git批量修改提交记录中的作者邮箱</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/git/git-pi-liang-xiu-gai-ti-jiao-ji-lu-zhong-de-zuo-zhe-you-xiang/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/git/git-pi-liang-xiu-gai-ti-jiao-ji-lu-zhong-de-zuo-zhe-you-xiang/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;批量修改Git仓库已提交的记录中的提交作者邮箱信息&lt;/p&gt;
+&lt;p&gt;执行 git log 命令，查看提交历史记录，并记住需要修改作者邮箱的提交 ID。&lt;/p&gt;
+&lt;p&gt;执行以下命令，将需要修改的提交 ID 替换为实际的值：&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="http://virogu.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="http://virogu.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git生成多个秘钥</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/git/git-sheng-cheng-duo-ge-mi-yao/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/git/git-sheng-cheng-duo-ge-mi-yao/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Git配置多个SSH-Key&quot;&gt;
+          &lt;a href=&quot;#Git配置多个SSH-Key&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#Git配置多个SSH-Key&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="http://virogu.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="http://virogu.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git基础</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/git/git-ji-chu/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/git/git-ji-chu/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Git-基础&quot;&gt;
+          &lt;a href=&quot;#Git-基础&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#Git-基础&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="http://virogu.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="http://virogu.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git换行符设置</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/git/git-huan-xing-fu-she-zhi/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/git/git-huan-xing-fu-she-zhi/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;#在vim下面查看当前文本的模式类型，一般为dos,unix
+:set ff
+
+#提交时转换为LF，检出时转换为CRLF
+git config</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="http://virogu.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="http://virogu.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C  知识点汇总</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/c/c-zhi-shi-dian-hui-zong/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/c/c-zhi-shi-dian-hui-zong/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#%E5%A4%B4%E6%96%87%E4%BB%B6&quot;&gt;头文件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B&quot;&gt;数据类型&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="C" scheme="http://virogu.github.io/categories/C/"/>
+    
+    
+    <category term="C" scheme="http://virogu.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kotlin 标准函数</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/kotlin/kotlin-biao-zhun-han-shu/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/kotlin/kotlin-biao-zhun-han-shu/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
+
+        &lt;h2 id=&quot;Kotlin标准函数&quot;&gt;
+          &lt;a href=&quot;#Kotlin标准函数&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Kotlin" scheme="http://virogu.github.io/categories/Kotlin/"/>
+    
+    
+    <category term="Kotlin" scheme="http://virogu.github.io/tags/Kotlin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kotlin 扩展函数</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/kotlin/kotlin-kuo-zhan-han-shu/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/kotlin/kotlin-kuo-zhan-han-shu/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
+
+        &lt;h3 id=&quot;内置扩展函数&quot;&gt;
+          &lt;a href=&quot;#内置扩展函数&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#内置扩展函数&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Kotlin" scheme="http://virogu.github.io/categories/Kotlin/"/>
+    
+    
+    <category term="Kotlin" scheme="http://virogu.github.io/tags/Kotlin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kotlin 协程篇</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/kotlin/kotlin-xie-cheng-pian/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/kotlin/kotlin-xie-cheng-pian/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
+
+        &lt;h2 id=&quot;CoroutineScope-作用域&quot;&gt;
+          &lt;a href=&quot;#CoroutineScope-作用域&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas</summary>
+        
+      
+    
+    
+    
+    <category term="Kotlin" scheme="http://virogu.github.io/categories/Kotlin/"/>
+    
+    
+    <category term="Kotlin" scheme="http://virogu.github.io/tags/Kotlin/"/>
+    
+  </entry>
+  
+</feed>

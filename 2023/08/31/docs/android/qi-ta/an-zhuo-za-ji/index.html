@@ -1,0 +1,1615 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Virogu">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Volley（网络请求）        依赖  implementation&#39;com.android.volley:volley:1.1.1&#39;   请求  RequestQueue queue &#x3D; Volley.newRequestQueue(this); String url &#x3D; &quot;&quot;; JsonObjectRequest request &#x3D; new JsonObjectR">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安卓杂记">
+<meta property="og:url" content="http://virogu.github.io/2023/08/31/docs/android/qi-ta/an-zhuo-za-ji/index.html">
+<meta property="og:site_name" content="半漠清风">
+<meta property="og:description" content="Volley（网络请求）        依赖  implementation&#39;com.android.volley:volley:1.1.1&#39;   请求  RequestQueue queue &#x3D; Volley.newRequestQueue(this); String url &#x3D; &quot;&quot;; JsonObjectRequest request &#x3D; new JsonObjectR">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-08-31T12:00:00.000Z">
+<meta property="article:modified_time" content="2023-08-31T12:00:00.000Z">
+<meta property="article:author" content="Virogu">
+<meta property="article:tag" content="Android">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>安卓杂记 - 半漠清风</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"virogu.github.io","root":"/","version":"1.9.5-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"|","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="半漠清风" type="application/atom+xml">
+</head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>半漠清风</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle">安卓杂记</span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        Virogu
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-08-31 20:00" pubdate>
+          2023年8月31日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          11k 字
+        
+      </span>
+    
+
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar category-bar" style="margin-right: -1rem">
+    
+
+
+
+
+
+<div class="category-list">
+  
+  
+    
+    
+    
+    <div class="category row nomargin-x">
+      <a class="category-item 
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="Android"
+        id="heading-e84e30b9390cdb64db6db2c9ab87846d" role="tab" data-toggle="collapse" href="#collapse-e84e30b9390cdb64db6db2c9ab87846d"
+        aria-expanded="true"
+      >
+        Android
+        <span class="list-group-count">(28)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse show" id="collapse-e84e30b9390cdb64db6db2c9ab87846d"
+           role="tabpanel" aria-labelledby="heading-e84e30b9390cdb64db6db2c9ab87846d">
+        
+        
+          
+          
+  <div class="category-post-list">
+    
+    
+  </div>
+
+          
+  
+    
+    
+    
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="JNI"
+        id="heading-4ceb3f5b846fa736acaada4c2f37a419" role="tab" data-toggle="collapse" href="#collapse-4ceb3f5b846fa736acaada4c2f37a419"
+        aria-expanded="false"
+      >
+        JNI
+        <span class="list-group-count">(1)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse " id="collapse-4ceb3f5b846fa736acaada4c2f37a419"
+           role="tabpanel" aria-labelledby="heading-4ceb3f5b846fa736acaada4c2f37a419">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2023/08/31/docs/android/jni/jni-zhong-da-yin-androidlog/" title="JNI中打印AndroidLog"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">JNI中打印AndroidLog</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="View"
+        id="heading-4351cfebe4b61d8aa5efa1d020710005" role="tab" data-toggle="collapse" href="#collapse-4351cfebe4b61d8aa5efa1d020710005"
+        aria-expanded="false"
+      >
+        View
+        <span class="list-group-count">(8)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse " id="collapse-4351cfebe4b61d8aa5efa1d020710005"
+           role="tabpanel" aria-labelledby="heading-4351cfebe4b61d8aa5efa1d020710005">
+        
+        
+          
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2023/08/31/docs/android/view/edittext/" title="EditText"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">EditText</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/view/radiobutton/" title="RadioButton"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">RadioButton</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/view/textview/" title="TextView"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">TextView</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/view/textview-xiang-guan/" title="TextView相关"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">TextView相关</span>
+        </a>
+      
+    
+  </div>
+
+          
+  
+    
+    
+    
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="RecycleView"
+        id="heading-125499de79f8c3dbffe1583ac986cca3" role="tab" data-toggle="collapse" href="#collapse-125499de79f8c3dbffe1583ac986cca3"
+        aria-expanded="false"
+      >
+        RecycleView
+        <span class="list-group-count">(4)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse " id="collapse-125499de79f8c3dbffe1583ac986cca3"
+           role="tabpanel" aria-labelledby="heading-125499de79f8c3dbffe1583ac986cca3">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2023/08/31/docs/android/view/recycleview/recyclerview-ge-xing-hua-she-zhi/" title="RecyclerView个性化设置"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">RecyclerView个性化设置</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/view/recycleview/paging3-xiang-guan/" title="Paging3相关"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">Paging3相关</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/view/recycleview/recycleview-hua-dong-shan-chu/" title="RecycleView滑动删除"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">RecycleView滑动删除</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/view/recycleview/recycleview-selection/" title="RecycleView-Selection"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">RecycleView-Selection</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem 
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="其他"
+        id="heading-0d98c74797e49d00bcc4c17c9d557a2b" role="tab" data-toggle="collapse" href="#collapse-0d98c74797e49d00bcc4c17c9d557a2b"
+        aria-expanded="true"
+      >
+        其他
+        <span class="list-group-count">(11)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse show" id="collapse-0d98c74797e49d00bcc4c17c9d557a2b"
+           role="tabpanel" aria-labelledby="heading-0d98c74797e49d00bcc4c17c9d557a2b">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2023/08/31/docs/android/qi-ta/androidsamples/" title="AndroidSamples"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">AndroidSamples</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/qi-ta/android-mu-lu-wen-jian-jian-xi/" title="Android目录文件简析"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">Android目录文件简析</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/qi-ta/contentresolver/" title="ContentResolver"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">ContentResolver</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/qi-ta/webrtc-bian-yi/" title="WebRTC编译"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">WebRTC编译</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/qi-ta/cha-kan-apk-qian-ming-xin-xi/" title="查看Apk签名信息"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">查看Apk签名信息</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/qi-ta/xi-tong-guang-bo/" title="系统广播"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">系统广播</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/qi-ta/an-zhuo-za-ji/" title="安卓杂记"
+           class="list-group-item list-group-item-action
+           active">
+          <span class="category-post">安卓杂记</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/qi-ta/xi-tong-ti-gong-de-activity/" title="系统提供的Activity"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">系统提供的Activity</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/qi-ta/qing-qiu-hu-lue-dian-chi-you-hua/" title="请求忽略电池优化"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">请求忽略电池优化</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/qi-ta/xi-tong-xin-xi-huo-qu/" title="系统信息获取"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">系统信息获取</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/qi-ta/ruan-jian-pan-xiang-guan-cao-zuo/" title="软键盘相关操作"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">软键盘相关操作</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="工具类"
+        id="heading-a72d8a4ca7a7e4637cefc70e4ba0b248" role="tab" data-toggle="collapse" href="#collapse-a72d8a4ca7a7e4637cefc70e4ba0b248"
+        aria-expanded="false"
+      >
+        工具类
+        <span class="list-group-count">(1)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse " id="collapse-a72d8a4ca7a7e4637cefc70e4ba0b248"
+           role="tabpanel" aria-labelledby="heading-a72d8a4ca7a7e4637cefc70e4ba0b248">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2023/08/31/docs/android/gong-ju-lei/tu-pian-cao-zuo-byte-bitmap-yuvimage-drawable-xuan-zhuan-suo-fang-xiang-hu-zhuan-hua/" title="图片操作（byte[],Bitmap,YuvImage,Drawable）旋转、缩放、相互转化"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">图片操作（byte[],Bitmap,YuvImage,Drawable）旋转、缩放、相互转化</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="知识汇总"
+        id="heading-4514693aa4a351141269d9ac95460bcf" role="tab" data-toggle="collapse" href="#collapse-4514693aa4a351141269d9ac95460bcf"
+        aria-expanded="false"
+      >
+        知识汇总
+        <span class="list-group-count">(7)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse " id="collapse-4514693aa4a351141269d9ac95460bcf"
+           role="tabpanel" aria-labelledby="heading-4514693aa4a351141269d9ac95460bcf">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2023/08/31/docs/android/zhi-shi-hui-zong/android-kuo-zhan-zhi-shi-dian/" title="Android扩展知识点"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">Android扩展知识点</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/zhi-shi-hui-zong/chang-jian-mian-shi-suan-fa-ti-hui-zong/" title="常见面试算法题汇总"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">常见面试算法题汇总</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/zhi-shi-hui-zong/android-zhi-shi-dian-hui-zong/" title="Android知识点汇总"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">Android知识点汇总</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/zhi-shi-hui-zong/ji-suan-ji-wang-luo-ji-chu/" title="计算机网络基础"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">计算机网络基础</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/zhi-shi-hui-zong/android-kai-yuan-ku-yuan-ma-fen-xi/" title="Android开源库源码分析"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">Android开源库源码分析</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/zhi-shi-hui-zong/she-ji-mo-shi-hui-zong/" title="设计模式汇总"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">设计模式汇总</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/android/zhi-shi-hui-zong/xing-neng-you-hua-zhi-shi-dian-hui-zong/" title="性能优化知识点汇总"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">性能优化知识点汇总</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+        
+      </div>
+    </div>
+  
+</div>
+
+
+  </aside>
+
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">安卓杂记</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h3 id="Volley（网络请求）">
+          <a href="#Volley（网络请求）" class="heading-link"><i class="fas fa-link"></i></a><a href="#Volley（网络请求）" class="headerlink" title="Volley（网络请求）"></a>Volley（网络请求）</h3>
+      <ul>
+<li>依赖</li>
+</ul>
+<pre class="line-numbers language-Groovy" data-language="Groovy"><code class="language-Groovy">implementation'com.android.volley:volley:1.1.1'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ul>
+<li>请求</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">RequestQueue</span> queue <span class="token operator">=</span> <span class="token class-name">Volley</span><span class="token punctuation">.</span><span class="token function">newRequestQueue</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">String</span> url <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
+<span class="token class-name">JsonObjectRequest</span> request <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JsonObjectRequest</span><span class="token punctuation">(</span><span class="token constant">GET</span><span class="token punctuation">,</span> url<span class="token punctuation">,</span> object<span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Response<span class="token punctuation">.</span>Listener</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">JSONObject</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Response<span class="token punctuation">.</span>ErrorListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+queue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li><p>停止请求：</p>
+<p>方法一：</p>
+  <pre class="line-numbers language-java" data-language="java"><code class="language-java">request<span class="token punctuation">.</span><span class="token function">setTag</span><span class="token punctuation">(</span><span class="token constant">TAG</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+queue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//为请求添加一个标签TAG，在activityonStop里停止包含TAG</span>
+的请求 
+<span class="token annotation punctuation">@Override</span>
+<span class="token keyword">protected</span> <span class="token keyword">void</span> onStop <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   		<span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onStop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   		<span class="token keyword">if</span> <span class="token punctuation">(</span>mRequestQueue <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       			mRequestQueue<span class="token punctuation">.</span><span class="token function">cancelAll</span><span class="token punctuation">(</span><span class="token constant">TAG</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   		<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>  方法二：</p>
+  <pre class="line-numbers language-java" data-language="java"><code class="language-java">   <span class="token comment">// 停止所有请求：</span>
+requestQueue<span class="token punctuation">.</span><span class="token function">cancelAll</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+</ul>
+
+        <h3 id="透明状态栏">
+          <a href="#透明状态栏" class="heading-link"><i class="fas fa-link"></i></a><a href="#透明状态栏" class="headerlink" title="透明状态栏"></a>透明状态栏</h3>
+      <ul>
+<li>依赖</li>
+</ul>
+<pre class="line-numbers language-Groovy" data-language="Groovy"><code class="language-Groovy">implementation 'com.jaeger.statusbarutil:library:1.5.1'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ul>
+<li>使用</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">StatusBarUtil</span><span class="token punctuation">.</span><span class="token function">setTransparent</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//如果是白色背景加上下面这一句将状态栏改成黑色字体</span>
+<span class="token comment">//getWindow().getDecorView().setSystemUiVisibility(SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+        <h3 id="防止手机转屏页面重建数据丢失">
+          <a href="#防止手机转屏页面重建数据丢失" class="heading-link"><i class="fas fa-link"></i></a><a href="#防止手机转屏页面重建数据丢失" class="headerlink" title="防止手机转屏页面重建数据丢失"></a>防止手机转屏页面重建数据丢失</h3>
+      <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>activity</span>
+<span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>.xxxActivity<span class="token punctuation">"</span></span>
+	<span class="token attr-name">&lt;!---在活动下面加上这句话就可以防止转屏丢失数据---</span><span class="token punctuation">&gt;</span></span>
+android:configChanges="orientation|keyboard|keyboardHidden|screenSize"&gt;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>activity</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>使用DataBinding也可以保持数据</p>
+
+        <h3 id="安卓P允许访问http页面">
+          <a href="#安卓P允许访问http页面" class="heading-link"><i class="fas fa-link"></i></a><a href="#安卓P允许访问http页面" class="headerlink" title="安卓P允许访问http页面"></a>安卓P允许访问http页面</h3>
+      <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>application</span>
+	<span class="token attr-name"><span class="token namespace">android:</span>usesCleartextTraffic</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>application</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+        <h3 id="ViewModel、DataBinding-ViewBinding">
+          <a href="#ViewModel、DataBinding-ViewBinding" class="heading-link"><i class="fas fa-link"></i></a><a href="#ViewModel、DataBinding-ViewBinding" class="headerlink" title="ViewModel、DataBinding / ViewBinding"></a>ViewModel、DataBinding / ViewBinding</h3>
+      <ul>
+<li>依赖</li>
+</ul>
+<pre class="line-numbers language-Groovy" data-language="Groovy"><code class="language-Groovy">dataBinding {
+    enabled true
+}
+viewBinding {
+    enabled true
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>Activity使用方法：</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">MyViewModel</span> viewModel<span class="token punctuation">;</span>
+<span class="token class-name">ActivityViewModelBinding</span> binding<span class="token punctuation">;</span>
+
+binding <span class="token operator">=</span> <span class="token class-name">DataBindingUtil</span><span class="token punctuation">.</span><span class="token function">setContentView</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token class-name">R</span><span class="token punctuation">.</span>layout<span class="token punctuation">.</span>activity_view_model<span class="token punctuation">)</span><span class="token punctuation">;</span>
+viewModel <span class="token operator">=</span> <span class="token class-name">ViewModelProviders</span><span class="token punctuation">.</span><span class="token function">of</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token class-name">MyViewModel</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+binding<span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span>viewModel<span class="token punctuation">)</span><span class="token punctuation">;</span>
+binding<span class="token punctuation">.</span><span class="token function">setLifecycleOwner</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>XML绑定语法</li>
+</ul>
+<pre class="line-numbers language-none"><code class="language-none">@{data.xxx}
+@{()-&gt;data.xxx()}
+
+// 与视图Text控件绑定时一定注意LiveData类型，不是String要进行转型（这个错误编译不会报错，但是运行就会FC）：
+android:text="@{String.valueOf(data.number)}"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+        <h3 id="阻止按钮自动大写">
+          <a href="#阻止按钮自动大写" class="heading-link"><i class="fas fa-link"></i></a><a href="#阻止按钮自动大写" class="headerlink" title="阻止按钮自动大写"></a>阻止按钮自动大写</h3>
+      <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>item</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>textAllCaps<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>false<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>item</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+        <h3 id="Room简单使用流程">
+          <a href="#Room简单使用流程" class="heading-link"><i class="fas fa-link"></i></a><a href="#Room简单使用流程" class="headerlink" title="Room简单使用流程"></a>Room简单使用流程</h3>
+      <ul>
+<li>依赖</li>
+</ul>
+<pre class="line-numbers language-Groovy" data-language="Groovy"><code class="language-Groovy">   def room_version = "2.2.2"
+   implementation "androidx.room:room-runtime:$room_version"
+   annotationProcessor "androidx.room:room-compiler:$room_version" 
+   testImplementation "androidx.room:room-testing:$room_version"
+//下面这三个一般用不到
+//implementation "androidx.room:room-ktx:$room_version"
+   //implementation "androidx.room:room-rxjava2:$room_version"
+   //implementation "androidx.room:room-guava:$room_version"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li><p>使用</p>
+<ol>
+<li>新建一个<code>@Entity</code> XXX类，定义表格格式</li>
+<li>定义一个<code>@Dao</code>接口<code>interface</code> <code>xxxDao</code>，编写数据库操作语句</li>
+</ol>
+  <pre class="line-numbers language-none"><code class="language-none">      @Insert
+@Update
+@Delete
+@Query(“”)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol start="3">
+<li>定义一个抽象类<code>xxxDataBase</code></li>
+</ol>
+  <pre class="line-numbers language-java" data-language="java"><code class="language-java">      <span class="token annotation punctuation">@DataBase</span><span class="token punctuation">(</span>entities <span class="token operator">=</span> <span class="token punctuation">{</span>xxx<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">}</span><span class="token punctuation">,</span>version <span class="token operator">=</span> x<span class="token punctuation">,</span>exportSchema <span class="token operator">=</span> boolen<span class="token punctuation">)</span>
+<span class="token comment">// 里面定义一个抽象方法</span>
+<span class="token keyword">abstract</span> xxxDao getxxxDao<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<ol start="4">
+<li>调用：</li>
+</ol>
+  <pre class="line-numbers language-java" data-language="java"><code class="language-java">   xxxDataBase x <span class="token operator">=</span> <span class="token class-name">Room</span><span class="token punctuation">.</span><span class="token function">databaseBuilder</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span>xxxDataBase<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span><span class="token string">"name"</span><span class="token punctuation">)</span>
+	<span class="token comment">//.allowMainThreadQueries() //设置允许在主线程运行，一般不要这样写</span>
+       <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+xxxDao xx <span class="token operator">=</span> x<span class="token punctuation">.</span>getxxxDao<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+
+        <h3 id="防止键盘遮挡输入框">
+          <a href="#防止键盘遮挡输入框" class="heading-link"><i class="fas fa-link"></i></a><a href="#防止键盘遮挡输入框" class="headerlink" title="防止键盘遮挡输入框"></a>防止键盘遮挡输入框</h3>
+      <p>将布局放到 <code>ScrollView</code> 中，然后在 <code>MainFest</code> 里 <code>Activity</code> 里面加入：</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">android:windowSoftInputMode="adjustResize"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+        <h3 id="RecyclerView简单调用流程">
+          <a href="#RecyclerView简单调用流程" class="heading-link"><i class="fas fa-link"></i></a><a href="#RecyclerView简单调用流程" class="headerlink" title="RecyclerView简单调用流程"></a>RecyclerView简单调用流程</h3>
+      
+        <h4 id="定义Adapter：">
+          <a href="#定义Adapter：" class="heading-link"><i class="fas fa-link"></i></a><a href="#定义Adapter：" class="headerlink" title="定义Adapter："></a>定义Adapter：</h4>
+      <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//定义一个内部类ViewHolder</span>
+<span class="token comment">//Adapter继承RecyclerView.Adapter&lt;xxxAdapter.ViewHolder&gt;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> xxxAdapter <span class="token keyword">extends</span> <span class="token class-name">RecyclerView<span class="token punctuation">.</span>Adapter</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name"><span class="token namespace">xxxAdapter<span class="token punctuation">.</span></span>ViewHolder</span><span class="token punctuation">&gt;</span></span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token function">xxxAdapter</span><span class="token punctuation">(</span><span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span>xxx<span class="token punctuation">&gt;</span></span> lists<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">ViewHolder</span> <span class="token keyword">extends</span>  <span class="token class-name">RecyclerView<span class="token punctuation">.</span>ViewHolder</span> <span class="token punctuation">{</span>
+       <span class="token keyword">public</span> <span class="token class-name">ViewHolder</span><span class="token punctuation">(</span><span class="token annotation punctuation">@NonNull</span> <span class="token class-name">View</span> itemView<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">super</span><span class="token punctuation">(</span>itemView<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment">//初始化item上的控件</span>
+         <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">//IDE会引导生成三个需要实现的方法</span>
+	<span class="token keyword">public</span> <span class="token class-name">ViewHolder</span> <span class="token function">onCreateViewHolder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token class-name">View</span> view <span class="token operator">=</span> <span class="token class-name">LayoutInflater</span><span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>parent<span class="token punctuation">.</span><span class="token function">getContext</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        		<span class="token punctuation">.</span><span class="token function">inflate</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>layout<span class="token punctuation">.</span>item_recycler<span class="token punctuation">,</span>parent<span class="token punctuation">,</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 	<span class="token class-name">ViewHolder</span> holder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ViewHolder</span><span class="token punctuation">(</span>view<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 	<span class="token keyword">return</span> holder<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onBindViewHolder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token comment">//绑定视图，为item上的控件赋值</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">getItemCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token comment">//返回item个数</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+        <h4 id="具体调用：">
+          <a href="#具体调用：" class="heading-link"><i class="fas fa-link"></i></a><a href="#具体调用：" class="headerlink" title="具体调用："></a>具体调用：</h4>
+      <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span>xxx<span class="token punctuation">&gt;</span></span> lists<span class="token punctuation">;</span> <span class="token comment">//封装数据</span>
+<span class="token class-name">RecyclerView</span> recylcler <span class="token operator">=</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">;</span>
+recycler<span class="token punctuation">.</span><span class="token function">setLayoutManager</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">LinearLayoutManager</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 如果可以确定每个item的高度是固定的，设置下面这个选项可以提高性能</span>
+recycler<span class="token punctuation">.</span><span class="token function">setHasFixedSize</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//Adapter</span>
+xxxAdapter adapter <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">xxxAdapter</span><span class="token punctuation">(</span>lists<span class="token punctuation">)</span><span class="token punctuation">;</span>
+recycler<span class="token punctuation">.</span><span class="token function">setAdapter</span><span class="token punctuation">(</span>adapter<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+        <h3 id="广播接收器">
+          <a href="#广播接收器" class="heading-link"><i class="fas fa-link"></i></a><a href="#广播接收器" class="headerlink" title="广播接收器"></a>广播接收器</h3>
+      
+        <h4 id="发送广播时：">
+          <a href="#发送广播时：" class="heading-link"><i class="fas fa-link"></i></a><a href="#发送广播时：" class="headerlink" title="发送广播时："></a>发送广播时：</h4>
+      <p>高版本的android系统，对于广播的接收变得越来越严格，发送广播时要在 <code>Intent</code> 后面加上 <code>.setComponent</code> 参数</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">Intent</span> intent <span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Intent</span><span class="token punctuation">(</span> <span class="token string">"com.xxx.name"</span> <span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//参数是广播接收器name</span>
+<span class="token comment">//参数1是广播接收器所在的包名，参数2是广播接收器name</span>
+intent<span class="token punctuation">.</span><span class="token function">setComponent</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ComponentName</span><span class="token punctuation">(</span><span class="token string">"com.xxx"</span><span class="token punctuation">,</span><span class="token string">"com.xxx.name"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">sendBroadcast</span><span class="token punctuation">(</span>intent <span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+        <h3 id="Retrofit（网络请求）">
+          <a href="#Retrofit（网络请求）" class="heading-link"><i class="fas fa-link"></i></a><a href="#Retrofit（网络请求）" class="headerlink" title="Retrofit（网络请求）"></a>Retrofit（网络请求）</h3>
+      <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//创建一个接口，通过注解定义请求方式格式等</span>
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">RetrofitUtil</span> <span class="token punctuation">{</span>
+	<span class="token comment">//第二段请求地址</span>
+	<span class="token comment">//加上第一段请求地址意思就是请求 https://a.b.b/de</span>
+    <span class="token annotation punctuation">@GET</span><span class="token punctuation">(</span><span class="token string">"de"</span><span class="token punctuation">)</span>
+    <span class="token class-name">Call</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">UpdateInfo</span><span class="token punctuation">&gt;</span></span> <span class="token function">getUpdateInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//使用</span>
+<span class="token comment">//构建一个Retrofit</span>
+<span class="token class-name">Retrofit</span> retrofit <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Retrofit
+        <span class="token punctuation">.</span>Builder</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+		<span class="token comment">//这里是使用Gson将请求结果封装成对象</span>
+        <span class="token punctuation">.</span><span class="token function">addConverterFactory</span><span class="token punctuation">(</span><span class="token class-name">GsonConverterFactory</span><span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	    <span class="token comment">//第一段请求地址</span>
+        <span class="token punctuation">.</span><span class="token function">baseUrl</span><span class="token punctuation">(</span><span class="token string">"https://a.b.b/"</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">RetrofitUtil</span> retrofitUtil <span class="token operator">=</span> retrofit<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token class-name">RetrofitUtil</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">Call</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">UpdateInfo</span><span class="token punctuation">&gt;</span></span> call <span class="token operator">=</span> retrofitUtil<span class="token punctuation">.</span><span class="token function">getUpdateInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//异步请求</span>
+call<span class="token punctuation">.</span><span class="token function">enqueue</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Callback</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">UpdateInfo</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+        <h3 id="EventBus（活动间发送接收信息）">
+          <a href="#EventBus（活动间发送接收信息）" class="heading-link"><i class="fas fa-link"></i></a><a href="#EventBus（活动间发送接收信息）" class="headerlink" title="EventBus（活动间发送接收信息）"></a>EventBus（活动间发送接收信息）</h3>
+      
+        <h4 id="发送：">
+          <a href="#发送：" class="heading-link"><i class="fas fa-link"></i></a><a href="#发送：" class="headerlink" title="发送："></a>发送：</h4>
+      <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">EventBus</span><span class="token punctuation">.</span><span class="token function">getDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">postSticky</span><span class="token punctuation">(</span>city_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">startActivity</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Intent</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getActivity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token class-name">B</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+        <h4 id="接收：">
+          <a href="#接收：" class="heading-link"><i class="fas fa-link"></i></a><a href="#接收：" class="headerlink" title="接收："></a>接收：</h4>
+      <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//接收前先注册</span>
+<span class="token class-name">EventBus</span><span class="token punctuation">.</span><span class="token function">getDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//活动销毁时反注册</span>
+<span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">onDestroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onDestroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">EventBus</span><span class="token punctuation">.</span><span class="token function">getDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">unregister</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//通过注解使用</span>
+<span class="token comment">//(线程模式，是否Stiky粘性注册)</span>
+<span class="token annotation punctuation">@Subscribe</span><span class="token punctuation">(</span>threadMode <span class="token operator">=</span> <span class="token class-name">ThreadMode</span><span class="token punctuation">.</span><span class="token constant">MAIN</span><span class="token punctuation">,</span> sticky <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">eventGetCityId</span><span class="token punctuation">(</span><span class="token class-name">String</span> city_id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>city_id <span class="token operator">=</span> city_id<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p> </p>
+
+        <h3 id="改变Menu三个小点颜色">
+          <a href="#改变Menu三个小点颜色" class="heading-link"><i class="fas fa-link"></i></a><a href="#改变Menu三个小点颜色" class="headerlink" title="改变Menu三个小点颜色"></a>改变Menu三个小点颜色</h3>
+      <p>item下面可以继续包含Menu</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>item</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>icon</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>@drawable/ic_more_white_24<span class="token punctuation">"</span></span>
+    <span class="token attr-name"><span class="token namespace">app:</span>showAsAction</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>always<span class="token punctuation">"</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>About<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>menu</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>item</span>
+            <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>@+id/m_item_about<span class="token punctuation">"</span></span>
+            <span class="token attr-name"><span class="token namespace">android:</span>title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>关于<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>menu</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>item</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+        <h3 id="锁屏显示页面">
+          <a href="#锁屏显示页面" class="heading-link"><i class="fas fa-link"></i></a><a href="#锁屏显示页面" class="headerlink" title="锁屏显示页面"></a>锁屏显示页面</h3>
+      <pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token comment">//onCreat()</span>
+<span class="token function">getWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addFlags</span><span class="token punctuation">(</span>WindowManager<span class="token punctuation">.</span>LayoutParams<span class="token punctuation">.</span>FLAG_SHOW_WHEN_LOCKED <span class="token comment">//锁屏显示</span>
+                | WindowManager<span class="token punctuation">.</span>LayoutParams<span class="token punctuation">.</span>FLAG_DISMISS_KEYGUARD <span class="token comment">//解锁</span>
+                | WindowManager<span class="token punctuation">.</span>LayoutParams<span class="token punctuation">.</span>FLAG_KEEP_SCREEN_ON <span class="token comment">//保持屏幕不息屏</span>
+                | WindowManager<span class="token punctuation">.</span>LayoutParams<span class="token punctuation">.</span>FLAG_TURN_SCREEN_ON<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//点亮屏幕</span>
+<span class="token comment">//startActivity</span>
+<span class="token keyword">val</span> pm <span class="token operator">=</span> <span class="token function">getSystemService</span><span class="token punctuation">(</span>Context<span class="token punctuation">.</span>POWER_SERVICE<span class="token punctuation">)</span> <span class="token keyword">as</span> PowerManager
+<span class="token keyword">val</span> mKeyguardManager <span class="token operator">=</span> <span class="token function">getSystemService</span><span class="token punctuation">(</span>Context<span class="token punctuation">.</span>KEYGUARD_SERVICE<span class="token punctuation">)</span> <span class="token keyword">as</span> KeyguardManager
+<span class="token keyword">val</span> wakeLock <span class="token operator">=</span> pm<span class="token punctuation">.</span><span class="token function">newWakeLock</span><span class="token punctuation">(</span>PowerManager<span class="token punctuation">.</span>ACQUIRE_CAUSES_WAKEUP <span class="token operator">or</span>  PowerManager<span class="token punctuation">.</span>SCREEN_DIM_WAKE_LOCK<span class="token punctuation">,</span> <span class="token string-literal singleline"><span class="token string">"wakeLock"</span></span><span class="token punctuation">)</span>
+wakeLock<span class="token punctuation">.</span><span class="token function">acquire</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">val</span> mKeyguardLock <span class="token operator">=</span> mKeyguardManager<span class="token punctuation">.</span><span class="token function">newKeyguardLock</span><span class="token punctuation">(</span><span class="token string-literal singleline"><span class="token string">""</span></span><span class="token punctuation">)</span>
+mKeyguardLock<span class="token punctuation">.</span><span class="token function">disableKeyguard</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">val</span> i <span class="token operator">=</span> <span class="token function">Intent</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span>CameraActivity<span class="token operator">::</span><span class="token keyword">class</span><span class="token punctuation">.</span>java<span class="token punctuation">)</span>
+i<span class="token punctuation">.</span><span class="token function">addFlags</span><span class="token punctuation">(</span>Intent<span class="token punctuation">.</span>FLAG_ACTIVITY_NEW_TASK <span class="token operator">or</span> Intent<span class="token punctuation">.</span>FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS<span class="token punctuation">)</span>
+<span class="token function">startActivity</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+        <h3 id="查看内存">
+          <a href="#查看内存" class="heading-link"><i class="fas fa-link"></i></a><a href="#查看内存" class="headerlink" title="查看内存"></a>查看内存</h3>
+      <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">/**
+ * 打印当前手机内存信息应用的内存信息
+ */</span>
+<span class="token annotation punctuation">@TargetApi</span><span class="token punctuation">(</span><span class="token class-name">Build</span><span class="token punctuation">.</span><span class="token constant">VERSION_CODES</span><span class="token punctuation">.</span><span class="token constant">JELLY_BEAN</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">printMemoryInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">final</span> <span class="token class-name">String</span> <span class="token constant">TAG</span> <span class="token operator">=</span> <span class="token string">"MemoryUtils.printMemoryInfo()"</span><span class="token punctuation">;</span>
+    <span class="token comment">//打印当前APP内存信息</span>
+
+    <span class="token comment">//开启了  android:largeHeap="true" 后,就是启用了流氓应用的内存限制</span>
+    <span class="token comment">//打印当前应用内存信息</span>
+    <span class="token class-name">Runtime</span> rt <span class="token operator">=</span> <span class="token class-name">Runtime</span><span class="token punctuation">.</span><span class="token function">getRuntime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">Log</span><span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span><span class="token constant">TAG</span><span class="token punctuation">,</span> <span class="token string">"APP当前内存状态: 最大可申请内存:"</span> <span class="token operator">+</span> rt<span class="token punctuation">.</span><span class="token function">maxMemory</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">+</span> <span class="token string">"MB 已申请内存:"</span> <span class="token operator">+</span> rt<span class="token punctuation">.</span><span class="token function">totalMemory</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">+</span> <span class="token string">"MB 空闲内存:"</span> <span class="token operator">+</span> rt<span class="token punctuation">.</span><span class="token function">freeMemory</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">+</span> <span class="token string">"MB"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * 获得app可用内存的字节数  这个类不需要try,catch理论上不会报错
+ */</span>
+<span class="token annotation punctuation">@TargetApi</span><span class="token punctuation">(</span><span class="token class-name">Build</span><span class="token punctuation">.</span><span class="token constant">VERSION_CODES</span><span class="token punctuation">.</span><span class="token constant">HONEYCOMB</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">long</span> <span class="token function">getAppSurplusMe</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">final</span> <span class="token class-name">String</span> <span class="token constant">TAG</span> <span class="token operator">=</span> <span class="token string">"MemoryUtils.getAppSurplusMe()"</span><span class="token punctuation">;</span>
+
+    <span class="token class-name">Runtime</span> rt <span class="token operator">=</span> <span class="token class-name">Runtime</span><span class="token punctuation">.</span><span class="token function">getRuntime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//一下参数单位为字节数</span>
+    <span class="token keyword">long</span> totalMemory <span class="token operator">=</span> rt<span class="token punctuation">.</span><span class="token function">totalMemory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//这个是已经申请的内存,等于已经使用的内存加上空闲内存</span>
+    <span class="token keyword">long</span> maxMemory <span class="token operator">=</span> rt<span class="token punctuation">.</span><span class="token function">maxMemory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//最大内存限制</span>
+    <span class="token keyword">long</span> freeMemory <span class="token operator">=</span> rt<span class="token punctuation">.</span><span class="token function">freeMemory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//假如最大内存限制是64M,已经申请了34M,空闲4M,那么其实当前使用的是:(34-4)M,而实际当前有效可使用的内存是:64-(34-4)=34;</span>
+    <span class="token comment">//64-(34-4)=34   请允许我引用高数老师的那句话:"同理可得" 64-34+4</span>
+    <span class="token comment">//so</span>
+    <span class="token keyword">long</span> surplusMemory <span class="token operator">=</span> maxMemory <span class="token operator">-</span> totalMemory <span class="token operator">+</span> freeMemory<span class="token punctuation">;</span>
+    <span class="token class-name">Log</span><span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span><span class="token constant">TAG</span><span class="token punctuation">,</span> <span class="token string">"系统当前内存状态: 最大可申请内存:"</span> <span class="token operator">+</span> rt<span class="token punctuation">.</span><span class="token function">maxMemory</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">+</span> <span class="token string">"MB 已申请内存:"</span> <span class="token operator">+</span> rt<span class="token punctuation">.</span><span class="token function">totalMemory</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">+</span> <span class="token string">"MB 空闲内存:"</span> <span class="token operator">+</span> rt<span class="token punctuation">.</span><span class="token function">freeMemory</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">+</span> <span class="token string">"MB"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> surplusMemory<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * 获得手机可用内存的字节数  这个类不需要try,catch,理论上不会报错
+ * &lt;p&gt;
+ * 这个方法要慎用  容易导致崩溃  特别在引导页的时候  低内存手机容易发生崩溃
+ *
+ * @param context
+ * @return
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">long</span> <span class="token function">getPhoneSurplusMe</span><span class="token punctuation">(</span><span class="token class-name">Context</span> context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">ActivityManager</span> am <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">ActivityManager</span><span class="token punctuation">)</span> context<span class="token punctuation">.</span><span class="token function">getSystemService</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span><span class="token constant">ACTIVITY_SERVICE</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">ActivityManager<span class="token punctuation">.</span>MemoryInfo</span> mi <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ActivityManager<span class="token punctuation">.</span>MemoryInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    am<span class="token punctuation">.</span><span class="token function">getMemoryInfo</span><span class="token punctuation">(</span>mi<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> mi<span class="token punctuation">.</span>availMem<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+        <h3 id="传感器">
+          <a href="#传感器" class="heading-link"><i class="fas fa-link"></i></a><a href="#传感器" class="headerlink" title="传感器"></a>传感器</h3>
+      <pre class="line-numbers language-none"><code class="language-none">#define SENSOR_TYPE_ACCELEROMETER       1 //加速度
+#define SENSOR_TYPE_MAGNETIC_FIELD      2 //磁力
+#define SENSOR_TYPE_ORIENTATION         3 //方向
+#define SENSOR_TYPE_GYROSCOPE           4 //陀螺仪
+#define SENSOR_TYPE_LIGHT               5 //光线感应
+#define SENSOR_TYPE_PRESSURE            6 //压力
+#define SENSOR_TYPE_TEMPERATURE         7 //温度 
+#define SENSOR_TYPE_PROXIMITY           8 //接近
+#define SENSOR_TYPE_GRAVITY             9 //重力
+#define SENSOR_TYPE_LINEAR_ACCELERATION 10//线性加速度
+#define SENSOR_TYPE_ROTATION_VECTOR     11//旋转矢量<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol>
+<li><p>加速度传感器<br>加速度传感器又叫 <code>G-sensor</code> ，返回x、y、z三轴的加速度数值。</p>
+<p>该数值包含地心引力的影响，单位是m/s^2。<br>将手机平放在桌面上，x轴默认为0，y轴默认0，z轴默认9.81。<br>将手机朝下放在桌面上，z轴为-9.81。<br>将手机向左倾斜，x轴为正值。<br>将手机向右倾斜，x轴为负值。<br>将手机向上倾斜，y轴为负值。<br>将手机向下倾斜，y轴为正值。<br>加速度传感器可能是最为成熟的一种mems产品，市场上的加速度传感器种类很多。<br>手机中常用的加速度传感器有BOSCH（博世）的BMA系列，AMK的897X系列，ST的LIS3X系列等。<br>这些传感器一般提供±2G至±16G的加速度测量范围，采用I2C或SPI接口和MCU相连，数据精度小于16bit。</p>
+</li>
+<li><p>磁力传感器<br>磁力传感器简称为M-sensor，返回x、y、z三轴的环境磁场数据。</p>
+<p>该数值的单位是微特斯拉（micro-Tesla），用uT表示。<br>单位也可以是高斯（Gauss），1Tesla=10000Gauss。<br>硬件上一般没有独立的磁力传感器，磁力数据由电子罗盘传感器提供（E-compass）。<br>电子罗盘传感器同时提供下文的方向传感器数据。</p>
+</li>
+<li><p>方向传感器</p>
+<p>方向传感器简称为O-sensor，返回三轴的角度数据，方向数据的单位是角度。</p>
+<p>为了得到精确的角度数据，E-compass需要获取G-sensor的数据，<br>经过计算生产O-sensor数据，否则只能获取水平方向的角度。<br>方向传感器提供三个数据，分别为azimuth、pitch和roll。<br>azimuth：方位，返回水平时磁北极和Y轴的夹角，范围为0°至360°。<br>0°=北，90°=东，180°=南，270°=西。<br>pitch：x轴和水平面的夹角，范围为-180°至180°。<br>当z轴向y轴转动时，角度为正值。<br>roll：y轴和水平面的夹角，由于历史原因，范围为-90°至90°。<br>当x轴向z轴移动时，角度为正值。<br>电子罗盘在获取正确的数据前需要进行校准，通常可用8字校准法。<br>8字校准法要求用户使用需要校准的设备在空中做8字晃动，<br>原则上尽量多的让设备法线方向指向空间的所有8个象限。<br>手机中使用的电子罗盘芯片有AKM公司的897X系列，ST公司的LSM系列以及雅马哈公司等等。<br>由于需要读取G-sensor数据并计算出M-sensor和O-sensor数据，<br>因此厂商一般会提供一个后台daemon来完成工作，电子罗盘算法一般是公司私有产权。</p>
+</li>
+<li><p>陀螺仪传感器</p>
+<p>陀螺仪传感器叫做Gyro-sensor，返回x、y、z三轴的角加速度数据。<br>角加速度的单位是radians/second。<br>根据Nexus S手机实测：<br>水平逆时针旋转，Z轴为正。<br>水平逆时针旋转，z轴为负。<br>向左旋转，y轴为负。<br>向右旋转，y轴为正。<br>向上旋转，x轴为负。<br>向下旋转，x轴为正。<br>ST的L3G系列的陀螺仪传感器比较流行，iphone4和google的nexus s中使用该种传感器。</p>
+</li>
+<li><p>光线感应传感器</p>
+<p>光线感应传感器检测实时的光线强度，光强单位是lux，其物理意义是照射到单位面积上的光通量。<br>光线感应传感器主要用于Android系统的LCD自动亮度功能。<br>可以根据采样到的光强数值实时调整LCD的亮度。</p>
+</li>
+<li><p>压力传感器</p>
+<p>压力传感器返回当前的压强，单位是百帕斯卡hectopascal（hPa）。</p>
+</li>
+<li><p>温度传感器</p>
+<p>温度传感器返回当前的温度。</p>
+</li>
+<li><p>接近传感器</p>
+<p>接近传感器检测物体与手机的距离，单位是厘米。<br>一些接近传感器只能返回远和近两个状态，<br>因此，接近传感器将最大距离返回远状态，小于最大距离返回近状态。<br>接近传感器可用于接听电话时自动关闭LCD屏幕以节省电量。<br>一些芯片集成了接近传感器和光线传感器两者功能。<br>下面三个传感器是Android2新提出的传感器类型，目前还不太清楚有哪些应用程序使用。</p>
+</li>
+<li><p>重力传感器</p>
+<p>重力传感器简称GV-sensor，输出重力数据。<br>在地球上，重力数值为9.8，单位是m/s^2。<br>坐标系统与加速度传感器相同。<br>当设备复位时，重力传感器的输出与加速度传感器相同。</p>
+</li>
+<li><p>线性加速度传感器</p>
+<p>线性加速度传感器简称LA-sensor。<br>线性加速度传感器是加速度传感器减去重力影响获取的数据。<br>单位是m/s^2，坐标系统与加速度传感器相同。<br>加速度传感器、重力传感器和线性加速度传感器的计算公式如下：<br>加速度 = 重力 + 线性加速度</p>
+</li>
+<li><p>旋转矢量传感器</p>
+<p>旋转矢量传感器简称RV-sensor。旋转矢量代表设备的方向，是一个将坐标轴和角度混合计算得到的数据。<br>RV-sensor输出三个数据：<br>x<em>sin(theta/2)<br>y</em>sin(theta/2)<br>z*sin(theta/2)<br>sin(theta/2)是RV的数量级。<br>RV的方向与轴旋转的方向相同。<br>RV的三个数值，与cos(theta/2)组成一个四元组。<br>RV的数据没有单位，使用的坐标系与加速度相同。<br>举例：</p>
+<pre class="line-numbers language-none"><code class="language-none">sensors_event_t.data[0] = x*sin(theta/2)
+sensors_event_t.data[1] = y*sin(theta/2)
+sensors_event_t.data[2] = z*sin(theta/2)
+sensors_event_t.data[3] = cos(theta/2)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>GV、LA和RV的数值没有物理传感器可以直接给出，<br>需要G-sensor、O-sensor和Gyro-sensor经过算法计算后得出。<br>算法一般是传感器公司的私有产权。</p>
+<p>参考文献：android source code hardware\libhardware\include\hardwaresensor.h<br><span class="exturl"><a class="exturl__link" target="_blank" rel="noopener" href="http://www.dzsc.com/data/html/2010-11-29/87454.html">http://www.dzsc.com/data/html/2010-11-29/87454.html</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+</li>
+</ol>
+
+        <h3 id="状态栏">
+          <a href="#状态栏" class="heading-link"><i class="fas fa-link"></i></a><a href="#状态栏" class="headerlink" title="状态栏"></a>状态栏</h3>
+      <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 隐藏状态栏</span>
+<span class="token function">getWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addFlags</span><span class="token punctuation">(</span><span class="token class-name">WindowManager<span class="token punctuation">.</span> LayoutParams</span><span class="token punctuation">.</span> <span class="token constant">FLAG_FULLSCREEN</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token comment">// 显示状态栏</span>
+<span class="token function">getWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">clearFlags</span><span class="token punctuation">(</span><span class="token class-name">WindowManager<span class="token punctuation">.</span> LayoutParams</span><span class="token punctuation">.</span><span class="token constant">FLAG_FULLSCREEN</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+        <h3 id="控制状态栏和导航栏显示-setSystemUiVisibility">
+          <a href="#控制状态栏和导航栏显示-setSystemUiVisibility" class="heading-link"><i class="fas fa-link"></i></a><a href="#控制状态栏和导航栏显示-setSystemUiVisibility" class="headerlink" title="控制状态栏和导航栏显示, setSystemUiVisibility"></a>控制状态栏和导航栏显示, setSystemUiVisibility</h3>
+      <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">View</span><span class="token punctuation">.</span> <span class="token constant">SYSTEM_UI_FLAG_LAYOUT_STABLE</span> 
+<span class="token comment">//全屏显示时保证尺寸不变。</span>
+
+<span class="token class-name">View</span><span class="token punctuation">.</span> <span class="token constant">SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN</span>
+ <span class="token comment">//Activity全屏显示，状态栏显示在Activity页面上面。</span>
+
+<span class="token class-name">View</span><span class="token punctuation">.</span> <span class="token constant">SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION</span>
+ <span class="token comment">//效果同View. SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN</span>
+
+<span class="token class-name">View</span><span class="token punctuation">.</span> <span class="token constant">SYSTEM_UI_FLAG_HIDE_NAVIGATION</span>
+ <span class="token comment">//隐藏导航栏</span>
+
+<span class="token class-name">View</span><span class="token punctuation">.</span> <span class="token constant">SYSTEM_UI_FLAG_FULLSCREEN</span> 
+<span class="token comment">//Activity全屏显示，且状态栏被隐藏覆盖掉。</span>
+
+<span class="token class-name">View</span><span class="token punctuation">.</span> <span class="token constant">SYSTEM_UI_FLAG_VISIBLE</span> 
+<span class="token comment">//Activity非全屏显示，显示状态栏和导航栏。</span>
+
+<span class="token class-name">View</span><span class="token punctuation">.</span> <span class="token constant">INVISIBLE</span>
+<span class="token comment">//Activity伸展全屏显示，隐藏状态栏。</span>
+
+<span class="token class-name">View</span><span class="token punctuation">.</span> <span class="token constant">SYSTEM_UI_LAYOUT_FLAGS</span>
+<span class="token comment">//效果同View. SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN</span>
+
+<span class="token class-name">View</span><span class="token punctuation">.</span> <span class="token constant">SYSTEM_UI_FLAG_IMMERSIVE_STICKY</span>
+<span class="token comment">//必须配合View.SYSTEM_UI_FLAG_FULLSCREEN和View.SYSTEM_UI_FLAG_HIDE_NAVIGATION组合使用，达到的效果是拉出状态栏和导航栏后显示一会儿消失。</span>
+
+<span class="token comment">// 全屏展示</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token class-name">Build</span><span class="token punctuation">.</span> <span class="token constant">VERSION</span><span class="token punctuation">.</span> <span class="token constant">SDK_INT</span> <span class="token operator">&gt;=</span> <span class="token class-name">Build</span><span class="token punctuation">.</span> <span class="token constant">VERSION_CODES</span><span class="token punctuation">.</span> <span class="token constant">JELLY_BEAN</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token class-name">Build</span><span class="token punctuation">.</span> <span class="token constant">VERSION</span><span class="token punctuation">.</span> <span class="token constant">SDK_INT</span> <span class="token operator">&gt;=</span> <span class="token class-name">Build</span><span class="token punctuation">.</span> <span class="token constant">VERSION_CODES</span><span class="token punctuation">.</span> <span class="token constant">LOLLIPOP</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 全屏显示，隐藏状态栏和导航栏，拉出状态栏和导航栏显示一会儿后消失。</span>
+        activity<span class="token punctuation">.</span><span class="token function">getWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDecorView</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setSystemUiVisibility</span><span class="token punctuation">(</span>
+                <span class="token class-name">View</span><span class="token punctuation">.</span> <span class="token constant">SYSTEM_UI_FLAG_LAYOUT_STABLE</span>
+                        <span class="token operator">|</span> <span class="token class-name">View</span><span class="token punctuation">.</span> <span class="token constant">SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN</span>
+                        <span class="token operator">|</span> <span class="token class-name">View</span><span class="token punctuation">.</span> <span class="token constant">SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION</span>
+                        <span class="token operator">|</span> <span class="token class-name">View</span><span class="token punctuation">.</span> <span class="token constant">SYSTEM_UI_FLAG_HIDE_NAVIGATION</span>
+                        <span class="token operator">|</span> <span class="token class-name">View</span><span class="token punctuation">.</span> <span class="token constant">SYSTEM_UI_FLAG_FULLSCREEN</span>
+                        <span class="token operator">|</span> <span class="token class-name">View</span><span class="token punctuation">.</span> <span class="token constant">SYSTEM_UI_FLAG_IMMERSIVE_STICKY</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 全屏显示，隐藏状态栏</span>
+        activity<span class="token punctuation">.</span><span class="token function">getWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDecorView</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setSystemUiVisibility</span><span class="token punctuation">(</span><span class="token class-name">View</span><span class="token punctuation">.</span> <span class="token constant">SYSTEM_UI_FLAG_FULLSCREEN</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 非全屏显示，显示状态栏和导航栏</span>
+activity<span class="token punctuation">.</span><span class="token function">getWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDecorView</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setSystemUiVisibility</span><span class="token punctuation">(</span><span class="token class-name">View</span><span class="token punctuation">.</span> <span class="token constant">SYSTEM_UI_FLAG_VISIBLE</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Android/" class="category-chain-item">Android</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/Android/%E5%85%B6%E4%BB%96/" class="category-chain-item">其他</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Android/" class="print-no-link">#Android</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>安卓杂记</div>
+      <div>http://virogu.github.io/2023/08/31/docs/android/qi-ta/an-zhuo-za-ji/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Virogu</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年8月31日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/08/31/docs/android/qi-ta/xi-tong-guang-bo/" title="系统广播">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">系统广播</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/08/31/docs/android/qi-ta/xi-tong-ti-gong-de-activity/" title="系统提供的Activity">
+                        <span class="hidden-mobile">系统提供的Activity</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+      <span>Copyright&nbsp;&copy;2023</span>&nbsp;
+<a href="https://github.com/virogu" target="_blank" rel="nofollow noopener"><span>Virogu</span></a>
+<span>&nbsp;|&nbsp;</span>
+<a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+<i class="iconfont icon-love"></i>
+<a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
