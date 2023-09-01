@@ -18,7 +18,7 @@
   
     <meta name="description" content="CPU温度 1adb shell cat &#x2F;sys&#x2F;class&#x2F;thermal&#x2F;thermal_zone7&#x2F;temp  强制停止程序 1adb shell am force-stop com.xxxx.android.mirror  启动程序 1adb shell am start com.xxxx.xxxx&#x2F;com.xxxx.PreviewActivity  卸载程序 1adb uninstal">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ADB 其他命令">
+<meta property="og:title" content="ADB 其他常用命令">
 <meta property="og:url" content="http://virogu.github.io/2023/08/31/docs/adb/adb-qi-ta-ming-ling/index.html">
 <meta property="og:site_name" content="半漠清风">
 <meta property="og:description" content="CPU温度 1adb shell cat &#x2F;sys&#x2F;class&#x2F;thermal&#x2F;thermal_zone7&#x2F;temp  强制停止程序 1adb shell am force-stop com.xxxx.android.mirror  启动程序 1adb shell am start com.xxxx.xxxx&#x2F;com.xxxx.PreviewActivity  卸载程序 1adb uninstal">
@@ -33,7 +33,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>ADB 其他命令 - 半漠清风</title>
+  <title>ADB 其他常用命令 - 半漠清风</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -202,7 +202,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">ADB 其他命令</span>
+            <span id="subtitle">ADB 其他常用命令</span>
           
         </div>
 
@@ -290,7 +290,7 @@
         aria-expanded="true"
       >
         ADB
-        <span class="list-group-count">(9)</span>
+        <span class="list-group-count">(8)</span>
         <i class="iconfont icon-arrowright"></i>
       </a>
       
@@ -304,10 +304,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/adb-qi-ta-ming-ling/" title="ADB 其他命令"
+        <a href="/2023/08/31/docs/adb/adb-qi-ta-ming-ling/" title="ADB 其他常用命令"
            class="list-group-item list-group-item-action
            active">
-          <span class="category-post">ADB 其他命令</span>
+          <span class="category-post">ADB 其他常用命令</span>
         </a>
       
     
@@ -349,10 +349,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/adb-cha-kan-yin-liang/" title="ADB 查看音量"
+        <a href="/2023/08/31/docs/adb/adb-cha-kan-yin-liang/" title="ADB 音量操作"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">ADB 查看音量</span>
+          <span class="category-post">ADB 音量操作</span>
         </a>
       
     
@@ -367,19 +367,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/da-kai-wang-luo-adb-diao-shi/" title="打开网络ADB调试"
+        <a href="/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/" title="ADB 开启远程调试"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">打开网络ADB调试</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/" title="ADB 远程调试"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">ADB 远程调试</span>
+          <span class="category-post">ADB 开启远程调试</span>
         </a>
       
     
@@ -401,39 +392,39 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">ADB 其他命令</h1>
+            <h1 id="seo-header">ADB 其他常用命令</h1>
             
             
               <div class="markdown-body">
                 
                 <p>CPU温度</p>
-<figure class="highlight cmd"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb shell cat /sys/class/thermal/thermal_zone7/temp<br></code></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell <span class="hljs-built_in">cat</span> /sys/class/thermal/thermal_zone7/temp<br></code></pre></td></tr></tbody></table></figure>
 
 <p>强制停止程序</p>
-<figure class="highlight cmd"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb shell am force-stop com.xxxx.android.mirror<br></code></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell am force-stop com.xxxx.android.mirror<br></code></pre></td></tr></tbody></table></figure>
 
 <p>启动程序</p>
-<figure class="highlight cmd"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb shell am <span class="hljs-built_in">start</span> com.xxxx.xxxx/com.xxxx.PreviewActivity<br></code></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell am start com.xxxx.xxxx/com.xxxx.PreviewActivity<br></code></pre></td></tr></tbody></table></figure>
 
 <p>卸载程序</p>
-<figure class="highlight cmd"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb uninstall com.xxx.xx<br></code></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb uninstall com.xxx.xx<br></code></pre></td></tr></tbody></table></figure>
 
-<figure class="highlight cmd"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb forward tcp:<span class="hljs-number">10101</span> tcp:<span class="hljs-number">10101</span><br>adb reverse tcp:<span class="hljs-number">9537</span> tcp:<span class="hljs-number">9537</span><br></code></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb forward tcp:10101 tcp:10101<br>adb reverse tcp:9537 tcp:9537<br></code></pre></td></tr></tbody></table></figure>
 
 <p>查看CPU</p>
-<figure class="highlight cmd"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb shell getprop ro.board.platform<br>top -m <span class="hljs-number">20</span> -s cpu -d <span class="hljs-number">5</span><br></code></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell getprop ro.board.platform<br>top -m 20 -s cpu -d 5<br></code></pre></td></tr></tbody></table></figure>
 
 <p>获取处理器信息</p>
-<figure class="highlight cmd"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb shell getprop ro.board.platform<br></code></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell getprop ro.board.platform<br></code></pre></td></tr></tbody></table></figure>
 
 <p>查看相机参数<br>执行这个adb命令会打印所有默认参数和当前使用参数</p>
-<figure class="highlight cmd"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb shell dumpsys media.camera<br></code></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell dumpsys media.camera<br></code></pre></td></tr></tbody></table></figure>
 
 <p>查看某一项参数,使用过滤命令grep(linux), windows下可使用findstr来过滤</p>
-<figure class="highlight cmd"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb shell dumpsys media.camera |grep picture-size<br></code></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell dumpsys media.camera |grep picture-size<br></code></pre></td></tr></tbody></table></figure>
 
 <p>将结果保存到文件中</p>
-<figure class="highlight cmd"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb shell dumpsys media.camera &gt; F:\Data\桌面\camera.txt<br></code></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell dumpsys media.camera &gt; F:\Data\桌面\camera.txt<br></code></pre></td></tr></tbody></table></figure>
 
 
 
@@ -481,7 +472,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>ADB 其他命令</div>
+      <div>ADB 其他常用命令</div>
       <div>http://virogu.github.io/2023/08/31/docs/adb/adb-qi-ta-ming-ling/</div>
     </div>
     <div class="license-meta">

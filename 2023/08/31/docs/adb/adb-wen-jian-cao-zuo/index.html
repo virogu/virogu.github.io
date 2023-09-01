@@ -16,12 +16,12 @@
   <meta name="author" content="Virogu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="删除文件 adb shell rm -rf &#x2F;dir1&#x2F;test1&#x2F;test  批量删除符合条件的文件 adb shell rm -rf &#x2F;dir1&#x2F;test1&#x2F;test*  批量删除符合条件的文件（不区分大小写） adb shell &#39;find &#x2F;dir1&#x2F;test1 -maxdepth 1 -iname &quot;TesT*&quot; -exec rm -rf {} \;&#39;">
+    <meta name="description" content="删除文件 1adb shell rm -rf &#x2F;dir1&#x2F;test1&#x2F;test  批量删除符合条件的文件 1adb shell rm -rf &#x2F;dir1&#x2F;test1&#x2F;test*  批量删除符合条件的文件（不区分大小写） 1adb shell &#39;find &#x2F;dir1&#x2F;test1 -maxdepth 1 -iname &quot;TesT*&quot; -exec rm -rf {} \;&#39;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ADB 文件操作">
 <meta property="og:url" content="http://virogu.github.io/2023/08/31/docs/adb/adb-wen-jian-cao-zuo/index.html">
 <meta property="og:site_name" content="半漠清风">
-<meta property="og:description" content="删除文件 adb shell rm -rf &#x2F;dir1&#x2F;test1&#x2F;test  批量删除符合条件的文件 adb shell rm -rf &#x2F;dir1&#x2F;test1&#x2F;test*  批量删除符合条件的文件（不区分大小写） adb shell &#39;find &#x2F;dir1&#x2F;test1 -maxdepth 1 -iname &quot;TesT*&quot; -exec rm -rf {} \;&#39;">
+<meta property="og:description" content="删除文件 1adb shell rm -rf &#x2F;dir1&#x2F;test1&#x2F;test  批量删除符合条件的文件 1adb shell rm -rf &#x2F;dir1&#x2F;test1&#x2F;test*  批量删除符合条件的文件（不区分大小写） 1adb shell &#39;find &#x2F;dir1&#x2F;test1 -maxdepth 1 -iname &quot;TesT*&quot; -exec rm -rf {} \;&#39;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-31T12:00:00.000Z">
 <meta property="article:modified_time" content="2023-08-31T12:00:00.000Z">
@@ -230,7 +230,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          155 字
+          158 字
         
       </span>
     
@@ -290,7 +290,7 @@
         aria-expanded="true"
       >
         ADB
-        <span class="list-group-count">(9)</span>
+        <span class="list-group-count">(8)</span>
         <i class="iconfont icon-arrowright"></i>
       </a>
       
@@ -304,10 +304,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/adb-qi-ta-ming-ling/" title="ADB 其他命令"
+        <a href="/2023/08/31/docs/adb/adb-qi-ta-ming-ling/" title="ADB 其他常用命令"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">ADB 其他命令</span>
+          <span class="category-post">ADB 其他常用命令</span>
         </a>
       
     
@@ -349,10 +349,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/adb-cha-kan-yin-liang/" title="ADB 查看音量"
+        <a href="/2023/08/31/docs/adb/adb-cha-kan-yin-liang/" title="ADB 音量操作"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">ADB 查看音量</span>
+          <span class="category-post">ADB 音量操作</span>
         </a>
       
     
@@ -367,19 +367,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/da-kai-wang-luo-adb-diao-shi/" title="打开网络ADB调试"
+        <a href="/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/" title="ADB 开启远程调试"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">打开网络ADB调试</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/" title="ADB 远程调试"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">ADB 远程调试</span>
+          <span class="category-post">ADB 开启远程调试</span>
         </a>
       
     
@@ -407,13 +398,13 @@
               <div class="markdown-body">
                 
                 <p>删除文件</p>
-<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">adb shell rm -rf /dir1/test1/test<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell <span class="hljs-built_in">rm</span> -rf /dir1/test1/test<br></code></pre></td></tr></tbody></table></figure>
 
 <p>批量删除符合条件的文件</p>
-<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">adb shell rm -rf /dir1/test1/test*<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell <span class="hljs-built_in">rm</span> -rf /dir1/test1/test*<br></code></pre></td></tr></tbody></table></figure>
 
 <p>批量删除符合条件的文件（不区分大小写）</p>
-<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">adb shell 'find /dir1/test1 -maxdepth 1 -iname "TesT*" -exec rm -rf {} \;'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell <span class="hljs-string">'find /dir1/test1 -maxdepth 1 -iname "TesT*" -exec rm -rf {} \;'</span><br></code></pre></td></tr></tbody></table></figure>
 
                 
               </div>

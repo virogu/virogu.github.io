@@ -16,12 +16,12 @@
   <meta name="author" content="Virogu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="1. 推送文件到 &#x2F;data&#x2F;local&#x2F;tmp       例： adb push E:&#x2F;Test&#x2F;libXXX.out.so &#x2F;data&#x2F;local&#x2F;tmp                      2. 设置文件权限       例： adb shell cd &#x2F;data&#x2F;local&#x2F;tmp chmod 777 libXXX.out.so">
+    <meta name="description" content="1. 推送文件到 &#x2F;data&#x2F;local&#x2F;tmp例： 1adb push E:&#x2F;Test&#x2F;libXXX.out.so &#x2F;data&#x2F;local&#x2F;tmp  2. 设置文件权限例： 123adb shellcd &#x2F;data&#x2F;local&#x2F;tmpchmod 777 libXXX.out.so  3. 设置工作目录为当前目录：1export LD_LIBRARY_PATH&#x3D;.  4. 执行可执行文件例：执行">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ADB 执行可执行文件">
 <meta property="og:url" content="http://virogu.github.io/2023/08/31/docs/adb/adb-zhi-xing-ke-zhi-xing-wen-jian/index.html">
 <meta property="og:site_name" content="半漠清风">
-<meta property="og:description" content="1. 推送文件到 &#x2F;data&#x2F;local&#x2F;tmp       例： adb push E:&#x2F;Test&#x2F;libXXX.out.so &#x2F;data&#x2F;local&#x2F;tmp                      2. 设置文件权限       例： adb shell cd &#x2F;data&#x2F;local&#x2F;tmp chmod 777 libXXX.out.so">
+<meta property="og:description" content="1. 推送文件到 &#x2F;data&#x2F;local&#x2F;tmp例： 1adb push E:&#x2F;Test&#x2F;libXXX.out.so &#x2F;data&#x2F;local&#x2F;tmp  2. 设置文件权限例： 123adb shellcd &#x2F;data&#x2F;local&#x2F;tmpchmod 777 libXXX.out.so  3. 设置工作目录为当前目录：1export LD_LIBRARY_PATH&#x3D;.  4. 执行可执行文件例：执行">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-31T12:00:00.000Z">
 <meta property="article:modified_time" content="2023-08-31T12:00:00.000Z">
@@ -230,7 +230,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          201 字
+          207 字
         
       </span>
     
@@ -290,7 +290,7 @@
         aria-expanded="true"
       >
         ADB
-        <span class="list-group-count">(9)</span>
+        <span class="list-group-count">(8)</span>
         <i class="iconfont icon-arrowright"></i>
       </a>
       
@@ -304,10 +304,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/adb-qi-ta-ming-ling/" title="ADB 其他命令"
+        <a href="/2023/08/31/docs/adb/adb-qi-ta-ming-ling/" title="ADB 其他常用命令"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">ADB 其他命令</span>
+          <span class="category-post">ADB 其他常用命令</span>
         </a>
       
     
@@ -349,10 +349,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/adb-cha-kan-yin-liang/" title="ADB 查看音量"
+        <a href="/2023/08/31/docs/adb/adb-cha-kan-yin-liang/" title="ADB 音量操作"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">ADB 查看音量</span>
+          <span class="category-post">ADB 音量操作</span>
         </a>
       
     
@@ -367,19 +367,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/da-kai-wang-luo-adb-diao-shi/" title="打开网络ADB调试"
+        <a href="/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/" title="ADB 开启远程调试"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">打开网络ADB调试</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/" title="ADB 远程调试"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">ADB 远程调试</span>
+          <span class="category-post">ADB 开启远程调试</span>
         </a>
       
     
@@ -406,29 +397,16 @@
             
               <div class="markdown-body">
                 
-                <h3 id="1-推送文件到-data-local-tmp">
-          <a href="#1-推送文件到-data-local-tmp" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-推送文件到-data-local-tmp" class="headerlink" title="1. 推送文件到 /data/local/tmp"></a>1. 推送文件到 /data/local/tmp</h3>
-      <p>例：</p>
-<pre class="line-numbers language-none"><code class="language-none">adb push E:/Test/libXXX.out.so /data/local/tmp<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h3 id="1-推送文件到-data-local-tmp"><a href="#1-推送文件到-data-local-tmp" class="headerlink" title="1. 推送文件到 /data/local/tmp"></a>1. 推送文件到 /data/local/tmp</h3><p>例：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb push E:/Test/libXXX.out.so /data/local/tmp<br></code></pre></td></tr></tbody></table></figure>
 
+<h3 id="2-设置文件权限"><a href="#2-设置文件权限" class="headerlink" title="2. 设置文件权限"></a>2. 设置文件权限</h3><p>例：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell<br><span class="hljs-built_in">cd</span> /data/local/tmp<br><span class="hljs-built_in">chmod</span> 777 libXXX.out.so<br></code></pre></td></tr></tbody></table></figure>
 
-        <h3 id="2-设置文件权限">
-          <a href="#2-设置文件权限" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-设置文件权限" class="headerlink" title="2. 设置文件权限"></a>2. 设置文件权限</h3>
-      <p>例：</p>
-<pre class="line-numbers language-none"><code class="language-none">adb shell
-cd /data/local/tmp
-chmod 777 libXXX.out.so<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="3-设置工作目录为当前目录："><a href="#3-设置工作目录为当前目录：" class="headerlink" title="3. 设置工作目录为当前目录："></a>3. 设置工作目录为当前目录：</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">export</span> LD_LIBRARY_PATH=.<br></code></pre></td></tr></tbody></table></figure>
 
-
-        <h3 id="3-设置工作目录为当前目录：">
-          <a href="#3-设置工作目录为当前目录：" class="heading-link"><i class="fas fa-link"></i></a><a href="#3-设置工作目录为当前目录：" class="headerlink" title="3. 设置工作目录为当前目录："></a>3. 设置工作目录为当前目录：</h3>
-      <pre class="line-numbers language-none"><code class="language-none">export LD_LIBRARY_PATH=.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-        <h3 id="4-执行可执行文件">
-          <a href="#4-执行可执行文件" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-执行可执行文件" class="headerlink" title="4. 执行可执行文件"></a>4. 执行可执行文件</h3>
-      <pre class="line-numbers language-none"><code class="language-none">例：执行 libXXX.out.so
-./libXXX.out.so<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="4-执行可执行文件"><a href="#4-执行可执行文件" class="headerlink" title="4. 执行可执行文件"></a>4. 执行可执行文件</h3><p>例：执行 <code>libXXX.out.so</code></p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">./libXXX.out.so<br></code></pre></td></tr></tbody></table></figure>
 
 
 
@@ -522,9 +500,9 @@ chmod 777 libXXX.out.so<span aria-hidden="true" class="line-numbers-rows"><span>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/08/31/docs/adb/adb-qi-ta-ming-ling/" title="ADB 其他命令">
+                      <a href="/2023/08/31/docs/adb/adb-qi-ta-ming-ling/" title="ADB 其他常用命令">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">ADB 其他命令</span>
+                        <span class="hidden-mobile">ADB 其他常用命令</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     

@@ -16,12 +16,12 @@
   <meta name="author" content="Virogu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="service.adb.tcp.port&#x3D;5555  adb tcpip 5555">
+    <meta name="description" content="开启无线调试Root模式方式一 手动修改 &#x2F;system&#x2F;build.prop 文件，后面添加下面这行，然后保存 1service.adb.tcp.port&#x3D;5555  可以这样操作 123adb rootadb remountadb pull &#x2F;system&#x2F;build.prop  手动修改 build.prop 文件，添加 service.adb.tcp.port&#x3D;5555，保存，然后推送到设">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ADB 远程调试">
+<meta property="og:title" content="ADB 开启远程调试">
 <meta property="og:url" content="http://virogu.github.io/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/index.html">
 <meta property="og:site_name" content="半漠清风">
-<meta property="og:description" content="service.adb.tcp.port&#x3D;5555  adb tcpip 5555">
+<meta property="og:description" content="开启无线调试Root模式方式一 手动修改 &#x2F;system&#x2F;build.prop 文件，后面添加下面这行，然后保存 1service.adb.tcp.port&#x3D;5555  可以这样操作 123adb rootadb remountadb pull &#x2F;system&#x2F;build.prop  手动修改 build.prop 文件，添加 service.adb.tcp.port&#x3D;5555，保存，然后推送到设">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-31T12:00:00.000Z">
 <meta property="article:modified_time" content="2023-08-31T12:00:00.000Z">
@@ -33,7 +33,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>ADB 远程调试 - 半漠清风</title>
+  <title>ADB 开启远程调试 - 半漠清风</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -202,7 +202,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">ADB 远程调试</span>
+            <span id="subtitle">ADB 开启远程调试</span>
           
         </div>
 
@@ -230,7 +230,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          37 字
+          496 字
         
       </span>
     
@@ -290,7 +290,7 @@
         aria-expanded="true"
       >
         ADB
-        <span class="list-group-count">(9)</span>
+        <span class="list-group-count">(8)</span>
         <i class="iconfont icon-arrowright"></i>
       </a>
       
@@ -304,10 +304,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/adb-qi-ta-ming-ling/" title="ADB 其他命令"
+        <a href="/2023/08/31/docs/adb/adb-qi-ta-ming-ling/" title="ADB 其他常用命令"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">ADB 其他命令</span>
+          <span class="category-post">ADB 其他常用命令</span>
         </a>
       
     
@@ -349,10 +349,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/adb-cha-kan-yin-liang/" title="ADB 查看音量"
+        <a href="/2023/08/31/docs/adb/adb-cha-kan-yin-liang/" title="ADB 音量操作"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">ADB 查看音量</span>
+          <span class="category-post">ADB 音量操作</span>
         </a>
       
     
@@ -367,19 +367,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/da-kai-wang-luo-adb-diao-shi/" title="打开网络ADB调试"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">打开网络ADB调试</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/" title="ADB 远程调试"
+        <a href="/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/" title="ADB 开启远程调试"
            class="list-group-item list-group-item-action
            active">
-          <span class="category-post">ADB 远程调试</span>
+          <span class="category-post">ADB 开启远程调试</span>
         </a>
       
     
@@ -401,14 +392,36 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">ADB 远程调试</h1>
+            <h1 id="seo-header">ADB 开启远程调试</h1>
             
             
               <div class="markdown-body">
                 
-                <pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">service.adb.tcp.port=5555
+                <h2 id="开启无线调试"><a href="#开启无线调试" class="headerlink" title="开启无线调试"></a>开启无线调试</h2><h3 id="Root模式"><a href="#Root模式" class="headerlink" title="Root模式"></a>Root模式</h3><p>方式一</p>
+<p>手动修改 <code>/system/build.prop</code> 文件，后面添加下面这行，然后保存</p>
+<figure class="highlight elm"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs elm"><span class="hljs-title">service</span>.adb.tcp.<span class="hljs-keyword">port</span>=5555<br></code></pre></td></tr></tbody></table></figure>
 
-adb tcpip 5555<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>可以这样操作</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb root<br>adb remount<br>adb pull /system/build.prop<br></code></pre></td></tr></tbody></table></figure>
+
+<p>手动修改 <code>build.prop</code> 文件，添加 <code>service.adb.tcp.port=5555</code>，保存，然后推送到设备中</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb push build.prop /system/build.prop<br>adb shell <span class="hljs-built_in">chmod</span> 0644 /system/build.prop<br></code></pre></td></tr></tbody></table></figure>
+
+<p>方式二</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell su -c setprop service.adb.tcp.port 5555<br></code></pre></td></tr></tbody></table></figure>
+
+<h3 id="非Root模式"><a href="#非Root模式" class="headerlink" title="非Root模式"></a>非Root模式</h3><p>需要先用数据线连接到设备，然后执行下面的命令打开无线调试</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb tcpip 5555<br></code></pre></td></tr></tbody></table></figure>
+
+<p>然后就可以断开数据线，通过无线连接到设备了</p>
+<blockquote>
+<p>注：这种方式设备重启后需要重新打开无线调试</p>
+</blockquote>
+<h2 id="无线连接"><a href="#无线连接" class="headerlink" title="无线连接"></a>无线连接</h2><p>连接设备，<code>adb connect ip:port</code></p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb connect 192.168.x.x:5555<br></code></pre></td></tr></tbody></table></figure>
+
+<p>默认端口是 <code>5555</code>，如果没有修改端口的话可以省略端口</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb connect 192.168.x.x<br></code></pre></td></tr></tbody></table></figure>
 
                 
               </div>
@@ -454,7 +467,7 @@ adb tcpip 5555<span aria-hidden="true" class="line-numbers-rows"><span></span><s
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>ADB 远程调试</div>
+      <div>ADB 开启远程调试</div>
       <div>http://virogu.github.io/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/</div>
     </div>
     <div class="license-meta">
@@ -499,9 +512,9 @@ adb tcpip 5555<span aria-hidden="true" class="line-numbers-rows"><span></span><s
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/08/31/docs/adb/da-kai-wang-luo-adb-diao-shi/" title="打开网络ADB调试">
+                      <a href="/2023/08/31/docs/adb/adb-mo-ni-ming-ling/" title="ADB 模拟命令">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">打开网络ADB调试</span>
+                        <span class="hidden-mobile">ADB 模拟命令</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     

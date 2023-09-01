@@ -16,12 +16,12 @@
   <meta name="author" content="Virogu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="adb命令打开手机设置页面       &#x2F;&#x2F;关闭设置界面 adb shell am force-stop com.android.settings  &#x2F;&#x2F;打开设置主页面 adb shell am start com.android.settings&#x2F;com.android.settings.Settings  &#x2F;&#x2F;安全 adb shell am start com.andro">
+    <meta name="description" content="adb命令打开手机设置页面关闭设置界面 1adb shell am force-stop com.android.settings  &#x2F;&#x2F;打开设置主页面 1adb shell am start com.android.settings&#x2F;com.android.settings.Settings  安全 1adb shell am start com.android.settings&#x2F;com.and">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ADB 打开设置界面">
 <meta property="og:url" content="http://virogu.github.io/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/index.html">
 <meta property="og:site_name" content="半漠清风">
-<meta property="og:description" content="adb命令打开手机设置页面       &#x2F;&#x2F;关闭设置界面 adb shell am force-stop com.android.settings  &#x2F;&#x2F;打开设置主页面 adb shell am start com.android.settings&#x2F;com.android.settings.Settings  &#x2F;&#x2F;安全 adb shell am start com.andro">
+<meta property="og:description" content="adb命令打开手机设置页面关闭设置界面 1adb shell am force-stop com.android.settings  &#x2F;&#x2F;打开设置主页面 1adb shell am start com.android.settings&#x2F;com.android.settings.Settings  安全 1adb shell am start com.android.settings&#x2F;com.and">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-31T12:00:00.000Z">
 <meta property="article:modified_time" content="2023-08-31T12:00:00.000Z">
@@ -290,7 +290,7 @@
         aria-expanded="true"
       >
         ADB
-        <span class="list-group-count">(9)</span>
+        <span class="list-group-count">(8)</span>
         <i class="iconfont icon-arrowright"></i>
       </a>
       
@@ -304,10 +304,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/adb-qi-ta-ming-ling/" title="ADB 其他命令"
+        <a href="/2023/08/31/docs/adb/adb-qi-ta-ming-ling/" title="ADB 其他常用命令"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">ADB 其他命令</span>
+          <span class="category-post">ADB 其他常用命令</span>
         </a>
       
     
@@ -349,10 +349,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/adb-cha-kan-yin-liang/" title="ADB 查看音量"
+        <a href="/2023/08/31/docs/adb/adb-cha-kan-yin-liang/" title="ADB 音量操作"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">ADB 查看音量</span>
+          <span class="category-post">ADB 音量操作</span>
         </a>
       
     
@@ -367,19 +367,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/da-kai-wang-luo-adb-diao-shi/" title="打开网络ADB调试"
+        <a href="/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/" title="ADB 开启远程调试"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">打开网络ADB调试</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/" title="ADB 远程调试"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">ADB 远程调试</span>
+          <span class="category-post">ADB 开启远程调试</span>
         </a>
       
     
@@ -406,63 +397,24 @@
             
               <div class="markdown-body">
                 
-                <h3 id="adb命令打开手机设置页面">
-          <a href="#adb命令打开手机设置页面" class="heading-link"><i class="fas fa-link"></i></a><a href="#adb命令打开手机设置页面" class="headerlink" title="adb命令打开手机设置页面"></a>adb命令打开手机设置页面</h3>
-      <pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">//关闭设置界面
-adb shell am force-stop com.android.settings
+                <h3 id="adb命令打开手机设置页面"><a href="#adb命令打开手机设置页面" class="headerlink" title="adb命令打开手机设置页面"></a>adb命令打开手机设置页面</h3><p>关闭设置界面</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell am force-stop com.android.settings<br></code></pre></td></tr></tbody></table></figure>
 
-//打开设置主页面
-adb shell am start com.android.settings/com.android.settings.Settings
+<p>//打开设置主页面</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell am start com.android.settings/com.android.settings.Settings<br></code></pre></td></tr></tbody></table></figure>
 
-//安全
-adb shell am start com.android.settings/com.android.settings.SecuritySettings
+<p>安全</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell am start com.android.settings/com.android.settings.SecuritySettings<br></code></pre></td></tr></tbody></table></figure>
 
-//手机无线信息
-adb shell am start com.android.settings/com.android.settings.RadioInfo
+<p>手机无线信息</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell am start com.android.settings/com.android.settings.RadioInfo<br></code></pre></td></tr></tbody></table></figure>
 
-// 有些界面需要这样打开
-APN界面
-adb shell am start -n 'com.android.settings/.Settings\$ApnSettingsActivity'
+<p>有些界面需要这样打开</p>
+<p>APN界面</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell am start -n <span class="hljs-string">'com.android.settings/.Settings\$ApnSettingsActivity'</span><br></code></pre></td></tr></tbody></table></figure>
 
-更多页面
-com.android.settings.AccessibilitySettings 辅助功能设置
-com.android.settings.ActivityPicker 选择活动
-com.android.settings.ApnSettings APN设置
-com.android.settings.ApplicationSettings 应用程序设置
-com.android.settings.BandMode 设置GSM/UMTS波段
-com.android.settings.BatteryInfo 电池信息
-com.android.settings.DateTimeSettings 日期和坝上旅游网时间设置
-com.android.settings.DateTimeSettingsSetupWizard 日期和时间设置
-com.android.settings.DevelopmentSettings 开发者设置
-com.android.settings.DeviceAdminSettings 设备管理器
-com.android.settings.DeviceInfoSettings 关于手机
-com.android.settings.Display 显示——设置显示字体大小及预览
-com.android.settings.DisplaySettings 显示设置
-com.android.settings.DockSettings 底座设置
-com.android.settings.IccLockSettings SIM卡锁定设置
-com.android.settings.InstalledAppDetails 语言和键盘设置
-com.android.settings.LanguageSettings 语言和键盘设置
-com.android.settings.LocalePicker 选择手机语言
-com.android.settings.LocalePickerInSetupWizard 选择手机语言
-com.android.settings.ManageApplications 已下载（安装）软件列表
-com.android.settings.MasterClear 恢复出厂设置
-com.android.settings.MediaFormat 格式化手机闪存
-com.android.settings.PhysicalKeyboardSettings 设置键盘
-com.android.settings.PrivacySettings 隐私设置
-com.android.settings.ProxySelector 代理设置
-com.android.settings.RadioInfo 手机信息
-com.android.settings.RunningServices 正在运行的程序（服务）
-com.android.settings.SecuritySettings 位置和安全设置
-com.android.settings.Settings 系统设置
-com.android.settings.SettingsSafetyLegalActivity 安全信息
-com.android.settings.SoundSettings 声音设置
-com.android.settings.TestingSettings 测试——显示手机信息、电池信息、使用情况统计、Wifi information、服务信息
-com.android.settings.TetherSettings 绑定与便携式热点
-com.android.settings.TextToSpeechSettings 文字转语音设置
-com.android.settings.UsageStats 使用情况统计
-com.android.settings.UserDictionarySettings 用户词典
-com.android.settings.VoiceInputOutputSettings 语音输入与输出设置
-com.android.settings.WirelessSettings 无线和网络设置<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>更多页面</p>
+<figure class="highlight stylus"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><code class="hljs stylus">com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.AccessibilitySettings</span> 辅助功能设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.ActivityPicker</span> 选择活动<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.ApnSettings</span> APN设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.ApplicationSettings</span> 应用程序设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.BandMode</span> 设置GSM/UMTS波段<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.BatteryInfo</span> 电池信息<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.DateTimeSettings</span> 日期和坝上旅游网时间设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.DateTimeSettingsSetupWizard</span> 日期和时间设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.DevelopmentSettings</span> 开发者设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.DeviceAdminSettings</span> 设备管理器<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.DeviceInfoSettings</span> 关于手机<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.Display</span> 显示——设置显示字体大小及预览<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.DisplaySettings</span> 显示设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.DockSettings</span> 底座设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.IccLockSettings</span> SIM卡锁定设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.InstalledAppDetails</span> 语言和键盘设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.LanguageSettings</span> 语言和键盘设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.LocalePicker</span> 选择手机语言<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.LocalePickerInSetupWizard</span> 选择手机语言<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.ManageApplications</span> 已下载（安装）软件列表<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.MasterClear</span> 恢复出厂设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.MediaFormat</span> 格式化手机闪存<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.PhysicalKeyboardSettings</span> 设置键盘<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.PrivacySettings</span> 隐私设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.ProxySelector</span> 代理设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.RadioInfo</span> 手机信息<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.RunningServices</span> 正在运行的程序（服务）<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.SecuritySettings</span> 位置和安全设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.Settings</span> 系统设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.SettingsSafetyLegalActivity</span> 安全信息<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.SoundSettings</span> 声音设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.TestingSettings</span> 测试——显示手机信息、电池信息、使用情况统计、Wifi information、服务信息<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.TetherSettings</span> 绑定与便携式热点<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.TextToSpeechSettings</span> 文字转语音设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.UsageStats</span> 使用情况统计<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.UserDictionarySettings</span> 用户词典<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.VoiceInputOutputSettings</span> 语音输入与输出设置<br>com<span class="hljs-selector-class">.android</span><span class="hljs-selector-class">.settings</span><span class="hljs-selector-class">.WirelessSettings</span> 无线和网络设置<br></code></pre></td></tr></tbody></table></figure>
 
                 
               </div>

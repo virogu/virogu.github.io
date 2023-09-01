@@ -16,12 +16,12 @@
   <meta name="author" content="Virogu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="模拟开关机广播 adb shell am broadcast -a android.intent.action.BOOT_COMPLETED  设置桌面 adb shell &quot;cmd package set-home-activity com.xxxx&#x2F;com.xxx.MainActivity&quot;   模拟输入文字 adb shell &quot;input keyboard text &#39;a text&#39;&quot;">
+    <meta name="description" content="模拟开关机广播 1adb shell am broadcast -a android.intent.action.BOOT_COMPLETED  设置桌面 1adb shell &quot;cmd package set-home-activity com.xxxx&#x2F;com.xxx.MainActivity&quot;   模拟输入文字 1adb shell &quot;input keyboard text &#39;a text&#39;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ADB 模拟命令">
 <meta property="og:url" content="http://virogu.github.io/2023/08/31/docs/adb/adb-mo-ni-ming-ling/index.html">
 <meta property="og:site_name" content="半漠清风">
-<meta property="og:description" content="模拟开关机广播 adb shell am broadcast -a android.intent.action.BOOT_COMPLETED  设置桌面 adb shell &quot;cmd package set-home-activity com.xxxx&#x2F;com.xxx.MainActivity&quot;   模拟输入文字 adb shell &quot;input keyboard text &#39;a text&#39;&quot;">
+<meta property="og:description" content="模拟开关机广播 1adb shell am broadcast -a android.intent.action.BOOT_COMPLETED  设置桌面 1adb shell &quot;cmd package set-home-activity com.xxxx&#x2F;com.xxx.MainActivity&quot;   模拟输入文字 1adb shell &quot;input keyboard text &#39;a text&#39;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-31T12:00:00.000Z">
 <meta property="article:modified_time" content="2023-08-31T12:00:00.000Z">
@@ -230,7 +230,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.5k 字
+          2.7k 字
         
       </span>
     
@@ -290,7 +290,7 @@
         aria-expanded="true"
       >
         ADB
-        <span class="list-group-count">(9)</span>
+        <span class="list-group-count">(8)</span>
         <i class="iconfont icon-arrowright"></i>
       </a>
       
@@ -304,10 +304,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/adb-qi-ta-ming-ling/" title="ADB 其他命令"
+        <a href="/2023/08/31/docs/adb/adb-qi-ta-ming-ling/" title="ADB 其他常用命令"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">ADB 其他命令</span>
+          <span class="category-post">ADB 其他常用命令</span>
         </a>
       
     
@@ -349,10 +349,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/adb-cha-kan-yin-liang/" title="ADB 查看音量"
+        <a href="/2023/08/31/docs/adb/adb-cha-kan-yin-liang/" title="ADB 音量操作"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">ADB 查看音量</span>
+          <span class="category-post">ADB 音量操作</span>
         </a>
       
     
@@ -367,19 +367,10 @@
     
       
       
-        <a href="/2023/08/31/docs/adb/da-kai-wang-luo-adb-diao-shi/" title="打开网络ADB调试"
+        <a href="/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/" title="ADB 开启远程调试"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">打开网络ADB调试</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/" title="ADB 远程调试"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">ADB 远程调试</span>
+          <span class="category-post">ADB 开启远程调试</span>
         </a>
       
     
@@ -407,123 +398,35 @@
               <div class="markdown-body">
                 
                 <p>模拟开关机广播</p>
-<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">adb shell am broadcast -a android.intent.action.BOOT_COMPLETED<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell am broadcast -a android.intent.action.BOOT_COMPLETED<br></code></pre></td></tr></tbody></table></figure>
 
 <p>设置桌面</p>
-<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">adb shell "cmd package set-home-activity com.xxxx/com.xxx.MainActivity" <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell <span class="hljs-string">"cmd package set-home-activity com.xxxx/com.xxx.MainActivity"</span> <br></code></pre></td></tr></tbody></table></figure>
 
 <p>模拟输入文字</p>
-<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">adb shell "input keyboard text 'a text'"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell <span class="hljs-string">"input keyboard text 'a text'"</span><br></code></pre></td></tr></tbody></table></figure>
 
 <p>模拟点击屏幕</p>
-<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">adb shell "input keyevent 3"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell <span class="hljs-string">"input keyevent 3"</span><br></code></pre></td></tr></tbody></table></figure>
 
 <p>在屏幕上做划屏操作，前四个数为坐标点，后面是滑动的时间（单位毫秒）</p>
-<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">adb shell input swipe 50 250 250 250 500<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell input swipe 50 250 250 250 500<br></code></pre></td></tr></tbody></table></figure>
 
 <p>在 100 100 位置长按 1000毫秒</p>
-<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">adb shell input swipe 100 100 100 100 1000<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell input swipe 100 100 100 100 1000<br></code></pre></td></tr></tbody></table></figure>
 
 <p>模拟点击屏幕<br>在屏幕上点击坐标点x=50 y=250的位置。</p>
-<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">adb shell input tap 50 250<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell input tap 50 250<br></code></pre></td></tr></tbody></table></figure>
 
 <p>设置默认输入法</p>
-<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">adb shell settings put secure default_input_method com.sohu.inputmethod.sogou/.SougouIME
-
-adb shell settings put secure default_input_method com.android.inputmethod.latin/.LatinIME<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell settings put secure default_input_method com.sohu.inputmethod.sogou/.SougouIME<br><br>adb shell settings put secure default_input_method com.android.inputmethod.latin/.LatinIME<br></code></pre></td></tr></tbody></table></figure>
 
 
 <p>模拟点击HOME键</p>
-<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">adb shell "input keyevent 3"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell <span class="hljs-string">"input keyevent 3"</span><br></code></pre></td></tr></tbody></table></figure>
 
 <p>模拟点击按键时每个数字与keycode对应表如下</p>
-<pre class="line-numbers language-none"><code class="language-none">0 --&gt; "KEYCODE_UNKNOWN"
-1 --&gt; "KEYCODE_MENU"
-2 --&gt; "KEYCODE_SOFT_RIGHT"
-3 --&gt; "KEYCODE_HOME"
-4 --&gt; "KEYCODE_BACK"
-5 --&gt; "KEYCODE_CALL"
-6 --&gt; "KEYCODE_ENDCALL"
-7 --&gt; "KEYCODE_0"
-8 --&gt; "KEYCODE_1"
-9 --&gt; "KEYCODE_2"
-10 --&gt; "KEYCODE_3"
-11 --&gt; "KEYCODE_4"
-12 --&gt; "KEYCODE_5"
-13 --&gt; "KEYCODE_6"
-14 --&gt; "KEYCODE_7"
-15 --&gt; "KEYCODE_8"
-16 --&gt; "KEYCODE_9"
-17 --&gt; "KEYCODE_STAR"
-18 --&gt; "KEYCODE_POUND"
-19 --&gt; "KEYCODE_DPAD_UP"
-20 --&gt; "KEYCODE_DPAD_DOWN"
-21 --&gt; "KEYCODE_DPAD_LEFT"
-22 --&gt; "KEYCODE_DPAD_RIGHT"
-23 --&gt; "KEYCODE_DPAD_CENTER"
-24 --&gt; "KEYCODE_VOLUME_UP"
-25 --&gt; "KEYCODE_VOLUME_DOWN"
-26 --&gt; "KEYCODE_POWER"
-27 --&gt; "KEYCODE_CAMERA"
-28 --&gt; "KEYCODE_CLEAR"
-29 --&gt; "KEYCODE_A"
-30 --&gt; "KEYCODE_B"
-31 --&gt; "KEYCODE_C"
-32 --&gt; "KEYCODE_D"
-33 --&gt; "KEYCODE_E"
-34 --&gt; "KEYCODE_F"
-35 --&gt; "KEYCODE_G"
-36 --&gt; "KEYCODE_H"
-37 --&gt; "KEYCODE_I"
-38 --&gt; "KEYCODE_J"
-39 --&gt; "KEYCODE_K"
-40 --&gt; "KEYCODE_L"
-41 --&gt; "KEYCODE_M"
-42 --&gt; "KEYCODE_N"
-43 --&gt; "KEYCODE_O"
-44 --&gt; "KEYCODE_P"
-45 --&gt; "KEYCODE_Q"
-46 --&gt; "KEYCODE_R"
-47 --&gt; "KEYCODE_S"
-48 --&gt; "KEYCODE_T"
-49 --&gt; "KEYCODE_U"
-50 --&gt; "KEYCODE_V"
-51 --&gt; "KEYCODE_W"
-52 --&gt; "KEYCODE_X"
-53 --&gt; "KEYCODE_Y"
-54 --&gt; "KEYCODE_Z"
-55 --&gt; "KEYCODE_COMMA"
-56 --&gt; "KEYCODE_PERIOD"
-57 --&gt; "KEYCODE_ALT_LEFT"
-58 --&gt; "KEYCODE_ALT_RIGHT"
-59 --&gt; "KEYCODE_SHIFT_LEFT"
-60 --&gt; "KEYCODE_SHIFT_RIGHT"
-61 --&gt; "KEYCODE_TAB"
-62 --&gt; "KEYCODE_SPACE"
-63 --&gt; "KEYCODE_SYM"
-64 --&gt; "KEYCODE_EXPLORER"
-65 --&gt; "KEYCODE_ENVELOPE"
-66 --&gt; "KEYCODE_ENTER"
-67 --&gt; "KEYCODE_DEL"
-68 --&gt; "KEYCODE_GRAVE"
-69 --&gt; "KEYCODE_MINUS"
-70 --&gt; "KEYCODE_EQUALS"
-71 --&gt; "KEYCODE_LEFT_BRACKET"
-72 --&gt; "KEYCODE_RIGHT_BRACKET"
-73 --&gt; "KEYCODE_BACKSLASH"
-74 --&gt; "KEYCODE_SEMICOLON"
-75 --&gt; "KEYCODE_APOSTROPHE"
-76 --&gt; "KEYCODE_SLASH"
-77 --&gt; "KEYCODE_AT"
-78 --&gt; "KEYCODE_NUM"
-79 --&gt; "KEYCODE_HEADSETHOOK"
-80 --&gt; "KEYCODE_FOCUS"
-81 --&gt; "KEYCODE_PLUS"
-82 --&gt; "KEYCODE_MENU"
-83 --&gt; "KEYCODE_NOTIFICATION"
-84 --&gt; "KEYCODE_SEARCH"
-85 --&gt; "TAG_LAST_KEYCODE"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight basic"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><code class="hljs basic"><span class="hljs-symbol">0 </span>--&gt; <span class="hljs-string">"KEYCODE_UNKNOWN"</span><br><span class="hljs-symbol">1 </span>--&gt; <span class="hljs-string">"KEYCODE_MENU"</span><br><span class="hljs-symbol">2 </span>--&gt; <span class="hljs-string">"KEYCODE_SOFT_RIGHT"</span><br><span class="hljs-symbol">3 </span>--&gt; <span class="hljs-string">"KEYCODE_HOME"</span><br><span class="hljs-symbol">4 </span>--&gt; <span class="hljs-string">"KEYCODE_BACK"</span><br><span class="hljs-symbol">5 </span>--&gt; <span class="hljs-string">"KEYCODE_CALL"</span><br><span class="hljs-symbol">6 </span>--&gt; <span class="hljs-string">"KEYCODE_ENDCALL"</span><br><span class="hljs-symbol">7 </span>--&gt; <span class="hljs-string">"KEYCODE_0"</span><br><span class="hljs-symbol">8 </span>--&gt; <span class="hljs-string">"KEYCODE_1"</span><br><span class="hljs-symbol">9 </span>--&gt; <span class="hljs-string">"KEYCODE_2"</span><br><span class="hljs-symbol">10 </span>--&gt; <span class="hljs-string">"KEYCODE_3"</span><br><span class="hljs-symbol">11 </span>--&gt; <span class="hljs-string">"KEYCODE_4"</span><br><span class="hljs-symbol">12 </span>--&gt; <span class="hljs-string">"KEYCODE_5"</span><br><span class="hljs-symbol">13 </span>--&gt; <span class="hljs-string">"KEYCODE_6"</span><br><span class="hljs-symbol">14 </span>--&gt; <span class="hljs-string">"KEYCODE_7"</span><br><span class="hljs-symbol">15 </span>--&gt; <span class="hljs-string">"KEYCODE_8"</span><br><span class="hljs-symbol">16 </span>--&gt; <span class="hljs-string">"KEYCODE_9"</span><br><span class="hljs-symbol">17 </span>--&gt; <span class="hljs-string">"KEYCODE_STAR"</span><br><span class="hljs-symbol">18 </span>--&gt; <span class="hljs-string">"KEYCODE_POUND"</span><br><span class="hljs-symbol">19 </span>--&gt; <span class="hljs-string">"KEYCODE_DPAD_UP"</span><br><span class="hljs-symbol">20 </span>--&gt; <span class="hljs-string">"KEYCODE_DPAD_DOWN"</span><br><span class="hljs-symbol">21 </span>--&gt; <span class="hljs-string">"KEYCODE_DPAD_LEFT"</span><br><span class="hljs-symbol">22 </span>--&gt; <span class="hljs-string">"KEYCODE_DPAD_RIGHT"</span><br><span class="hljs-symbol">23 </span>--&gt; <span class="hljs-string">"KEYCODE_DPAD_CENTER"</span><br><span class="hljs-symbol">24 </span>--&gt; <span class="hljs-string">"KEYCODE_VOLUME_UP"</span><br><span class="hljs-symbol">25 </span>--&gt; <span class="hljs-string">"KEYCODE_VOLUME_DOWN"</span><br><span class="hljs-symbol">26 </span>--&gt; <span class="hljs-string">"KEYCODE_POWER"</span><br><span class="hljs-symbol">27 </span>--&gt; <span class="hljs-string">"KEYCODE_CAMERA"</span><br><span class="hljs-symbol">28 </span>--&gt; <span class="hljs-string">"KEYCODE_CLEAR"</span><br><span class="hljs-symbol">29 </span>--&gt; <span class="hljs-string">"KEYCODE_A"</span><br><span class="hljs-symbol">30 </span>--&gt; <span class="hljs-string">"KEYCODE_B"</span><br><span class="hljs-symbol">31 </span>--&gt; <span class="hljs-string">"KEYCODE_C"</span><br><span class="hljs-symbol">32 </span>--&gt; <span class="hljs-string">"KEYCODE_D"</span><br><span class="hljs-symbol">33 </span>--&gt; <span class="hljs-string">"KEYCODE_E"</span><br><span class="hljs-symbol">34 </span>--&gt; <span class="hljs-string">"KEYCODE_F"</span><br><span class="hljs-symbol">35 </span>--&gt; <span class="hljs-string">"KEYCODE_G"</span><br><span class="hljs-symbol">36 </span>--&gt; <span class="hljs-string">"KEYCODE_H"</span><br><span class="hljs-symbol">37 </span>--&gt; <span class="hljs-string">"KEYCODE_I"</span><br><span class="hljs-symbol">38 </span>--&gt; <span class="hljs-string">"KEYCODE_J"</span><br><span class="hljs-symbol">39 </span>--&gt; <span class="hljs-string">"KEYCODE_K"</span><br><span class="hljs-symbol">40 </span>--&gt; <span class="hljs-string">"KEYCODE_L"</span><br><span class="hljs-symbol">41 </span>--&gt; <span class="hljs-string">"KEYCODE_M"</span><br><span class="hljs-symbol">42 </span>--&gt; <span class="hljs-string">"KEYCODE_N"</span><br><span class="hljs-symbol">43 </span>--&gt; <span class="hljs-string">"KEYCODE_O"</span><br><span class="hljs-symbol">44 </span>--&gt; <span class="hljs-string">"KEYCODE_P"</span><br><span class="hljs-symbol">45 </span>--&gt; <span class="hljs-string">"KEYCODE_Q"</span><br><span class="hljs-symbol">46 </span>--&gt; <span class="hljs-string">"KEYCODE_R"</span><br><span class="hljs-symbol">47 </span>--&gt; <span class="hljs-string">"KEYCODE_S"</span><br><span class="hljs-symbol">48 </span>--&gt; <span class="hljs-string">"KEYCODE_T"</span><br><span class="hljs-symbol">49 </span>--&gt; <span class="hljs-string">"KEYCODE_U"</span><br><span class="hljs-symbol">50 </span>--&gt; <span class="hljs-string">"KEYCODE_V"</span><br><span class="hljs-symbol">51 </span>--&gt; <span class="hljs-string">"KEYCODE_W"</span><br><span class="hljs-symbol">52 </span>--&gt; <span class="hljs-string">"KEYCODE_X"</span><br><span class="hljs-symbol">53 </span>--&gt; <span class="hljs-string">"KEYCODE_Y"</span><br><span class="hljs-symbol">54 </span>--&gt; <span class="hljs-string">"KEYCODE_Z"</span><br><span class="hljs-symbol">55 </span>--&gt; <span class="hljs-string">"KEYCODE_COMMA"</span><br><span class="hljs-symbol">56 </span>--&gt; <span class="hljs-string">"KEYCODE_PERIOD"</span><br><span class="hljs-symbol">57 </span>--&gt; <span class="hljs-string">"KEYCODE_ALT_LEFT"</span><br><span class="hljs-symbol">58 </span>--&gt; <span class="hljs-string">"KEYCODE_ALT_RIGHT"</span><br><span class="hljs-symbol">59 </span>--&gt; <span class="hljs-string">"KEYCODE_SHIFT_LEFT"</span><br><span class="hljs-symbol">60 </span>--&gt; <span class="hljs-string">"KEYCODE_SHIFT_RIGHT"</span><br><span class="hljs-symbol">61 </span>--&gt; <span class="hljs-string">"KEYCODE_TAB"</span><br><span class="hljs-symbol">62 </span>--&gt; <span class="hljs-string">"KEYCODE_SPACE"</span><br><span class="hljs-symbol">63 </span>--&gt; <span class="hljs-string">"KEYCODE_SYM"</span><br><span class="hljs-symbol">64 </span>--&gt; <span class="hljs-string">"KEYCODE_EXPLORER"</span><br><span class="hljs-symbol">65 </span>--&gt; <span class="hljs-string">"KEYCODE_ENVELOPE"</span><br><span class="hljs-symbol">66 </span>--&gt; <span class="hljs-string">"KEYCODE_ENTER"</span><br><span class="hljs-symbol">67 </span>--&gt; <span class="hljs-string">"KEYCODE_DEL"</span><br><span class="hljs-symbol">68 </span>--&gt; <span class="hljs-string">"KEYCODE_GRAVE"</span><br><span class="hljs-symbol">69 </span>--&gt; <span class="hljs-string">"KEYCODE_MINUS"</span><br><span class="hljs-symbol">70 </span>--&gt; <span class="hljs-string">"KEYCODE_EQUALS"</span><br><span class="hljs-symbol">71 </span>--&gt; <span class="hljs-string">"KEYCODE_LEFT_BRACKET"</span><br><span class="hljs-symbol">72 </span>--&gt; <span class="hljs-string">"KEYCODE_RIGHT_BRACKET"</span><br><span class="hljs-symbol">73 </span>--&gt; <span class="hljs-string">"KEYCODE_BACKSLASH"</span><br><span class="hljs-symbol">74 </span>--&gt; <span class="hljs-string">"KEYCODE_SEMICOLON"</span><br><span class="hljs-symbol">75 </span>--&gt; <span class="hljs-string">"KEYCODE_APOSTROPHE"</span><br><span class="hljs-symbol">76 </span>--&gt; <span class="hljs-string">"KEYCODE_SLASH"</span><br><span class="hljs-symbol">77 </span>--&gt; <span class="hljs-string">"KEYCODE_AT"</span><br><span class="hljs-symbol">78 </span>--&gt; <span class="hljs-string">"KEYCODE_NUM"</span><br><span class="hljs-symbol">79 </span>--&gt; <span class="hljs-string">"KEYCODE_HEADSETHOOK"</span><br><span class="hljs-symbol">80 </span>--&gt; <span class="hljs-string">"KEYCODE_FOCUS"</span><br><span class="hljs-symbol">81 </span>--&gt; <span class="hljs-string">"KEYCODE_PLUS"</span><br><span class="hljs-symbol">82 </span>--&gt; <span class="hljs-string">"KEYCODE_MENU"</span><br><span class="hljs-symbol">83 </span>--&gt; <span class="hljs-string">"KEYCODE_NOTIFICATION"</span><br><span class="hljs-symbol">84 </span>--&gt; <span class="hljs-string">"KEYCODE_SEARCH"</span><br><span class="hljs-symbol">85 </span>--&gt; <span class="hljs-string">"TAG_LAST_KEYCODE"</span><br></code></pre></td></tr></tbody></table></figure>
 
 
                 
@@ -615,9 +518,9 @@ adb shell settings put secure default_input_method com.android.inputmethod.latin
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/08/31/docs/adb/adb-cha-kan-yin-liang/" title="ADB 查看音量">
+                      <a href="/2023/08/31/docs/adb/adb-cha-kan-yin-liang/" title="ADB 音量操作">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">ADB 查看音量</span>
+                        <span class="hidden-mobile">ADB 音量操作</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -625,8 +528,8 @@ adb shell settings put secure default_input_method com.android.inputmethod.latin
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/08/31/docs/adb/da-kai-wang-luo-adb-diao-shi/" title="打开网络ADB调试">
-                        <span class="hidden-mobile">打开网络ADB调试</span>
+                      <a href="/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/" title="ADB 开启远程调试">
+                        <span class="hidden-mobile">ADB 开启远程调试</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

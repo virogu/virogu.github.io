@@ -17,7 +17,7 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ADB 其他命令</title>
+    <title>ADB 其他常用命令</title>
     <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-qi-ta-ming-ling/"/>
     <id>http://virogu.github.io/2023/08/31/docs/adb/adb-qi-ta-ming-ling/</id>
     <published>2023-08-31T12:00:00.000Z</published>
@@ -29,7 +29,7 @@
         
         
     <summary type="html">&lt;p&gt;CPU温度&lt;/p&gt;
-&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</summary>
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</summary>
         
       
     
@@ -54,8 +54,7 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;1-推送文件到-data-local-tmp&quot;&gt;
-          &lt;a href=&quot;#1-推送文件到-data-local-tmp&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a</summary>
+    <summary type="html">&lt;h3 id=&quot;1-推送文件到-data-local-tmp&quot;&gt;&lt;a href=&quot;#1-推送文件到-data-local-tmp&quot; class=&quot;headerlink&quot; title=&quot;1. 推送文件到 /data/local/tmp&quot;&gt;&lt;/a&gt;1. 推送文件到</summary>
         
       
     
@@ -81,7 +80,7 @@
         
         
     <summary type="html">&lt;p&gt;删除文件&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-cmd&quot; data-language=&quot;cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;adb shell rm -rf /dir1/test1/test&lt;span</summary>
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</summary>
         
       
     
@@ -106,8 +105,8 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;adb命令打开手机设置页面&quot;&gt;
-          &lt;a href=&quot;#adb命令打开手机设置页面&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#adb命令打开手机设置页面&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;adb命令打开手机设置页面&quot;&gt;&lt;a href=&quot;#adb命令打开手机设置页面&quot; class=&quot;headerlink&quot; title=&quot;adb命令打开手机设置页面&quot;&gt;&lt;/a&gt;adb命令打开手机设置页面&lt;/h3&gt;&lt;p&gt;关闭设置界面&lt;/p&gt;
+&lt;figure</summary>
         
       
     
@@ -132,9 +131,8 @@
       
         
         
-    <summary type="html">&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;adb shell dumpsys batterystats --reset
-
-adb shell dumpsys batterystats</summary>
+    <summary type="html">&lt;p&gt;重置电池记录&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</summary>
         
       
     
@@ -148,7 +146,7 @@ adb shell dumpsys batterystats</summary>
   </entry>
   
   <entry>
-    <title>ADB 查看音量</title>
+    <title>ADB 音量操作</title>
     <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-cha-kan-yin-liang/"/>
     <id>http://virogu.github.io/2023/08/31/docs/adb/adb-cha-kan-yin-liang/</id>
     <published>2023-08-31T12:00:00.000Z</published>
@@ -159,8 +157,7 @@ adb shell dumpsys batterystats</summary>
       
         
         
-    <summary type="html">&lt;h1 id=&quot;获取设备音频流信息&quot;&gt;
-          &lt;a href=&quot;#获取设备音频流信息&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#获取设备音频流信息&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;获取设备音频流信息&quot;&gt;&lt;a href=&quot;#获取设备音频流信息&quot; class=&quot;headerlink&quot; title=&quot;获取设备音频流信息&quot;&gt;&lt;/a&gt;获取设备音频流信息&lt;/h2&gt;&lt;figure class=&quot;highlight</summary>
         
       
     
@@ -186,7 +183,7 @@ adb shell dumpsys batterystats</summary>
         
         
     <summary type="html">&lt;p&gt;模拟开关机广播&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-cmd&quot; data-language=&quot;cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;adb shell am broadcast -a</summary>
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</summary>
         
       
     
@@ -200,36 +197,7 @@ adb shell dumpsys batterystats</summary>
   </entry>
   
   <entry>
-    <title>打开网络ADB调试</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/adb/da-kai-wang-luo-adb-diao-shi/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/adb/da-kai-wang-luo-adb-diao-shi/</id>
-    <published>2023-08-31T12:00:00.000Z</published>
-    <updated>2023-08-31T12:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;service.adb.tcp.port=5555
-
-adb tcpip 5555
-
-adb shell su -c setprop</summary>
-        
-      
-    
-    
-    
-    <category term="ADB" scheme="http://virogu.github.io/categories/ADB/"/>
-    
-    
-    <category term="ADB" scheme="http://virogu.github.io/tags/ADB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ADB 远程调试</title>
+    <title>ADB 开启远程调试</title>
     <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/"/>
     <id>http://virogu.github.io/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/</id>
     <published>2023-08-31T12:00:00.000Z</published>
@@ -240,9 +208,7 @@ adb shell su -c setprop</summary>
       
         
         
-    <summary type="html">&lt;pre class=&quot;line-numbers language-cmd&quot; data-language=&quot;cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;service.adb.tcp.port=5555
-
-adb tcpip 5555&lt;span</summary>
+    <summary type="html">&lt;h2 id=&quot;开启无线调试&quot;&gt;&lt;a href=&quot;#开启无线调试&quot; class=&quot;headerlink&quot; title=&quot;开启无线调试&quot;&gt;&lt;/a&gt;开启无线调试&lt;/h2&gt;&lt;h3 id=&quot;Root模式&quot;&gt;&lt;a href=&quot;#Root模式&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -320,7 +286,7 @@ adb tcpip 5555&lt;span</summary>
         
         
     <summary type="html">&lt;p&gt;Git删除某个文件的所有提交记录&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-cmd&quot; data-language=&quot;cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;git filter-branch</summary>
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
         
       
     
@@ -348,7 +314,7 @@ adb tcpip 5555&lt;span</summary>
     <summary type="html">&lt;p&gt;批量修改Git仓库已提交的记录中的提交作者邮箱信息&lt;/p&gt;
 &lt;p&gt;执行 git log 命令，查看提交历史记录，并记住需要修改作者邮箱的提交 ID。&lt;/p&gt;
 &lt;p&gt;执行以下命令，将需要修改的提交 ID 替换为实际的值：&lt;/p&gt;
-&lt;pre</summary>
+&lt;figure</summary>
         
       
     
@@ -551,6 +517,31 @@ git config</summary>
     
     
     <category term="Kotlin" scheme="http://virogu.github.io/tags/Kotlin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Emoji表情</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/markdown/emoji-biao-qing/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/markdown/emoji-biao-qing/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Emoji表情&quot;&gt;&lt;a href=&quot;#Emoji表情&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="MarkDown" scheme="http://virogu.github.io/categories/MarkDown/"/>
+    
+    
+    <category term="MarkDown" scheme="http://virogu.github.io/tags/MarkDown/"/>
     
   </entry>
   

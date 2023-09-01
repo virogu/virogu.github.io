@@ -16,24 +16,24 @@
   <meta name="author" content="Virogu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="sh 执行问题                           bash: .&#x2F;xxx.sh: &#x2F;bin&#x2F;bash^M: bad interpreter: No such file or directory       解决方案：  方法一 vim xxx.sh   进入 xxx.sh后 在底部模式下执行 :set fileformat&#x3D;unix  后执行 :x 或者 :">
+    <meta name="description" content="sh 执行问题bash: .&#x2F;xxx.sh: &#x2F;bin&#x2F;bash^M: bad interpreter: No such file or directory解决方案：  方法一 1vim xxx.sh  进入 xxx.sh后在底部模式下执行 1:set fileformat&#x3D;unix 后执行 1:x 或者 1:wq 保存修改然后就可以执行.&#x2F;***.sh运行脚本了。  方法二： 直接执行 sed">
 <meta property="og:type" content="article">
-<meta property="og:title" content="bash执行命令相关问题">
+<meta property="og:title" content="Linux bash执行命令相关问题">
 <meta property="og:url" content="http://virogu.github.io/2023/08/31/docs/cao-zuo-xi-tong/linux/bash-zhi-xing-ming-ling-xiang-guan-wen-ti/index.html">
 <meta property="og:site_name" content="半漠清风">
-<meta property="og:description" content="sh 执行问题                           bash: .&#x2F;xxx.sh: &#x2F;bin&#x2F;bash^M: bad interpreter: No such file or directory       解决方案：  方法一 vim xxx.sh   进入 xxx.sh后 在底部模式下执行 :set fileformat&#x3D;unix  后执行 :x 或者 :">
+<meta property="og:description" content="sh 执行问题bash: .&#x2F;xxx.sh: &#x2F;bin&#x2F;bash^M: bad interpreter: No such file or directory解决方案：  方法一 1vim xxx.sh  进入 xxx.sh后在底部模式下执行 1:set fileformat&#x3D;unix 后执行 1:x 或者 1:wq 保存修改然后就可以执行.&#x2F;***.sh运行脚本了。  方法二： 直接执行 sed">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-31T12:00:00.000Z">
 <meta property="article:modified_time" content="2023-08-31T12:00:00.000Z">
 <meta property="article:author" content="Virogu">
-<meta property="article:tag" content="操作系统">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>bash执行命令相关问题 - 半漠清风</title>
+  <title>Linux bash执行命令相关问题 - 半漠清风</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -202,7 +202,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">bash执行命令相关问题</span>
+            <span id="subtitle">Linux bash执行命令相关问题</span>
           
         </div>
 
@@ -230,7 +230,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          588 字
+          624 字
         
       </span>
     
@@ -331,15 +331,6 @@
     
       
       
-        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/linuxmint-shan-chu-zi-dai-de-jdk/" title="LinuxMint删除自带的jdk"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">LinuxMint删除自带的jdk</span>
-        </a>
-      
-    
-      
-      
         <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/linux-han-hua-bu-wan-quan/" title="Linux汉化不完全"
            class="list-group-item list-group-item-action
            ">
@@ -358,10 +349,10 @@
     
       
       
-        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/vi-bian-ji/" title="Vi编辑"
+        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/vi-bian-ji/" title="Linux vim编辑指令"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">Vi编辑</span>
+          <span class="category-post">Linux vim编辑指令</span>
         </a>
       
     
@@ -376,19 +367,19 @@
     
       
       
-        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/samba-gong-xiang-wen-jian/" title="samba共享文件"
+        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/samba-gong-xiang-wen-jian/" title="Linux samba共享文件"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">samba共享文件</span>
+          <span class="category-post">Linux samba共享文件</span>
         </a>
       
     
       
       
-        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/bash-zhi-xing-ming-ling-xiang-guan-wen-ti/" title="bash执行命令相关问题"
+        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/bash-zhi-xing-ming-ling-xiang-guan-wen-ti/" title="Linux bash执行命令相关问题"
            class="list-group-item list-group-item-action
            active">
-          <span class="category-post">bash执行命令相关问题</span>
+          <span class="category-post">Linux bash执行命令相关问题</span>
         </a>
       
     
@@ -403,19 +394,28 @@
     
       
       
-        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/an-zhuang-webmin/" title="安装Webmin"
+        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/an-zhuang-wine/" title="Linux安装Wine"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">安装Webmin</span>
+          <span class="category-post">Linux安装Wine</span>
         </a>
       
     
       
       
-        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/an-zhuang-wine/" title="安装Wine"
+        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/linux-an-zhuang-webmin/" title="Linux安装Webmin"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">安装Wine</span>
+          <span class="category-post">Linux安装Webmin</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/linux-xiu-gai-java-ban-ben/" title="Linux安装Webmin"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">Linux安装Webmin</span>
         </a>
       
     
@@ -505,32 +505,22 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">bash执行命令相关问题</h1>
+            <h1 id="seo-header">Linux bash执行命令相关问题</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="sh-执行问题">
-          <a href="#sh-执行问题" class="heading-link"><i class="fas fa-link"></i></a><a href="#sh-执行问题" class="headerlink" title="sh 执行问题"></a>sh 执行问题</h1>
-      
-        <h2 id="bash-xxx-sh-bin-bash-M-bad-interpreter-No-such-file-or-directory">
-          <a href="#bash-xxx-sh-bin-bash-M-bad-interpreter-No-such-file-or-directory" class="heading-link"><i class="fas fa-link"></i></a><a href="#bash-xxx-sh-bin-bash-M-bad-interpreter-No-such-file-or-directory" class="headerlink" title="bash: ./xxx.sh: /bin/bash^M: bad interpreter: No such file or directory"></a>bash: ./xxx.sh: /bin/bash^M: bad interpreter: No such file or directory</h2>
-      <p>解决方案：</p>
+                <h3 id="sh-执行问题"><a href="#sh-执行问题" class="headerlink" title="sh 执行问题"></a>sh 执行问题</h3><h4 id="bash-xxx-sh-bin-bash-M-bad-interpreter-No-such-file-or-directory"><a href="#bash-xxx-sh-bin-bash-M-bad-interpreter-No-such-file-or-directory" class="headerlink" title="bash: ./xxx.sh: /bin/bash^M: bad interpreter: No such file or directory"></a>bash: ./xxx.sh: /bin/bash^M: bad interpreter: No such file or directory</h4><p>解决方案：</p>
 <ul>
 <li><p>方法一</p>
-<pre class="line-numbers language-none"><code class="language-none">vim xxx.sh 
-
-进入 xxx.sh后
-在底部模式下执行
-:set fileformat=unix
-
-后执行
-:x
-或者
-:wq
-
-保存修改
-然后就可以执行./***.sh运行脚本了。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">vim xxx.sh <br></code></pre></td></tr></tbody></table></figure>
+<p>进入 xxx.sh后<br>在底部模式下执行</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">:<span class="hljs-built_in">set</span> fileformat=unix<br></code></pre></td></tr></tbody></table></figure>
+<p>后执行</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">:x<br></code></pre></td></tr></tbody></table></figure>
+<p>或者</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">:wq<br></code></pre></td></tr></tbody></table></figure>
+<p>保存修改<br>然后就可以执行./***.sh运行脚本了。</p>
 </li>
 <li><p>方法二：</p>
 <p>直接执行 <code>sed -i "s/\r//" xxx.sh</code> 来转化， 然后就可以执行 <code>./***.sh</code> 运行脚本了。</p>
@@ -540,22 +530,12 @@
 <p>如执行报错<code>bash: dos2unix: command not found</code>，请使用<code>busybox dos2unix ***.sh</code>继续操作。</p>
 </li>
 </ul>
-
-        <h2 id="bash-XXX-No-such-file-or-directory-没有那个文件或目录">
-          <a href="#bash-XXX-No-such-file-or-directory-没有那个文件或目录" class="heading-link"><i class="fas fa-link"></i></a><a href="#bash-XXX-No-such-file-or-directory-没有那个文件或目录" class="headerlink" title="bash: ./XXX: No such file or directory/ 没有那个文件或目录"></a>bash: ./XXX: No such file or directory/ 没有那个文件或目录</h2>
-      <p>64-bit上运行32-bit软件时，会出现这种问题</p>
-<p>需要安装32位支持库</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> ia32-libs<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="bash-XXX-No-such-file-or-directory-没有那个文件或目录"><a href="#bash-XXX-No-such-file-or-directory-没有那个文件或目录" class="headerlink" title="bash: ./XXX: No such file or directory/ 没有那个文件或目录"></a>bash: ./XXX: No such file or directory/ 没有那个文件或目录</h4><p>明明文件存在而且有权限执行，却提示这个问题，有可可能是在64-bit机器上上运行了32-bit软件<br>需要安装32位支持库</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt-get install ia32-libs<br></code></pre></td></tr></tbody></table></figure>
 <p>安装这个库可能会提示找不到，安装不了</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">没有可用的软件包 ia32-libs，但是它被其它的软件包引用了。
-这可能意味着这个缺失的软件包可能已被废弃，
-或者只能在其他发布源中找到
-然而下列软件包会取代它：
-  lib32z1
-
-E: 软件包 ia32-libs 没有可安装候选<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight avrasm"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">没有可用的软件包 ia32-libs，但是它被其它的软件包引用了。<br>这可能意味着这个缺失的软件包可能已被废弃，<br>或者只能在其他发布源中找到<br>然而下列软件包会取代它：<br>  lib32z1<br><br><span class="hljs-symbol">E:</span> 软件包 ia32-libs 没有可安装候选<br></code></pre></td></tr></tbody></table></figure>
 <p>根据错误提示安装下面这个这个库</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> lib32z1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt-get install lib32z1<br></code></pre></td></tr></tbody></table></figure>
 
                 
               </div>
@@ -596,7 +576,7 @@ E: 软件包 ia32-libs 没有可安装候选<span aria-hidden="true" class="line
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="print-no-link">#操作系统</a>
+        <a href="/tags/Linux/" class="print-no-link">#Linux</a>
       
     </div>
   
@@ -608,7 +588,7 @@ E: 软件包 ia32-libs 没有可安装候选<span aria-hidden="true" class="line
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>bash执行命令相关问题</div>
+      <div>Linux bash执行命令相关问题</div>
       <div>http://virogu.github.io/2023/08/31/docs/cao-zuo-xi-tong/linux/bash-zhi-xing-ming-ling-xiang-guan-wen-ti/</div>
     </div>
     <div class="license-meta">
@@ -653,9 +633,9 @@ E: 软件包 ia32-libs 没有可安装候选<span aria-hidden="true" class="line
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/samba-gong-xiang-wen-jian/" title="samba共享文件">
+                      <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/samba-gong-xiang-wen-jian/" title="Linux samba共享文件">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">samba共享文件</span>
+                        <span class="hidden-mobile">Linux samba共享文件</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
