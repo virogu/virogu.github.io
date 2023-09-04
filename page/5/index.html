@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/logo.png">
+  <link rel="icon" href="/img/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -60,7 +60,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"virogu.github.io","root":"/","version":"1.9.5-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"|","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"virogu.github.io","root":"/","version":"1.9.5-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -229,15 +229,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/31/docs/android/qi-ta/ruan-jian-pan-xiang-guan-cao-zuo/" target="_self">
-          软键盘相关操作
+        <a href="/2023/08/23/docs/git/git-sheng-cheng-duo-ge-mi-yao/" target="_self">
+          Git生成多个秘钥
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/android/qi-ta/ruan-jian-pan-xiang-guan-cao-zuo/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/23/docs/git/git-sheng-cheng-duo-ge-mi-yao/" target="_self">
         <div>
-          禁止EditorText自动弹出软键盘       在控件父布局加上： &lt;androidx.constraintlayout.widget.ConstraintLayout     ...     android:focusable="true"     android:focusableInTouchMode="true"     ...     &gt;
+          Git配置多个SSH-KeySSH Key 背景当有多个git账号时，比如： a. 一个gitee，用于公司内部的工作开发； b. 一个github，用于自己进行一些开发活动； 解决方法 生成一个公司用的SSH-Key  1$ ssh-keygen -t rsa -C 'xxxxx@company.com' -f ~/.ssh/gitee_id_rsa   生成一个github用的SSH-Key
         </div>
       </a>
 
@@ -245,8 +245,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
+            <time datetime="2023-08-23 20:00" pubdate>
+              2023-08-23
             </time>
           </div>
         
@@ -261,15 +261,8 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Android/" class="category-chain-item">Android</a>
+  <a href="/categories/Git/" class="category-chain-item">Git</a>
   
-  
-    <span>></span>
-    
-  <a href="/categories/Android/%E5%85%B6%E4%BB%96/" class="category-chain-item">其他</a>
-  
-  
-
   
 
       </span>
@@ -282,6 +275,557 @@
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Git/">#Git</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/23/docs/git/git-huan-xing-fu-she-zhi/" target="_self">
+          Git换行符设置
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/23/docs/git/git-huan-xing-fu-she-zhi/" target="_self">
+        <div>
+          123456789101112#在vim下面查看当前文本的模式类型，一般为dos,unix:set ff#提交时转换为LF，检出时转换为CRLFgit config --global core.autocrlf true   #提交时转换为LF，检出时不转换（以上问题使用此命令可解决）git config --global core.autocrlf input   #提交检出均不转换git co
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-23 20:00" pubdate>
+              2023-08-23
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Git/" class="category-chain-item">Git</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Git/">#Git</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/22/docs/gradle/gradle-cang-ku-yuan-dai-li-lan-jie/" target="_self">
+          Gradle仓库源代理拦截
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/22/docs/gradle/gradle-cang-ku-yuan-dai-li-lan-jie/" target="_self">
+        <div>
+          国内访问Google、Maven仓库源速度很慢或者无法访问，导致项目一直卡在同步中，可以修改拦截仓库代理源，将其修改为国内仓库源 在用户gradle的目录下面新建一个init.gradle.kts的文件（如果有的话就不用新建） 1~/.gradle/init.gradle.kts  将下面的内容添加到init.gradle.kts文件中，可以根据自己需求修改相关配置再保存 123456789101
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-22 20:00" pubdate>
+              2023-08-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Gradle/" class="category-chain-item">Gradle</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Gradle/">#Gradle</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/22/docs/gradle/gradle-bian-yi-you-hua/" target="_self">
+          Gradle编译配置优化
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/22/docs/gradle/gradle-bian-yi-you-hua/" target="_self">
+        <div>
+          在用户gradle的目录下面新建一个gradle.properties的文件（如果有的话就不用新建） 1~/.gradle/gradle.properties  将下面的内容添加到gradle.properties文件中，可以根据自己需求修改相关配置再保存 123456789101112131415161718192021222324252627282930313233343536# Experi
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-22 20:00" pubdate>
+              2023-08-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Gradle/" class="category-chain-item">Gradle</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Gradle/">#Gradle</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/22/docs/gradle/gradle-zhi-shi-dian-hui-zong/" target="_self">
+          Gradle知识点汇总
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/22/docs/gradle/gradle-zhi-shi-dian-hui-zong/" target="_self">
+        <div>
+          依赖项配置   配置 说明    implementation Gradle 会将依赖项添加到编译类路径，并将依赖项打包到编译输出。不过，当模块配置 implementation 依赖项时，其他模块只有在运行时才能使用该依赖项。   api Gradle 会将依赖项添加到编译类路径和编译输出。当一个模块包含 api 依赖项时，会让 Gradle 了解该模块要以传递方式将该依赖项导出到其他模块，以便
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-22 20:00" pubdate>
+              2023-08-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Gradle/" class="category-chain-item">Gradle</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Gradle/">#Gradle</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/22/docs/gradle/gradle-huo-qu-flavor/" target="_self">
+          Gradle获取flavor
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/22/docs/gradle/gradle-huo-qu-flavor/" target="_self">
+        <div>
+          123456789101112131415161718192021222324def getCurrentFlavor() {    Gradle gradle = getGradle()    String tskReqStr = gradle.getStartParameter().getTaskRequests().toString()    Pattern pattern    print
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-22 20:00" pubdate>
+              2023-08-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Gradle/" class="category-chain-item">Gradle</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Gradle/">#Gradle</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/22/docs/gradle/yi-xie-chang-yong-de-gradle-yi-lai/" target="_self">
+          一些常用的Gradle依赖
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/22/docs/gradle/yi-xie-chang-yong-de-gradle-yi-lai/" target="_self">
+        <div>
+          12345678910111213141516171819202122232425262728293031323334353637383940//kotlin安卓扩展apply plugin: 'kotlin-android-extensions'//Retrifot(网络请求)implementation 'com.squareup.retrofit2:retrofit:2.0.2'implem
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-22 20:00" pubdate>
+              2023-08-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Gradle/" class="category-chain-item">Gradle</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Gradle/">#Gradle</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/22/docs/gradle/cang-ku-zhong-you-mou-ge-ku-yi-ran-bao-cuo-zhao-bu-dao-mou-ge-yi-lai-ku/" target="_self">
+          踩坑：仓库中有某个库依然报错找不到某个依赖库
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/22/docs/gradle/cang-ku-zhong-you-mou-ge-ku-yi-ran-bao-cuo-zhao-bu-dao-mou-ge-yi-lai-ku/" target="_self">
+        <div>
+          gradle同步时提示找不到某个依赖库 先排除是不是网络有问题，或者这个库是不是真的不存在 但是大部分情况下上面这两个都是没问题的，还是会提示找不到某个依赖库，类似这样 1234567891011121314151617Where:    Build file xxx build.gradle.kts' line: 4    * What went wrong:    Plugin [id:"xx
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-22 20:00" pubdate>
+              2023-08-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Gradle/" class="category-chain-item">Gradle</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Gradle/">#Gradle</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/22/docs/gradle/shi-yong-fat-aar-da-bao-yi-lai-ku-dao-aar/" target="_self">
+          使用fat-aar 打包依赖库到aar
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/22/docs/gradle/shi-yong-fat-aar-da-bao-yi-lai-ku-dao-aar/" target="_self">
+        <div>
+          https://github.com/kezong/fat-aar-android 项目根目录 build.gradle 添加 12345678buildscript {    repositories {        maven { url "https://plugins.gradle.org/m2/" }    }    dependencies {        classpath 'c
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-22 20:00" pubdate>
+              2023-08-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Gradle/" class="category-chain-item">Gradle</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Gradle/">#Gradle</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/22/docs/gradle/shi-yong-git-ban-ben-hao-kong-zhi/" target="_self">
+          使用git版本号控制
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/22/docs/gradle/shi-yong-git-ban-ben-hao-kong-zhi/" target="_self">
+        <div>
+          1234567891011121314151617181920212223242526272829303132333435363738394041424344454647defaultConfig {        minSdkVersion minVersion        targetSdkVersion versionTarget        versionCode git_commit
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-22 20:00" pubdate>
+              2023-08-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Gradle/" class="category-chain-item">Gradle</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Gradle/">#Gradle</a>
             
               <a href="/tags/Android/">#Android</a>
             
@@ -297,15 +841,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/31/docs/android/zhi-shi-hui-zong/android-kuo-zhan-zhi-shi-dian/" target="_self">
-          Android扩展知识点
+        <a href="/2023/08/22/docs/gradle/gen-ju-flavor-she-zhi-bu-tong-qi-dong-ye-mian/" target="_self">
+          根据flavor设置不同启动页面
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/android/zhi-shi-hui-zong/android-kuo-zhan-zhi-shi-dian/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/22/docs/gradle/gen-ju-flavor-she-zhi-bu-tong-qi-dong-ye-mian/" target="_self">
         <div>
-          ART ART 功能 预先 (AOT) 编译 垃圾回收优化 开发和调试方面的优化   ART GC   Hook 基本流程 使用示例   Proguard 规则 公共模板 常用的自定义混淆规则 aar中增加独立的混淆配置 检查混淆和追踪异常   架构 MVC MVP MVVM   Jetpack 架构 使用示例   NDK 开发 JNI 基础 数据类型 String 字符串函数操作 常用 JNI
+          12345678910defaultConfig {    //......    // 先在默认配置中定义两个变量main_activity_key和oem_main_activity_key，并赋初始值    manifestPlaceholders += [main_activity_key    : "android.intent.action.MAIN",
         </div>
       </a>
 
@@ -313,8 +857,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
+            <time datetime="2023-08-22 20:00" pubdate>
+              2023-08-22
             </time>
           </div>
         
@@ -329,15 +873,8 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Android/" class="category-chain-item">Android</a>
+  <a href="/categories/Gradle/" class="category-chain-item">Gradle</a>
   
-  
-    <span>></span>
-    
-  <a href="/categories/Android/%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB/" class="category-chain-item">知识汇总</a>
-  
-  
-
   
 
       </span>
@@ -351,7 +888,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Android/">#Android</a>
+              <a href="/tags/Gradle/">#Gradle</a>
             
           </div>
         
@@ -365,15 +902,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/31/docs/android/zhi-shi-hui-zong/chang-jian-mian-shi-suan-fa-ti-hui-zong/" target="_self">
-          常见面试算法题汇总
+        <a href="/2023/08/21/docs/java/java-zhi-shi-dian-hui-zong/" target="_self">
+          Java知识点汇总
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/android/zhi-shi-hui-zong/chang-jian-mian-shi-suan-fa-ti-hui-zong/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/21/docs/java/java-zhi-shi-dian-hui-zong/" target="_self">
         <div>
-          排序 比较排序 冒泡排序 归并排序 快速排序   线性排序 计数排序 桶排序     二叉树 顺序遍历 层次遍历 左右翻转 最大值 最大深度 最小深度 平衡二叉树   链表 删除节点 翻转链表 中间元素 判断是否为循环链表 合并两个已排序链表 链表排序 删除倒数第N个节点 两个链表是否相交   栈 / 队列 带最小值操作的栈 有效括号 用栈实现队列 逆波兰表达式求值   二分 二分搜索 X的平方
+          JVM JVM 工作流程 运行时数据区（Runtime Data Area） 程序计数器 Java 虚拟机栈 本地方法栈 Java 堆 方法区   方法指令 类加载器 垃圾回收 gc 对象存活判断 垃圾收集算法 垃圾收集器 内存模型与回收策略     Object equals 方法 hashCode 方法   static final String、StringBuffer、StringBui
         </div>
       </a>
 
@@ -381,8 +918,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
+            <time datetime="2023-08-21 20:00" pubdate>
+              2023-08-21
             </time>
           </div>
         
@@ -397,15 +934,8 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Android/" class="category-chain-item">Android</a>
+  <a href="/categories/Java/" class="category-chain-item">Java</a>
   
-  
-    <span>></span>
-    
-  <a href="/categories/Android/%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB/" class="category-chain-item">知识汇总</a>
-  
-  
-
   
 
       </span>
@@ -419,619 +949,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Android/">#Android</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/08/31/docs/android/zhi-shi-hui-zong/android-zhi-shi-dian-hui-zong/" target="_self">
-          Android知识点汇总
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/android/zhi-shi-hui-zong/android-zhi-shi-dian-hui-zong/" target="_self">
-        <div>
-          Activity 生命周期 启动模式 启动过程   Fragment 特点 生命周期 与Activity通信   Service 启动过程 绑定过程 生命周期 启用前台服务   BroadcastReceiver 注册过程   ContentProvider 基本使用   数据存储 View MeasureSpec MotionEvent VelocityTracker GestureDetec
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Android/" class="category-chain-item">Android</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Android/%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB/" class="category-chain-item">知识汇总</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Android/">#Android</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/08/31/docs/android/zhi-shi-hui-zong/ji-suan-ji-wang-luo-ji-chu/" target="_self">
-          计算机网络基础
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/android/zhi-shi-hui-zong/ji-suan-ji-wang-luo-ji-chu/" target="_self">
-        <div>
-          网络体系的分层结构 HTTP 相关 通用头部 请求报文 请求行 请求方法   请求头 请求体   响应报文 常见状态码 响应头   缓存机制 HTTP 1.1 HTTP 2.0 HTTPS 加密原理     TCP/IP 三次握手 四次挥手 TCP 与 UDP 的区别   Socket 使用示例                        网络体系的分层结构          分层 说明
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Android/" class="category-chain-item">Android</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Android/%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB/" class="category-chain-item">知识汇总</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Android/">#Android</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/08/31/docs/android/zhi-shi-hui-zong/android-kai-yuan-ku-yuan-ma-fen-xi/" target="_self">
-          Android开源库源码分析
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/android/zhi-shi-hui-zong/android-kai-yuan-ku-yuan-ma-fen-xi/" target="_self">
-        <div>
-          OKHttp OKHttp请求流程 新建OKHttpClient客户端 同步请求流程 异步请求流程   网络请求缓存处理 连接池   Retrofit 基本使用流程 Retrofit构建过程 Retrofit核心对象解析 Builder内部构造 添加baseUrl 添加GsonConverterFactory build过程   创建网络请求接口实例过程 创建网络请求接口类实例并执行请求过程 R
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Android/" class="category-chain-item">Android</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Android/%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB/" class="category-chain-item">知识汇总</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Android/">#Android</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/08/31/docs/android/zhi-shi-hui-zong/she-ji-mo-shi-hui-zong/" target="_self">
-          设计模式汇总
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/android/zhi-shi-hui-zong/she-ji-mo-shi-hui-zong/" target="_self">
-        <div>
-          设计模式分类 面向对象六大原则 工厂模式 单例模式 建造者模式 原型模式 适配器模式 观察者模式 代理模式 责任链模式 策略模式 备忘录模式                      设计模式分类          模式 &amp; 描述 包括    创建型模式提供了一种在创建对象的同时隐藏创建逻辑的方式。 工厂模式（Factory Pattern）抽象工厂模式（Abstract Factory
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Android/" class="category-chain-item">Android</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Android/%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB/" class="category-chain-item">知识汇总</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Android/">#Android</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/linux-han-hua-bu-wan-quan/" target="_self">
-          Linux汉化不完全
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/cao-zuo-xi-tong/linux/linux-han-hua-bu-wan-quan/" target="_self">
-        <div>
-          成功安装了Linux Mint 19操作系统，但是部分界面还是英文的。由于在Linux Mint 19里去除了Ubuntu的语言支持小工具，使用Cinnamon自身的一个新开发语言配置工具来替换，但是这个工具尚未完善，明明在Linux Mint 19系统中的Firefox等软件还是英文的界面，可却显示中文已经完整安装。所以，我们需要手动来安装所需要的中文语言包，以下在Linux Mint 19系统
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/" class="category-chain-item">Linux</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Linux/">#Linux</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/ubuntu-she-zhi-root-deng-lu/" target="_self">
-          Ubuntu设置root登录
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/cao-zuo-xi-tong/linux/ubuntu-she-zhi-root-deng-lu/" target="_self">
-        <div>
-          sudo passwd root su root sudo gedit /etc/pam.d/gdm-autologin //注释 auth requied pam_succeed_if.so user != root quiet success sudo gedit /etc/pam.d/gdm-password //注释 auth requied pam_succeed_if.so user
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/" class="category-chain-item">Linux</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Linux/">#Linux</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/08/31/docs/android/zhi-shi-hui-zong/xing-neng-you-hua-zhi-shi-dian-hui-zong/" target="_self">
-          性能优化知识点汇总
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/android/zhi-shi-hui-zong/xing-neng-you-hua-zhi-shi-dian-hui-zong/" target="_self">
-        <div>
-          启动优化 视觉优化 启动主题优化   代码优化 冷启动耗时统计 Application 优化 闪屏页业务优化 广告页优化   优化效果 启动窗口   UI渲染优化 CPU、GPU的职责 查找Overdraw clipRect解决自定义View的OverDraw Hierarchy Viewer的使用 内存抖动现象   崩溃优化 崩溃 崩溃的收集 ANR 应用退出   崩溃处理 崩溃现场 崩溃分析
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Android/" class="category-chain-item">Android</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Android/%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB/" class="category-chain-item">知识汇总</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Android/">#Android</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/vi-bian-ji/" target="_self">
-          Linux vim编辑指令
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/cao-zuo-xi-tong/linux/vi-bian-ji/" target="_self">
-        <div>
-          i 进入编辑模式 按ESC键 退出编辑模式，然后： :w 保存文件但不退出vi :w file 将修改另外保存到file中，不退出vi :w! 强制保存，不推出vi :wq 保存文件并退出vi :wq! 强制保存文件，并退出vi q: 不保存文件，退出vi :q! 不保存文件，强制退出vi :e! 放弃所有修改，从上次保存文件开始再编辑
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/" class="category-chain-item">Linux</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Linux-vim/">#Linux,vim</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/ubuntu-kan-bu-dao-tu-xing-jie-mian-jie-jue-ban-fa/" target="_self">
-          Ubuntu看不到图形界面解决办法
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/cao-zuo-xi-tong/linux/ubuntu-kan-bu-dao-tu-xing-jie-mian-jie-jue-ban-fa/" target="_self">
-        <div>
-          ubuntu 看不到图形界面桌面的解决办法1、使用Ctrl + Alt + F1组合键进入字符命令行界面 2、试试 restartx 3、如果第2条解决不了，再试试 sudo service lightdm restart 重启 lightdm 4、如果第3条解决不了，再试试 sudo dpkg-reconfigre lightdm 选择 lightdm 5、如果第4条解决不了，就只能重装 uni
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/" class="category-chain-item">Linux</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Linux/">#Linux</a>
+              <a href="/tags/Java/">#Java</a>
             
           </div>
         
@@ -1043,7 +961,7 @@
 
   <nav aria-label="navigation">
     <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/4/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/#board">3</a><a class="page-number" href="/page/4/#board">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/#board">6</a><a class="page-number" href="/page/7/#board">7</a><a class="extend next" rel="next" href="/page/6/#board"><i class="iconfont icon-arrowright"></i></a>
+      <a class="extend prev" rel="prev" href="/page/4/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/#board">3</a><a class="page-number" href="/page/4/#board">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/#board">6</a><a class="page-number" href="/page/7/#board">7</a><a class="page-number" href="/page/8/#board">8</a><a class="extend next" rel="next" href="/page/6/#board"><i class="iconfont icon-arrowright"></i></a>
     </span>
   </nav>
 

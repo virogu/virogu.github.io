@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/logo.png">
+  <link rel="icon" href="/img/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -60,7 +60,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"virogu.github.io","root":"/","version":"1.9.5-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"|","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"virogu.github.io","root":"/","version":"1.9.5-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -290,6 +290,67 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
+        <a href="/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/" target="_self">
+          ADB 打开设置界面
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/" target="_self">
+        <div>
+          adb命令打开手机设置页面关闭设置界面 1adb shell am force-stop com.android.settings  //打开设置主页面 1adb shell am start com.android.settings/com.android.settings.Settings  安全 1adb shell am start com.android.settings/com.and
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-31 20:00" pubdate>
+              2023-08-31
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/ADB/" class="category-chain-item">ADB</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/ADB/">#ADB</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
         <a href="/2023/08/31/docs/adb/adb-zhi-xing-ke-zhi-xing-wen-jian/" target="_self">
           ADB 执行可执行文件
         </a>
@@ -360,67 +421,6 @@
       <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/adb/adb-wen-jian-cao-zuo/" target="_self">
         <div>
           删除文件 1adb shell rm -rf /dir1/test1/test  批量删除符合条件的文件 1adb shell rm -rf /dir1/test1/test*  批量删除符合条件的文件（不区分大小写） 1adb shell 'find /dir1/test1 -maxdepth 1 -iname "TesT*" -exec rm -rf {} \;'
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/ADB/" class="category-chain-item">ADB</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/ADB/">#ADB</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/" target="_self">
-          ADB 打开设置界面
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/" target="_self">
-        <div>
-          adb命令打开手机设置页面关闭设置界面 1adb shell am force-stop com.android.settings  //打开设置主页面 1adb shell am start com.android.settings/com.android.settings.Settings  安全 1adb shell am start com.android.settings/com.and
         </div>
       </a>
 
@@ -717,15 +717,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/31/docs/git/git/" target="_self">
-          GIT
+        <a href="/2023/08/30/docs/android/jni/jni-zhong-da-yin-androidlog/" target="_self">
+          JNI中打印AndroidLog
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/git/git/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/30/docs/android/jni/jni-zhong-da-yin-androidlog/" target="_self">
         <div>
-          版本控制的作用        备份					 避免万一机器挂了,磁盘坏了等原因导致代码丢失.   多人协作 提交 (push/commit),拉取 (pull/update) 分支 (branch) 重置 (revert) 日志 (log) …                        Git 简史         https://git-scm.com/book/zh/
+          在文件前面加上下面的定义 123456789#include &lt;android/log.h&gt;#define TAG "LogTag"#define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG, TAG, __VA_ARGS__)#define LOGI(...) __android_log_print(ANDROID_LOG_INFO
         </div>
       </a>
 
@@ -733,8 +733,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
+            <time datetime="2023-08-30 20:00" pubdate>
+              2023-08-30
             </time>
           </div>
         
@@ -749,8 +749,15 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Git/" class="category-chain-item">Git</a>
+  <a href="/categories/Android/" class="category-chain-item">Android</a>
   
+  
+    <span>></span>
+    
+  <a href="/categories/Android/JNI/" class="category-chain-item">JNI</a>
+  
+  
+
   
 
       </span>
@@ -764,7 +771,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Git/">#Git</a>
+              <a href="/tags/Android/">#Android</a>
             
           </div>
         
@@ -778,15 +785,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/31/docs/git/git-mian-mi-la-qu-bao-gua-ssh-http-fang-shi/" target="_self">
-          Git免密拉取(包括ssh,http方式)
+        <a href="/2023/08/29/docs/android/view/customview/animeview/" target="_self">
+          AnimeView
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/git/git-mian-mi-la-qu-bao-gua-ssh-http-fang-shi/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/29/docs/android/view/customview/animeview/" target="_self">
         <div>
-          配置Git免密拉取                           基础安装配置       已安装配置好的可以略过  先配置一下用户名和邮箱git config --global user.name 'username' git config --global user.email 'xxx@xxx.com' 生成ssh公钥：ssh-keygen -t rsa -C "
+          123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960class AnimeView @JvmOverloads constructor(    context: Context, attrs: AttributeSet? = nu
         </div>
       </a>
 
@@ -794,8 +801,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
+            <time datetime="2023-08-29 20:00" pubdate>
+              2023-08-29
             </time>
           </div>
         
@@ -810,8 +817,22 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Git/" class="category-chain-item">Git</a>
+  <a href="/categories/Android/" class="category-chain-item">Android</a>
   
+  
+    <span>></span>
+    
+  <a href="/categories/Android/View/" class="category-chain-item">View</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/Android/View/CustomView/" class="category-chain-item">CustomView</a>
+  
+  
+
+  
+
   
 
       </span>
@@ -825,7 +846,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Git/">#Git</a>
+              <a href="/tags/Android/">#Android</a>
             
           </div>
         
@@ -839,15 +860,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/31/docs/git/git-shan-chu-mou-ge-wen-jian-de-suo-you-ti-jiao-ji-lu/" target="_self">
-          Git删除某个文件的所有提交记录
+        <a href="/2023/08/29/docs/android/view/customview/customradiogroup/" target="_self">
+          自定义RadioGroup
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/git/git-shan-chu-mou-ge-wen-jian-de-suo-you-ti-jiao-ji-lu/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/29/docs/android/view/customview/customradiogroup/" target="_self">
         <div>
-          Git删除某个文件的所有提交记录 123git filter-branch --index-filter 'git rm --cached --ignore-unmatch 文件路径' -- --allgit filter-branch --index-filter 'git rm --cached --ignore-unmatch 文件路径1 文件路径2 文件路径3' -- --all
+          12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210
         </div>
       </a>
 
@@ -855,8 +876,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
+            <time datetime="2023-08-29 20:00" pubdate>
+              2023-08-29
             </time>
           </div>
         
@@ -871,8 +892,22 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Git/" class="category-chain-item">Git</a>
+  <a href="/categories/Android/" class="category-chain-item">Android</a>
   
+  
+    <span>></span>
+    
+  <a href="/categories/Android/View/" class="category-chain-item">View</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/Android/View/CustomView/" class="category-chain-item">CustomView</a>
+  
+  
+
+  
+
   
 
       </span>
@@ -886,7 +921,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Git/">#Git</a>
+              <a href="/tags/Android/">#Android</a>
             
           </div>
         
@@ -900,15 +935,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/31/docs/git/git-pi-liang-xiu-gai-ti-jiao-ji-lu-zhong-de-zuo-zhe-you-xiang/" target="_self">
-          Git批量修改提交记录中的作者邮箱
+        <a href="/2023/08/29/docs/android/view/customview/verticalseekbar/" target="_self">
+          垂直SeekBar,VerticalSeekBar
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/git/git-pi-liang-xiu-gai-ti-jiao-ji-lu-zhong-de-zuo-zhe-you-xiang/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/29/docs/android/view/customview/verticalseekbar/" target="_self">
         <div>
-          批量修改Git仓库已提交的记录中的提交作者邮箱信息 执行 git log 命令，查看提交历史记录，并记住需要修改作者邮箱的提交 ID。 执行以下命令，将需要修改的提交 ID 替换为实际的值： 123456789101112131415git filter-branch --env-filter 'OLD_EMAIL="原作者邮箱"CORRECT_NAME="新作者名字"CORRECT_EMAIL=
+          12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364import android.annotation.SuppressLintimport android.content.Contextimport androi
         </div>
       </a>
 
@@ -916,8 +951,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
+            <time datetime="2023-08-29 20:00" pubdate>
+              2023-08-29
             </time>
           </div>
         
@@ -932,8 +967,22 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Git/" class="category-chain-item">Git</a>
+  <a href="/categories/Android/" class="category-chain-item">Android</a>
   
+  
+    <span>></span>
+    
+  <a href="/categories/Android/View/" class="category-chain-item">View</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/Android/View/CustomView/" class="category-chain-item">CustomView</a>
+  
+  
+
+  
+
   
 
       </span>
@@ -947,7 +996,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Git/">#Git</a>
+              <a href="/tags/Android/">#Android</a>
             
           </div>
         
@@ -959,7 +1008,7 @@
 
   <nav aria-label="navigation">
     <span class="pagination" id="pagination">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/#board">2</a><a class="page-number" href="/page/3/#board">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/#board">7</a><a class="extend next" rel="next" href="/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/#board">2</a><a class="page-number" href="/page/3/#board">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/#board">8</a><a class="extend next" rel="next" href="/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
     </span>
   </nav>
 

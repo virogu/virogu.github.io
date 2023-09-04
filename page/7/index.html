@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/logo.png">
+  <link rel="icon" href="/img/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -60,7 +60,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"virogu.github.io","root":"/","version":"1.9.5-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"|","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"virogu.github.io","root":"/","version":"1.9.5-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -229,15 +229,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/31/docs/android/view/customview/animeview/" target="_self">
-          AnimeView
+        <a href="/2023/08/20/docs/ssh/ssh-mian-mi-deng-lu/" target="_self">
+          SSH免密登录Linux服务器
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/android/view/customview/animeview/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/20/docs/ssh/ssh-mian-mi-deng-lu/" target="_self">
         <div>
-          123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960class AnimeView @JvmOverloads constructor(    context: Context, attrs: AttributeSet? = nu
+          SSH免密登录Linux服务器首先要安装ssh 1sudo apt-get install ssh  检查ssh的一些配置项 1sudo gedit /etc/ssh/sshd_config  注意下面的配置项是否开启 12PermitRootLogin yesPubkeyAuthentication yes  重启ssh服务 123sudo /etc/init.d/ssh restart# 或者
         </div>
       </a>
 
@@ -245,8 +245,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
+            <time datetime="2023-08-20 20:00" pubdate>
+              2023-08-20
             </time>
           </div>
         
@@ -261,22 +261,8 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Android/" class="category-chain-item">Android</a>
+  <a href="/categories/ssh/" class="category-chain-item">ssh</a>
   
-  
-    <span>></span>
-    
-  <a href="/categories/Android/View/" class="category-chain-item">View</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Android/View/CustomView/" class="category-chain-item">CustomView</a>
-  
-  
-
-  
-
   
 
       </span>
@@ -290,7 +276,9 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Android/">#Android</a>
+              <a href="/tags/ssh/">#ssh</a>
+            
+              <a href="/tags/Linux/">#Linux</a>
             
           </div>
         
@@ -304,376 +292,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/31/docs/android/view/customview/customradiogroup/" target="_self">
-          自定义RadioGroup
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/android/view/customview/customradiogroup/" target="_self">
-        <div>
-          12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Android/" class="category-chain-item">Android</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Android/View/" class="category-chain-item">View</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Android/View/CustomView/" class="category-chain-item">CustomView</a>
-  
-  
-
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Android/">#Android</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/08/31/docs/android/view/customview/verticalseekbar/" target="_self">
-          垂直SeekBar,VerticalSeekBar
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/android/view/customview/verticalseekbar/" target="_self">
-        <div>
-          12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364import android.annotation.SuppressLintimport android.content.Contextimport androi
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Android/" class="category-chain-item">Android</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Android/View/" class="category-chain-item">View</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Android/View/CustomView/" class="category-chain-item">CustomView</a>
-  
-  
-
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Android/">#Android</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/08/31/docs/android/view/customview/ipeditortext/" target="_self">
-          IP输入框控件
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/android/view/customview/ipeditortext/" target="_self">
-        <div>
-          IpEditorText.kt 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Android/" class="category-chain-item">Android</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Android/View/" class="category-chain-item">View</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Android/View/CustomView/" class="category-chain-item">CustomView</a>
-  
-  
-
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Android/">#Android</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/08/31/docs/android/view/textview-xian-zhi-shu-ru-nei-rong/" target="_self">
-          TextView限制输入内容
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/android/view/textview-xian-zhi-shu-ru-nei-rong/" target="_self">
-        <div>
-          EditText限制只能输入汉字1234567891011121314151617181920212223242526272829303132333435363738394041424344/** * EditText限制只能输入汉字 */public InputFilter getInputFilter() {    InputFilter filter = new InputFilter()
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Android/" class="category-chain-item">Android</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Android/View/" class="category-chain-item">View</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Android/">#Android</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/08/31/docs/android/view/textview-shu-xing/" target="_self">
-          TextView属性
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/android/view/textview-shu-xing/" target="_self">
-        <div>
-          TextView 跑马灯123456789101112&lt;TextView    android:id="@+id/textView"    android:layout_width="wrap_content"    android:layout_height="wrap_content"    android:textSize="40sp"    android:singleLine="t
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Android/" class="category-chain-item">Android</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Android/View/" class="category-chain-item">View</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Android/">#Android</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/linux-an-zhuang-webmin/" target="_self">
+        <a href="/2023/08/19/docs/cao-zuo-xi-tong/linux/linux-xiu-gai-java-ban-ben/" target="_self">
           Linux安装Webmin
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/cao-zuo-xi-tong/linux/linux-an-zhuang-webmin/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/19/docs/cao-zuo-xi-tong/linux/linux-xiu-gai-java-ban-ben/" target="_self">
         <div>
-          Webmin Download 快速安装添加仓库源12curl -o setup-repos.sh https://raw.githubusercontent.com/webmin/webmin/master/setup-repos.shsh setup-repos.sh  此脚本将自动设置Webmin的存储库并在系统上安装 GPG 密钥，并提供 Webmin 包以供将来安装和轻松升级。支持的系统
+          #添加镜像源sudo gedit /etc/apt/sources.listdeb [by-hash=force] https://mirrors.aliyun.com/deepin apricot main contrib non-free #更新软件包列表sudo apt update #查看软件库中的jdk版本apt search openjdk #安装所需JDK版本sudo apt ins
         </div>
       </a>
 
@@ -681,8 +308,78 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
+            <time datetime="2023-08-19 20:00" pubdate>
+              2023-08-19
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/" class="category-chain-item">Linux</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Linux/">#Linux</a>
+            
+              <a href="/tags/JDK/">#JDK</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/19/docs/cao-zuo-xi-tong/linux/linux-han-hua-bu-wan-quan/" target="_self">
+          Linux汉化不完全
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/19/docs/cao-zuo-xi-tong/linux/linux-han-hua-bu-wan-quan/" target="_self">
+        <div>
+          成功安装了Linux Mint 19操作系统，但是部分界面还是英文的。由于在Linux Mint 19里去除了Ubuntu的语言支持小工具，使用Cinnamon自身的一个新开发语言配置工具来替换，但是这个工具尚未完善，明明在LinuxMint 19系统中的Firefox等软件还是英文的界面，可却显示中文已经完整安装。所以，我们需要手动来安装所需要的中文语言包，以下在LinuxMint 19系统终端
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-19 20:00" pubdate>
+              2023-08-19
             </time>
           </div>
         
@@ -733,15 +430,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/31/docs/cao-zuo-xi-tong/linux/linux-xiu-gai-java-ban-ben/" target="_self">
-          Linux安装Webmin
+        <a href="/2023/08/19/docs/cao-zuo-xi-tong/linux/ubuntu-kan-bu-dao-tu-xing-jie-mian-jie-jue-ban-fa/" target="_self">
+          Ubuntu看不到图形界面解决办法
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/cao-zuo-xi-tong/linux/linux-xiu-gai-java-ban-ben/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/19/docs/cao-zuo-xi-tong/linux/ubuntu-kan-bu-dao-tu-xing-jie-mian-jie-jue-ban-fa/" target="_self">
         <div>
-          #添加镜像源sudo gedit /etc/apt/sources.listdeb [by-hash=force] https://mirrors.aliyun.com/deepin apricot main contrib non-free #更新软件包列表sudo apt update #查看软件库中的jdk版本apt search openjdk #安装所需JDK版本sudo apt ins
+          ubuntu 看不到图形界面桌面的解决办法1、使用Ctrl + Alt + F1组合键进入字符命令行界面 2、试试 restartx 3、如果第2条解决不了，再试试 sudo service lightdm restart 重启 lightdm 4、如果第3条解决不了，再试试 sudo dpkg-reconfigre lightdm 选择 lightdm 5、如果第4条解决不了，就只能重装 uni
         </div>
       </a>
 
@@ -749,8 +446,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
+            <time datetime="2023-08-19 20:00" pubdate>
+              2023-08-19
             </time>
           </div>
         
@@ -787,7 +484,555 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Linux-JDK/">#Linux,JDK</a>
+              <a href="/tags/Linux/">#Linux</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/19/docs/cao-zuo-xi-tong/linux/ubuntu-she-zhi-root-deng-lu/" target="_self">
+          Ubuntu设置root登录
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/19/docs/cao-zuo-xi-tong/linux/ubuntu-she-zhi-root-deng-lu/" target="_self">
+        <div>
+          sudo passwd root su root sudo gedit /etc/pam.d/gdm-autologin //注释 auth requied pam_succeed_if.so user != root quiet success sudo gedit /etc/pam.d/gdm-password //注释 auth requied pam_succeed_if.so user
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-19 20:00" pubdate>
+              2023-08-19
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/" class="category-chain-item">Linux</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Linux/">#Linux</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/19/docs/cao-zuo-xi-tong/linux/vi-bian-ji/" target="_self">
+          Linux vim编辑指令
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/19/docs/cao-zuo-xi-tong/linux/vi-bian-ji/" target="_self">
+        <div>
+          i 进入编辑模式 按ESC键 退出编辑模式，然后： :w 保存文件但不退出vi :w file 将修改另外保存到file中，不退出vi :w! 强制保存，不推出vi :wq 保存文件并退出vi :wq! 强制保存文件，并退出vi q: 不保存文件，退出vi :q! 不保存文件，强制退出vi :e! 放弃所有修改，从上次保存文件开始再编辑
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-19 20:00" pubdate>
+              2023-08-19
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/" class="category-chain-item">Linux</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Linux/">#Linux</a>
+            
+              <a href="/tags/vim/">#vim</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/19/docs/cao-zuo-xi-tong/linux/samba-gong-xiang-wen-jian/" target="_self">
+          Linux samba共享文件
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/19/docs/cao-zuo-xi-tong/linux/samba-gong-xiang-wen-jian/" target="_self">
+        <div>
+          Samba共享文件Samba共享文件 Windows上无法访问共享文件
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-19 20:00" pubdate>
+              2023-08-19
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/" class="category-chain-item">Linux</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Linux/">#Linux</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/19/docs/cao-zuo-xi-tong/linux/bash-zhi-xing-ming-ling-xiang-guan-wen-ti/" target="_self">
+          Linux bash执行命令相关问题
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/19/docs/cao-zuo-xi-tong/linux/bash-zhi-xing-ming-ling-xiang-guan-wen-ti/" target="_self">
+        <div>
+          sh 执行问题bash: ./xxx.sh: /bin/bash^M: bad interpreter: No such file or directory解决方案：  方法一 1vim xxx.sh  进入 xxx.sh后在底部模式下执行 1:set fileformat=unix 后执行 1:x 或者 1:wq 保存修改然后就可以执行./***.sh运行脚本了。  方法二： 直接执行 sed
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-19 20:00" pubdate>
+              2023-08-19
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/" class="category-chain-item">Linux</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Linux/">#Linux</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/19/docs/cao-zuo-xi-tong/linux/linux-an-zhuang-webmin/" target="_self">
+          Linux安装Webmin
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/19/docs/cao-zuo-xi-tong/linux/linux-an-zhuang-webmin/" target="_self">
+        <div>
+          Webmin Download 快速安装添加仓库源12curl -o setup-repos.sh https://raw.githubusercontent.com/webmin/webmin/master/setup-repos.shsh setup-repos.sh  此脚本将自动设置Webmin的存储库并在系统上安装 GPG 密钥，并提供 Webmin 包以供将来安装和轻松升级。支持的系统
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-19 20:00" pubdate>
+              2023-08-19
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/" class="category-chain-item">Linux</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Linux/">#Linux</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/19/docs/cao-zuo-xi-tong/linux/xie-zai-yi-an-zhuang-de-qt/" target="_self">
+          卸载已安装的Qt
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/19/docs/cao-zuo-xi-tong/linux/xie-zai-yi-an-zhuang-de-qt/" target="_self">
+        <div>
+          linux下卸载之前的qt4 打开终端，进入安装Qt的目录 运行命令1./MaintenanceTool 如果没有这个的话，则执行：1sudo apt autoremove '.*qt4.*-dev' 还不行的话：1rm /usr/lib/x86_64-linux-gnu/libQt*  安装Qt5以安装qt5.9.9为例  从以下网址中下载qt安装包 Qt5.12.12下载  打开终端，输入以下
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-19 20:00" pubdate>
+              2023-08-19
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/" class="category-chain-item">Linux</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Linux/">#Linux</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/19/docs/cao-zuo-xi-tong/linux/an-zhuang-wine/" target="_self">
+          Linux安装Wine
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/19/docs/cao-zuo-xi-tong/linux/an-zhuang-wine/" target="_self">
+        <div>
+          先得添加ubuntu-wine/ppa这个官方的源地址指令是： 1sudo add-apt-repository ppa:ubuntu-wine/ppa  当然，你如果直接开始安装也是可以的，但是不能获取到最新的wine哦！建议以上的操作。 再更新安装包安装包的更新指令是： 1234567sudo apt-get update```  安装wine1.8```bashsudo apt-get in
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-19 20:00" pubdate>
+              2023-08-19
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/" class="category-chain-item">Linux</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Linux/">#Linux</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/18/docs/cao-zuo-xi-tong/windows/edge-liu-lan-qi-you-hua/" target="_self">
+          Edge浏览器优化
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/18/docs/cao-zuo-xi-tong/windows/edge-liu-lan-qi-you-hua/" target="_self">
+        <div>
+          Edge浏览器优化禁止Edge多余进程，自动更新等 创建一个文件 Edge浏览器优化.reg 用记事本打开编辑，输入下面的内容 123456789101112131415161718192021Windows Registry Editor Version 5.00[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]"HubsSidebarEn
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-18 20:00" pubdate>
+              2023-08-18
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Windows/" class="category-chain-item">Windows</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Windows/">#Windows</a>
+            
+              <a href="/tags/Edge/">#Edge</a>
             
           </div>
         
@@ -799,7 +1044,7 @@
 
   <nav aria-label="navigation">
     <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/6/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/#board">5</a><a class="page-number" href="/page/6/#board">6</a><span class="page-number current">7</span>
+      <a class="extend prev" rel="prev" href="/page/6/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/#board">5</a><a class="page-number" href="/page/6/#board">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/#board">8</a><a class="extend next" rel="next" href="/page/8/#board"><i class="iconfont icon-arrowright"></i></a>
     </span>
   </nav>
 

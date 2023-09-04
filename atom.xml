@@ -43,6 +43,32 @@
   </entry>
   
   <entry>
+    <title>ADB 打开设置界面</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;adb命令打开手机设置页面&quot;&gt;&lt;a href=&quot;#adb命令打开手机设置页面&quot; class=&quot;headerlink&quot; title=&quot;adb命令打开手机设置页面&quot;&gt;&lt;/a&gt;adb命令打开手机设置页面&lt;/h3&gt;&lt;p&gt;关闭设置界面&lt;/p&gt;
+&lt;figure</summary>
+        
+      
+    
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/categories/ADB/"/>
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/tags/ADB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ADB 执行可执行文件</title>
     <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-zhi-xing-ke-zhi-xing-wen-jian/"/>
     <id>http://virogu.github.io/2023/08/31/docs/adb/adb-zhi-xing-ke-zhi-xing-wen-jian/</id>
@@ -81,32 +107,6 @@
         
     <summary type="html">&lt;p&gt;删除文件&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</summary>
-        
-      
-    
-    
-    
-    <category term="ADB" scheme="http://virogu.github.io/categories/ADB/"/>
-    
-    
-    <category term="ADB" scheme="http://virogu.github.io/tags/ADB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ADB 打开设置界面</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/</id>
-    <published>2023-08-31T12:00:00.000Z</published>
-    <updated>2023-08-31T12:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;adb命令打开手机设置页面&quot;&gt;&lt;a href=&quot;#adb命令打开手机设置页面&quot; class=&quot;headerlink&quot; title=&quot;adb命令打开手机设置页面&quot;&gt;&lt;/a&gt;adb命令打开手机设置页面&lt;/h3&gt;&lt;p&gt;关闭设置界面&lt;/p&gt;
-&lt;figure</summary>
         
       
     
@@ -222,326 +222,344 @@
   </entry>
   
   <entry>
-    <title>GIT</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/git/git/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/git/git/</id>
-    <published>2023-08-31T12:00:00.000Z</published>
-    <updated>2023-08-31T12:00:00.000Z</updated>
+    <title>JNI中打印AndroidLog</title>
+    <link href="http://virogu.github.io/2023/08/30/docs/android/jni/jni-zhong-da-yin-androidlog/"/>
+    <id>http://virogu.github.io/2023/08/30/docs/android/jni/jni-zhong-da-yin-androidlog/</id>
+    <published>2023-08-30T12:00:00.000Z</published>
+    <updated>2023-08-30T12:00:00.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h4 id=&quot;版本控制的作用&quot;&gt;
-          &lt;a href=&quot;#版本控制的作用&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#版本控制的作用&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;p&gt;在文件前面加上下面的定义&lt;/p&gt;
+&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
         
       
     
     
     
-    <category term="Git" scheme="http://virogu.github.io/categories/Git/"/>
+    <category term="Android" scheme="http://virogu.github.io/categories/Android/"/>
+    
+    <category term="JNI" scheme="http://virogu.github.io/categories/Android/JNI/"/>
     
     
-    <category term="Git" scheme="http://virogu.github.io/tags/Git/"/>
+    <category term="Android" scheme="http://virogu.github.io/tags/Android/"/>
     
   </entry>
   
   <entry>
-    <title>Git免密拉取(包括ssh,http方式)</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/git/git-mian-mi-la-qu-bao-gua-ssh-http-fang-shi/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/git/git-mian-mi-la-qu-bao-gua-ssh-http-fang-shi/</id>
-    <published>2023-08-31T12:00:00.000Z</published>
-    <updated>2023-08-31T12:00:00.000Z</updated>
+    <title>AnimeView</title>
+    <link href="http://virogu.github.io/2023/08/29/docs/android/view/customview/animeview/"/>
+    <id>http://virogu.github.io/2023/08/29/docs/android/view/customview/animeview/</id>
+    <published>2023-08-29T12:00:00.000Z</published>
+    <updated>2023-08-29T12:00:00.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;配置Git免密拉取&quot;&gt;
-          &lt;a href=&quot;#配置Git免密拉取&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#配置Git免密拉取&quot;</summary>
+    <summary type="html">&lt;figure class=&quot;highlight kotlin&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
         
       
     
     
     
-    <category term="Git" scheme="http://virogu.github.io/categories/Git/"/>
+    <category term="Android" scheme="http://virogu.github.io/categories/Android/"/>
+    
+    <category term="View" scheme="http://virogu.github.io/categories/Android/View/"/>
+    
+    <category term="CustomView" scheme="http://virogu.github.io/categories/Android/View/CustomView/"/>
     
     
-    <category term="Git" scheme="http://virogu.github.io/tags/Git/"/>
+    <category term="Android" scheme="http://virogu.github.io/tags/Android/"/>
     
   </entry>
   
   <entry>
-    <title>Git删除某个文件的所有提交记录</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/git/git-shan-chu-mou-ge-wen-jian-de-suo-you-ti-jiao-ji-lu/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/git/git-shan-chu-mou-ge-wen-jian-de-suo-you-ti-jiao-ji-lu/</id>
-    <published>2023-08-31T12:00:00.000Z</published>
-    <updated>2023-08-31T12:00:00.000Z</updated>
+    <title>自定义RadioGroup</title>
+    <link href="http://virogu.github.io/2023/08/29/docs/android/view/customview/customradiogroup/"/>
+    <id>http://virogu.github.io/2023/08/29/docs/android/view/customview/customradiogroup/</id>
+    <published>2023-08-29T12:00:00.000Z</published>
+    <updated>2023-08-29T12:00:00.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Git删除某个文件的所有提交记录&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
+    <summary type="html">&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
         
       
     
     
     
-    <category term="Git" scheme="http://virogu.github.io/categories/Git/"/>
+    <category term="Android" scheme="http://virogu.github.io/categories/Android/"/>
+    
+    <category term="View" scheme="http://virogu.github.io/categories/Android/View/"/>
+    
+    <category term="CustomView" scheme="http://virogu.github.io/categories/Android/View/CustomView/"/>
     
     
-    <category term="Git" scheme="http://virogu.github.io/tags/Git/"/>
+    <category term="Android" scheme="http://virogu.github.io/tags/Android/"/>
     
   </entry>
   
   <entry>
-    <title>Git批量修改提交记录中的作者邮箱</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/git/git-pi-liang-xiu-gai-ti-jiao-ji-lu-zhong-de-zuo-zhe-you-xiang/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/git/git-pi-liang-xiu-gai-ti-jiao-ji-lu-zhong-de-zuo-zhe-you-xiang/</id>
-    <published>2023-08-31T12:00:00.000Z</published>
-    <updated>2023-08-31T12:00:00.000Z</updated>
+    <title>垂直SeekBar,VerticalSeekBar</title>
+    <link href="http://virogu.github.io/2023/08/29/docs/android/view/customview/verticalseekbar/"/>
+    <id>http://virogu.github.io/2023/08/29/docs/android/view/customview/verticalseekbar/</id>
+    <published>2023-08-29T12:00:00.000Z</published>
+    <updated>2023-08-29T12:00:00.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;批量修改Git仓库已提交的记录中的提交作者邮箱信息&lt;/p&gt;
-&lt;p&gt;执行 git log 命令，查看提交历史记录，并记住需要修改作者邮箱的提交 ID。&lt;/p&gt;
-&lt;p&gt;执行以下命令，将需要修改的提交 ID 替换为实际的值：&lt;/p&gt;
-&lt;figure</summary>
+    <summary type="html">&lt;figure class=&quot;highlight kotlin&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
         
       
     
     
     
-    <category term="Git" scheme="http://virogu.github.io/categories/Git/"/>
+    <category term="Android" scheme="http://virogu.github.io/categories/Android/"/>
+    
+    <category term="View" scheme="http://virogu.github.io/categories/Android/View/"/>
+    
+    <category term="CustomView" scheme="http://virogu.github.io/categories/Android/View/CustomView/"/>
     
     
-    <category term="Git" scheme="http://virogu.github.io/tags/Git/"/>
+    <category term="Android" scheme="http://virogu.github.io/tags/Android/"/>
     
   </entry>
   
   <entry>
-    <title>Git生成多个秘钥</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/git/git-sheng-cheng-duo-ge-mi-yao/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/git/git-sheng-cheng-duo-ge-mi-yao/</id>
-    <published>2023-08-31T12:00:00.000Z</published>
-    <updated>2023-08-31T12:00:00.000Z</updated>
+    <title>IP输入框控件</title>
+    <link href="http://virogu.github.io/2023/08/29/docs/android/view/customview/ipeditortext/"/>
+    <id>http://virogu.github.io/2023/08/29/docs/android/view/customview/ipeditortext/</id>
+    <published>2023-08-29T12:00:00.000Z</published>
+    <updated>2023-08-29T12:00:00.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;Git配置多个SSH-Key&quot;&gt;
-          &lt;a href=&quot;#Git配置多个SSH-Key&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#Git配置多个SSH-Key&quot;</summary>
+    <summary type="html">&lt;p&gt;IpEditorText.kt&lt;/p&gt;
+&lt;figure class=&quot;highlight kotlin&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
         
       
     
     
     
-    <category term="Git" scheme="http://virogu.github.io/categories/Git/"/>
+    <category term="Android" scheme="http://virogu.github.io/categories/Android/"/>
+    
+    <category term="View" scheme="http://virogu.github.io/categories/Android/View/"/>
+    
+    <category term="CustomView" scheme="http://virogu.github.io/categories/Android/View/CustomView/"/>
     
     
-    <category term="Git" scheme="http://virogu.github.io/tags/Git/"/>
+    <category term="Android" scheme="http://virogu.github.io/tags/Android/"/>
     
   </entry>
   
   <entry>
-    <title>Git基础</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/git/git-ji-chu/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/git/git-ji-chu/</id>
-    <published>2023-08-31T12:00:00.000Z</published>
-    <updated>2023-08-31T12:00:00.000Z</updated>
+    <title>Paging3相关</title>
+    <link href="http://virogu.github.io/2023/08/28/docs/android/view/recycleview/paging3-xiang-guan/"/>
+    <id>http://virogu.github.io/2023/08/28/docs/android/view/recycleview/paging3-xiang-guan/</id>
+    <published>2023-08-28T12:00:00.000Z</published>
+    <updated>2023-08-28T12:00:00.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Git-基础&quot;&gt;
-          &lt;a href=&quot;#Git-基础&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#Git-基础&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;Paging局部修改数据&quot;&gt;&lt;a href=&quot;#Paging局部修改数据&quot; class=&quot;headerlink&quot; title=&quot;Paging局部修改数据&quot;&gt;&lt;/a&gt;Paging局部修改数据&lt;/h2&gt;&lt;figure class=&quot;highlight</summary>
         
       
     
     
     
-    <category term="Git" scheme="http://virogu.github.io/categories/Git/"/>
+    <category term="Android" scheme="http://virogu.github.io/categories/Android/"/>
+    
+    <category term="View" scheme="http://virogu.github.io/categories/Android/View/"/>
+    
+    <category term="RecycleView" scheme="http://virogu.github.io/categories/Android/View/RecycleView/"/>
     
     
-    <category term="Git" scheme="http://virogu.github.io/tags/Git/"/>
+    <category term="Android" scheme="http://virogu.github.io/tags/Android/"/>
     
   </entry>
   
   <entry>
-    <title>Git换行符设置</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/git/git-huan-xing-fu-she-zhi/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/git/git-huan-xing-fu-she-zhi/</id>
-    <published>2023-08-31T12:00:00.000Z</published>
-    <updated>2023-08-31T12:00:00.000Z</updated>
+    <title>RecycleView多选功能示例，RecycleView-Selection</title>
+    <link href="http://virogu.github.io/2023/08/28/docs/android/view/recycleview/recycleview-selection/"/>
+    <id>http://virogu.github.io/2023/08/28/docs/android/view/recycleview/recycleview-selection/</id>
+    <published>2023-08-28T12:00:00.000Z</published>
+    <updated>2023-08-28T12:00:00.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;#在vim下面查看当前文本的模式类型，一般为dos,unix
-:set ff
-
-#提交时转换为LF，检出时转换为CRLF
-git config</summary>
+    <summary type="html">&lt;figure class=&quot;highlight kotlin&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
         
       
     
     
     
-    <category term="Git" scheme="http://virogu.github.io/categories/Git/"/>
+    <category term="Android" scheme="http://virogu.github.io/categories/Android/"/>
+    
+    <category term="View" scheme="http://virogu.github.io/categories/Android/View/"/>
+    
+    <category term="RecycleView" scheme="http://virogu.github.io/categories/Android/View/RecycleView/"/>
     
     
-    <category term="Git" scheme="http://virogu.github.io/tags/Git/"/>
+    <category term="Android" scheme="http://virogu.github.io/tags/Android/"/>
     
   </entry>
   
   <entry>
-    <title>C  知识点汇总</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/c/c-zhi-shi-dian-hui-zong/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/c/c-zhi-shi-dian-hui-zong/</id>
-    <published>2023-08-31T12:00:00.000Z</published>
-    <updated>2023-08-31T12:00:00.000Z</updated>
+    <title>RecycleView滑动删除</title>
+    <link href="http://virogu.github.io/2023/08/28/docs/android/view/recycleview/recycleview-hua-dong-shan-chu/"/>
+    <id>http://virogu.github.io/2023/08/28/docs/android/view/recycleview/recycleview-hua-dong-shan-chu/</id>
+    <published>2023-08-28T12:00:00.000Z</published>
+    <updated>2023-08-28T12:00:00.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#%E5%A4%B4%E6%96%87%E4%BB%B6&quot;&gt;头文件&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B&quot;&gt;数据类型&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;RecycleView实现滑动删除或拖动排序&quot;&gt;&lt;a href=&quot;#RecycleView实现滑动删除或拖动排序&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
-    <category term="C" scheme="http://virogu.github.io/categories/C/"/>
+    <category term="Android" scheme="http://virogu.github.io/categories/Android/"/>
+    
+    <category term="View" scheme="http://virogu.github.io/categories/Android/View/"/>
+    
+    <category term="RecycleView" scheme="http://virogu.github.io/categories/Android/View/RecycleView/"/>
     
     
-    <category term="C" scheme="http://virogu.github.io/tags/C/"/>
+    <category term="Android" scheme="http://virogu.github.io/tags/Android/"/>
     
   </entry>
   
   <entry>
-    <title>Kotlin 标准函数</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/kotlin/kotlin-biao-zhun-han-shu/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/kotlin/kotlin-biao-zhun-han-shu/</id>
-    <published>2023-08-31T12:00:00.000Z</published>
-    <updated>2023-08-31T12:00:00.000Z</updated>
+    <title>RecyclerView个性化设置</title>
+    <link href="http://virogu.github.io/2023/08/28/docs/android/view/recycleview/recyclerview-ge-xing-hua-she-zhi/"/>
+    <id>http://virogu.github.io/2023/08/28/docs/android/view/recycleview/recyclerview-ge-xing-hua-she-zhi/</id>
+    <published>2023-08-28T12:00:00.000Z</published>
+    <updated>2023-08-28T12:00:00.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
-
-        &lt;h2 id=&quot;Kotlin标准函数&quot;&gt;
-          &lt;a href=&quot;#Kotlin标准函数&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;属性&quot;&gt;&lt;a href=&quot;#属性&quot; class=&quot;headerlink&quot; title=&quot;属性&quot;&gt;&lt;/a&gt;属性&lt;/h2&gt;&lt;h3 id=&quot;预览视图样式&quot;&gt;&lt;a href=&quot;#预览视图样式&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
-    <category term="Kotlin" scheme="http://virogu.github.io/categories/Kotlin/"/>
+    <category term="Android" scheme="http://virogu.github.io/categories/Android/"/>
+    
+    <category term="View" scheme="http://virogu.github.io/categories/Android/View/"/>
+    
+    <category term="RecycleView" scheme="http://virogu.github.io/categories/Android/View/RecycleView/"/>
     
     
-    <category term="Kotlin" scheme="http://virogu.github.io/tags/Kotlin/"/>
+    <category term="Android" scheme="http://virogu.github.io/tags/Android/"/>
     
   </entry>
   
   <entry>
-    <title>Kotlin 扩展函数</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/kotlin/kotlin-kuo-zhan-han-shu/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/kotlin/kotlin-kuo-zhan-han-shu/</id>
-    <published>2023-08-31T12:00:00.000Z</published>
-    <updated>2023-08-31T12:00:00.000Z</updated>
+    <title>EditText属性配置</title>
+    <link href="http://virogu.github.io/2023/08/27/docs/android/view/edittext/"/>
+    <id>http://virogu.github.io/2023/08/27/docs/android/view/edittext/</id>
+    <published>2023-08-27T12:00:00.000Z</published>
+    <updated>2023-08-27T12:00:00.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
-
-        &lt;h3 id=&quot;内置扩展函数&quot;&gt;
-          &lt;a href=&quot;#内置扩展函数&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#内置扩展函数&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;一些-inputType-属性值&quot;&gt;&lt;a href=&quot;#一些-inputType-属性值&quot; class=&quot;headerlink&quot; title=&quot;一些 inputType 属性值&quot;&gt;&lt;/a&gt;一些 &lt;code&gt;inputType&lt;/code&gt;</summary>
         
       
     
     
     
-    <category term="Kotlin" scheme="http://virogu.github.io/categories/Kotlin/"/>
+    <category term="Android" scheme="http://virogu.github.io/categories/Android/"/>
+    
+    <category term="View" scheme="http://virogu.github.io/categories/Android/View/"/>
     
     
-    <category term="Kotlin" scheme="http://virogu.github.io/tags/Kotlin/"/>
+    <category term="Android" scheme="http://virogu.github.io/tags/Android/"/>
     
   </entry>
   
   <entry>
-    <title>Kotlin 协程篇</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/kotlin/kotlin-xie-cheng-pian/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/kotlin/kotlin-xie-cheng-pian/</id>
-    <published>2023-08-31T12:00:00.000Z</published>
-    <updated>2023-08-31T12:00:00.000Z</updated>
+    <title>RadioButton属性</title>
+    <link href="http://virogu.github.io/2023/08/27/docs/android/view/radiobutton/"/>
+    <id>http://virogu.github.io/2023/08/27/docs/android/view/radiobutton/</id>
+    <published>2023-08-27T12:00:00.000Z</published>
+    <updated>2023-08-27T12:00:00.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
-
-        &lt;h2 id=&quot;CoroutineScope-作用域&quot;&gt;
-          &lt;a href=&quot;#CoroutineScope-作用域&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas</summary>
+    <summary type="html">&lt;h1 id=&quot;RadioButton&quot;&gt;&lt;a href=&quot;#RadioButton&quot; class=&quot;headerlink&quot; title=&quot;RadioButton&quot;&gt;&lt;/a&gt;RadioButton&lt;/h1&gt;&lt;h2 id=&quot;切换文字和按钮布局&quot;&gt;&lt;a</summary>
         
       
     
     
     
-    <category term="Kotlin" scheme="http://virogu.github.io/categories/Kotlin/"/>
+    <category term="Android" scheme="http://virogu.github.io/categories/Android/"/>
+    
+    <category term="View" scheme="http://virogu.github.io/categories/Android/View/"/>
     
     
-    <category term="Kotlin" scheme="http://virogu.github.io/tags/Kotlin/"/>
+    <category term="Android" scheme="http://virogu.github.io/tags/Android/"/>
     
   </entry>
   
   <entry>
-    <title>Emoji表情</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/markdown/emoji-biao-qing/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/markdown/emoji-biao-qing/</id>
-    <published>2023-08-31T12:00:00.000Z</published>
-    <updated>2023-08-31T12:00:00.000Z</updated>
+    <title>TextView属性</title>
+    <link href="http://virogu.github.io/2023/08/27/docs/android/view/textview-shu-xing/"/>
+    <id>http://virogu.github.io/2023/08/27/docs/android/view/textview-shu-xing/</id>
+    <published>2023-08-27T12:00:00.000Z</published>
+    <updated>2023-08-27T12:00:00.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Emoji表情&quot;&gt;&lt;a href=&quot;#Emoji表情&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;TextView-跑马灯&quot;&gt;&lt;a href=&quot;#TextView-跑马灯&quot; class=&quot;headerlink&quot; title=&quot;TextView 跑马灯&quot;&gt;&lt;/a&gt;TextView 跑马灯&lt;/h2&gt;&lt;figure class=&quot;highlight</summary>
         
       
     
     
     
-    <category term="MarkDown" scheme="http://virogu.github.io/categories/MarkDown/"/>
+    <category term="Android" scheme="http://virogu.github.io/categories/Android/"/>
+    
+    <category term="View" scheme="http://virogu.github.io/categories/Android/View/"/>
     
     
-    <category term="MarkDown" scheme="http://virogu.github.io/tags/MarkDown/"/>
+    <category term="Android" scheme="http://virogu.github.io/tags/Android/"/>
     
   </entry>
   
