@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/logo.png">
-  <link rel="icon" href="/img/logo.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/resources/img/logo.png">
+  <link rel="icon" href="/resources/img/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -290,15 +290,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/" target="_self">
-          ADB 打开设置界面
+        <a href="/2023/08/31/docs/adb/adb-zhi-xing-ke-zhi-xing-wen-jian/" target="_self">
+          ADB 执行可执行文件
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/adb/adb-zhi-xing-ke-zhi-xing-wen-jian/" target="_self">
         <div>
-          adb命令打开手机设置页面关闭设置界面 1adb shell am force-stop com.android.settings  //打开设置主页面 1adb shell am start com.android.settings/com.android.settings.Settings  安全 1adb shell am start com.android.settings/com.and
+          1. 推送文件到 /data/local/tmp例： 1adb push E:/Test/libXXX.out.so /data/local/tmp  2. 设置文件权限例： 123adb shellcd /data/local/tmpchmod 777 libXXX.out.so  3. 设置工作目录为当前目录：1export LD_LIBRARY_PATH=.  4. 执行可执行文件例：执行
         </div>
       </a>
 
@@ -351,15 +351,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/31/docs/adb/adb-zhi-xing-ke-zhi-xing-wen-jian/" target="_self">
-          ADB 执行可执行文件
+        <a href="/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/" target="_self">
+          ADB 打开设置界面
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/adb/adb-zhi-xing-ke-zhi-xing-wen-jian/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/" target="_self">
         <div>
-          1. 推送文件到 /data/local/tmp例： 1adb push E:/Test/libXXX.out.so /data/local/tmp  2. 设置文件权限例： 123adb shellcd /data/local/tmpchmod 777 libXXX.out.so  3. 设置工作目录为当前目录：1export LD_LIBRARY_PATH=.  4. 执行可执行文件例：执行
+          adb命令打开手机设置页面关闭设置界面 1adb shell am force-stop com.android.settings  //打开设置主页面 1adb shell am start com.android.settings/com.android.settings.Settings  安全 1adb shell am start com.android.settings/com.and
         </div>
       </a>
 
@@ -473,67 +473,6 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/31/docs/adb/adb-cha-kan-dian-chi-ji-lu/" target="_self">
-          ADB 查看电池记录
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/adb/adb-cha-kan-dian-chi-ji-lu/" target="_self">
-        <div>
-          重置电池记录 1adb shell dumpsys batterystats --reset  保存电池记录导致文档 12adb shell dumpsys batterystats &gt; E:\test\batterystats.txtadb bugreport &gt; E:\test\bugreport.txt
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-31 20:00" pubdate>
-              2023-08-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/ADB/" class="category-chain-item">ADB</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/ADB/">#ADB</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
         <a href="/2023/08/31/docs/adb/adb-cha-kan-yin-liang/" target="_self">
           ADB 音量操作
         </a>
@@ -595,15 +534,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/31/docs/adb/adb-mo-ni-ming-ling/" target="_self">
-          ADB 模拟命令
+        <a href="/2023/08/31/docs/adb/adb-cha-kan-dian-chi-ji-lu/" target="_self">
+          ADB 查看电池记录
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/adb/adb-mo-ni-ming-ling/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/adb/adb-cha-kan-dian-chi-ji-lu/" target="_self">
         <div>
-          模拟开关机广播 1adb shell am broadcast -a android.intent.action.BOOT_COMPLETED  设置桌面 1adb shell "cmd package set-home-activity com.xxxx/com.xxx.MainActivity"   模拟输入文字 1adb shell "input keyboard text 'a text'
+          重置电池记录 1adb shell dumpsys batterystats --reset  保存电池记录导致文档 12adb shell dumpsys batterystats &gt; E:\test\batterystats.txtadb bugreport &gt; E:\test\bugreport.txt
         </div>
       </a>
 
@@ -665,6 +604,67 @@
       <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/" target="_self">
         <div>
           开启无线调试Root模式方式一 手动修改 /system/build.prop 文件，后面添加下面这行，然后保存 1service.adb.tcp.port=5555  可以这样操作 123adb rootadb remountadb pull /system/build.prop  手动修改 build.prop 文件，添加 service.adb.tcp.port=5555，保存，然后推送到设
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-31 20:00" pubdate>
+              2023-08-31
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/ADB/" class="category-chain-item">ADB</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/ADB/">#ADB</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/31/docs/adb/adb-mo-ni-ming-ling/" target="_self">
+          ADB 模拟命令
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/31/docs/adb/adb-mo-ni-ming-ling/" target="_self">
+        <div>
+          模拟开关机广播 1adb shell am broadcast -a android.intent.action.BOOT_COMPLETED  设置桌面 1adb shell "cmd package set-home-activity com.xxxx/com.xxx.MainActivity"   模拟输入文字 1adb shell "input keyboard text 'a text'
         </div>
       </a>
 
@@ -935,15 +935,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/29/docs/android/view/customview/verticalseekbar/" target="_self">
-          垂直SeekBar,VerticalSeekBar
+        <a href="/2023/08/29/docs/android/view/customview/ipeditortext/" target="_self">
+          IP输入框控件
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/29/docs/android/view/customview/verticalseekbar/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/29/docs/android/view/customview/ipeditortext/" target="_self">
         <div>
-          12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364import android.annotation.SuppressLintimport android.content.Contextimport androi
+          IpEditorText.kt 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969
         </div>
       </a>
 

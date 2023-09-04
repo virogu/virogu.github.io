@@ -43,9 +43,9 @@
   </entry>
   
   <entry>
-    <title>ADB 打开设置界面</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/</id>
+    <title>ADB 执行可执行文件</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-zhi-xing-ke-zhi-xing-wen-jian/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-zhi-xing-ke-zhi-xing-wen-jian/</id>
     <published>2023-08-31T12:00:00.000Z</published>
     <updated>2023-08-31T12:00:00.000Z</updated>
     
@@ -54,8 +54,7 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;adb命令打开手机设置页面&quot;&gt;&lt;a href=&quot;#adb命令打开手机设置页面&quot; class=&quot;headerlink&quot; title=&quot;adb命令打开手机设置页面&quot;&gt;&lt;/a&gt;adb命令打开手机设置页面&lt;/h3&gt;&lt;p&gt;关闭设置界面&lt;/p&gt;
-&lt;figure</summary>
+    <summary type="html">&lt;h3 id=&quot;1-推送文件到-data-local-tmp&quot;&gt;&lt;a href=&quot;#1-推送文件到-data-local-tmp&quot; class=&quot;headerlink&quot; title=&quot;1. 推送文件到 /data/local/tmp&quot;&gt;&lt;/a&gt;1. 推送文件到</summary>
         
       
     
@@ -69,9 +68,9 @@
   </entry>
   
   <entry>
-    <title>ADB 执行可执行文件</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-zhi-xing-ke-zhi-xing-wen-jian/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-zhi-xing-ke-zhi-xing-wen-jian/</id>
+    <title>ADB 打开设置界面</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-da-kai-she-zhi-jie-mian/</id>
     <published>2023-08-31T12:00:00.000Z</published>
     <updated>2023-08-31T12:00:00.000Z</updated>
     
@@ -80,7 +79,8 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;1-推送文件到-data-local-tmp&quot;&gt;&lt;a href=&quot;#1-推送文件到-data-local-tmp&quot; class=&quot;headerlink&quot; title=&quot;1. 推送文件到 /data/local/tmp&quot;&gt;&lt;/a&gt;1. 推送文件到</summary>
+    <summary type="html">&lt;h3 id=&quot;adb命令打开手机设置页面&quot;&gt;&lt;a href=&quot;#adb命令打开手机设置页面&quot; class=&quot;headerlink&quot; title=&quot;adb命令打开手机设置页面&quot;&gt;&lt;/a&gt;adb命令打开手机设置页面&lt;/h3&gt;&lt;p&gt;关闭设置界面&lt;/p&gt;
+&lt;figure</summary>
         
       
     
@@ -120,6 +120,31 @@
   </entry>
   
   <entry>
+    <title>ADB 音量操作</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-cha-kan-yin-liang/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-cha-kan-yin-liang/</id>
+    <published>2023-08-31T12:00:00.000Z</published>
+    <updated>2023-08-31T12:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;获取设备音频流信息&quot;&gt;&lt;a href=&quot;#获取设备音频流信息&quot; class=&quot;headerlink&quot; title=&quot;获取设备音频流信息&quot;&gt;&lt;/a&gt;获取设备音频流信息&lt;/h2&gt;&lt;figure class=&quot;highlight</summary>
+        
+      
+    
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/categories/ADB/"/>
+    
+    
+    <category term="ADB" scheme="http://virogu.github.io/tags/ADB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ADB 查看电池记录</title>
     <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-cha-kan-dian-chi-ji-lu/"/>
     <id>http://virogu.github.io/2023/08/31/docs/adb/adb-cha-kan-dian-chi-ji-lu/</id>
@@ -146,9 +171,9 @@
   </entry>
   
   <entry>
-    <title>ADB 音量操作</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-cha-kan-yin-liang/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-cha-kan-yin-liang/</id>
+    <title>ADB 开启远程调试</title>
+    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/"/>
+    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/</id>
     <published>2023-08-31T12:00:00.000Z</published>
     <updated>2023-08-31T12:00:00.000Z</updated>
     
@@ -157,7 +182,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;获取设备音频流信息&quot;&gt;&lt;a href=&quot;#获取设备音频流信息&quot; class=&quot;headerlink&quot; title=&quot;获取设备音频流信息&quot;&gt;&lt;/a&gt;获取设备音频流信息&lt;/h2&gt;&lt;figure class=&quot;highlight</summary>
+    <summary type="html">&lt;h2 id=&quot;开启无线调试&quot;&gt;&lt;a href=&quot;#开启无线调试&quot; class=&quot;headerlink&quot; title=&quot;开启无线调试&quot;&gt;&lt;/a&gt;开启无线调试&lt;/h2&gt;&lt;h3 id=&quot;Root模式&quot;&gt;&lt;a href=&quot;#Root模式&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -184,31 +209,6 @@
         
     <summary type="html">&lt;p&gt;模拟开关机广播&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</summary>
-        
-      
-    
-    
-    
-    <category term="ADB" scheme="http://virogu.github.io/categories/ADB/"/>
-    
-    
-    <category term="ADB" scheme="http://virogu.github.io/tags/ADB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ADB 开启远程调试</title>
-    <link href="http://virogu.github.io/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/"/>
-    <id>http://virogu.github.io/2023/08/31/docs/adb/adb-yuan-cheng-diao-shi/</id>
-    <published>2023-08-31T12:00:00.000Z</published>
-    <updated>2023-08-31T12:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;开启无线调试&quot;&gt;&lt;a href=&quot;#开启无线调试&quot; class=&quot;headerlink&quot; title=&quot;开启无线调试&quot;&gt;&lt;/a&gt;开启无线调试&lt;/h2&gt;&lt;h3 id=&quot;Root模式&quot;&gt;&lt;a href=&quot;#Root模式&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -308,9 +308,9 @@
   </entry>
   
   <entry>
-    <title>垂直SeekBar,VerticalSeekBar</title>
-    <link href="http://virogu.github.io/2023/08/29/docs/android/view/customview/verticalseekbar/"/>
-    <id>http://virogu.github.io/2023/08/29/docs/android/view/customview/verticalseekbar/</id>
+    <title>IP输入框控件</title>
+    <link href="http://virogu.github.io/2023/08/29/docs/android/view/customview/ipeditortext/"/>
+    <id>http://virogu.github.io/2023/08/29/docs/android/view/customview/ipeditortext/</id>
     <published>2023-08-29T12:00:00.000Z</published>
     <updated>2023-08-29T12:00:00.000Z</updated>
     
@@ -319,7 +319,8 @@
       
         
         
-    <summary type="html">&lt;figure class=&quot;highlight kotlin&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
+    <summary type="html">&lt;p&gt;IpEditorText.kt&lt;/p&gt;
+&lt;figure class=&quot;highlight kotlin&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
         
       
     
@@ -337,9 +338,9 @@
   </entry>
   
   <entry>
-    <title>IP输入框控件</title>
-    <link href="http://virogu.github.io/2023/08/29/docs/android/view/customview/ipeditortext/"/>
-    <id>http://virogu.github.io/2023/08/29/docs/android/view/customview/ipeditortext/</id>
+    <title>垂直SeekBar,VerticalSeekBar</title>
+    <link href="http://virogu.github.io/2023/08/29/docs/android/view/customview/verticalseekbar/"/>
+    <id>http://virogu.github.io/2023/08/29/docs/android/view/customview/verticalseekbar/</id>
     <published>2023-08-29T12:00:00.000Z</published>
     <updated>2023-08-29T12:00:00.000Z</updated>
     
@@ -348,8 +349,7 @@
       
         
         
-    <summary type="html">&lt;p&gt;IpEditorText.kt&lt;/p&gt;
-&lt;figure class=&quot;highlight kotlin&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
+    <summary type="html">&lt;figure class=&quot;highlight kotlin&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
         
       
     
@@ -425,9 +425,9 @@
   </entry>
   
   <entry>
-    <title>RecycleView滑动删除</title>
-    <link href="http://virogu.github.io/2023/08/28/docs/android/view/recycleview/recycleview-hua-dong-shan-chu/"/>
-    <id>http://virogu.github.io/2023/08/28/docs/android/view/recycleview/recycleview-hua-dong-shan-chu/</id>
+    <title>RecyclerView个性化设置</title>
+    <link href="http://virogu.github.io/2023/08/28/docs/android/view/recycleview/recyclerview-ge-xing-hua-she-zhi/"/>
+    <id>http://virogu.github.io/2023/08/28/docs/android/view/recycleview/recyclerview-ge-xing-hua-she-zhi/</id>
     <published>2023-08-28T12:00:00.000Z</published>
     <updated>2023-08-28T12:00:00.000Z</updated>
     
@@ -436,7 +436,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;RecycleView实现滑动删除或拖动排序&quot;&gt;&lt;a href=&quot;#RecycleView实现滑动删除或拖动排序&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;属性&quot;&gt;&lt;a href=&quot;#属性&quot; class=&quot;headerlink&quot; title=&quot;属性&quot;&gt;&lt;/a&gt;属性&lt;/h2&gt;&lt;h3 id=&quot;预览视图样式&quot;&gt;&lt;a href=&quot;#预览视图样式&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -454,9 +454,9 @@
   </entry>
   
   <entry>
-    <title>RecyclerView个性化设置</title>
-    <link href="http://virogu.github.io/2023/08/28/docs/android/view/recycleview/recyclerview-ge-xing-hua-she-zhi/"/>
-    <id>http://virogu.github.io/2023/08/28/docs/android/view/recycleview/recyclerview-ge-xing-hua-she-zhi/</id>
+    <title>RecycleView滑动删除</title>
+    <link href="http://virogu.github.io/2023/08/28/docs/android/view/recycleview/recycleview-hua-dong-shan-chu/"/>
+    <id>http://virogu.github.io/2023/08/28/docs/android/view/recycleview/recycleview-hua-dong-shan-chu/</id>
     <published>2023-08-28T12:00:00.000Z</published>
     <updated>2023-08-28T12:00:00.000Z</updated>
     
@@ -465,7 +465,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;属性&quot;&gt;&lt;a href=&quot;#属性&quot; class=&quot;headerlink&quot; title=&quot;属性&quot;&gt;&lt;/a&gt;属性&lt;/h2&gt;&lt;h3 id=&quot;预览视图样式&quot;&gt;&lt;a href=&quot;#预览视图样式&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;RecycleView实现滑动删除或拖动排序&quot;&gt;&lt;a href=&quot;#RecycleView实现滑动删除或拖动排序&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -510,9 +510,9 @@
   </entry>
   
   <entry>
-    <title>RadioButton属性</title>
-    <link href="http://virogu.github.io/2023/08/27/docs/android/view/radiobutton/"/>
-    <id>http://virogu.github.io/2023/08/27/docs/android/view/radiobutton/</id>
+    <title>TextView属性</title>
+    <link href="http://virogu.github.io/2023/08/27/docs/android/view/textview-shu-xing/"/>
+    <id>http://virogu.github.io/2023/08/27/docs/android/view/textview-shu-xing/</id>
     <published>2023-08-27T12:00:00.000Z</published>
     <updated>2023-08-27T12:00:00.000Z</updated>
     
@@ -521,7 +521,7 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;RadioButton&quot;&gt;&lt;a href=&quot;#RadioButton&quot; class=&quot;headerlink&quot; title=&quot;RadioButton&quot;&gt;&lt;/a&gt;RadioButton&lt;/h1&gt;&lt;h2 id=&quot;切换文字和按钮布局&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;TextView-跑马灯&quot;&gt;&lt;a href=&quot;#TextView-跑马灯&quot; class=&quot;headerlink&quot; title=&quot;TextView 跑马灯&quot;&gt;&lt;/a&gt;TextView 跑马灯&lt;/h2&gt;&lt;figure class=&quot;highlight</summary>
         
       
     
@@ -537,9 +537,9 @@
   </entry>
   
   <entry>
-    <title>TextView属性</title>
-    <link href="http://virogu.github.io/2023/08/27/docs/android/view/textview-shu-xing/"/>
-    <id>http://virogu.github.io/2023/08/27/docs/android/view/textview-shu-xing/</id>
+    <title>TextView限制输入内容</title>
+    <link href="http://virogu.github.io/2023/08/27/docs/android/view/textview-xian-zhi-shu-ru-nei-rong/"/>
+    <id>http://virogu.github.io/2023/08/27/docs/android/view/textview-xian-zhi-shu-ru-nei-rong/</id>
     <published>2023-08-27T12:00:00.000Z</published>
     <updated>2023-08-27T12:00:00.000Z</updated>
     
@@ -548,7 +548,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;TextView-跑马灯&quot;&gt;&lt;a href=&quot;#TextView-跑马灯&quot; class=&quot;headerlink&quot; title=&quot;TextView 跑马灯&quot;&gt;&lt;/a&gt;TextView 跑马灯&lt;/h2&gt;&lt;figure class=&quot;highlight</summary>
+    <summary type="html">&lt;h3 id=&quot;EditText限制只能输入汉字&quot;&gt;&lt;a href=&quot;#EditText限制只能输入汉字&quot; class=&quot;headerlink&quot; title=&quot;EditText限制只能输入汉字&quot;&gt;&lt;/a&gt;EditText限制只能输入汉字&lt;/h3&gt;&lt;figure</summary>
         
       
     

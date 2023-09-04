@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/logo.png">
-  <link rel="icon" href="/img/logo.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/resources/img/logo.png">
+  <link rel="icon" href="/resources/img/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -290,15 +290,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/23/docs/git/git-huan-xing-fu-she-zhi/" target="_self">
-          Git换行符设置
+        <a href="/2023/08/23/docs/git/git-pi-liang-xiu-gai-ti-jiao-ji-lu-zhong-de-zuo-zhe-you-xiang/" target="_self">
+          Git批量修改提交记录中的作者邮箱
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/23/docs/git/git-huan-xing-fu-she-zhi/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/23/docs/git/git-pi-liang-xiu-gai-ti-jiao-ji-lu-zhong-de-zuo-zhe-you-xiang/" target="_self">
         <div>
-          123456789101112#在vim下面查看当前文本的模式类型，一般为dos,unix:set ff#提交时转换为LF，检出时转换为CRLFgit config --global core.autocrlf true   #提交时转换为LF，检出时不转换（以上问题使用此命令可解决）git config --global core.autocrlf input   #提交检出均不转换git co
+          批量修改Git仓库已提交的记录中的提交作者邮箱信息 执行 git log 命令，查看提交历史记录，并记住需要修改作者邮箱的提交 ID。 执行以下命令，将需要修改的提交 ID 替换为实际的值： 123456789101112131415git filter-branch --env-filter 'OLD_EMAIL="原作者邮箱"CORRECT_NAME="新作者名字"CORRECT_EMAIL=
         </div>
       </a>
 
@@ -338,6 +338,67 @@
             <i class="iconfont icon-tags"></i>
             
               <a href="/tags/Git/">#Git</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/22/docs/gradle/gradle-zhi-shi-dian-hui-zong/" target="_self">
+          Gradle知识点汇总
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/22/docs/gradle/gradle-zhi-shi-dian-hui-zong/" target="_self">
+        <div>
+          依赖项配置   配置 说明    implementation Gradle 会将依赖项添加到编译类路径，并将依赖项打包到编译输出。不过，当模块配置 implementation 依赖项时，其他模块只有在运行时才能使用该依赖项。   api Gradle 会将依赖项添加到编译类路径和编译输出。当一个模块包含 api 依赖项时，会让 Gradle 了解该模块要以传递方式将该依赖项导出到其他模块，以便
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-22 20:00" pubdate>
+              2023-08-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Gradle/" class="category-chain-item">Gradle</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Gradle/">#Gradle</a>
             
           </div>
         
@@ -473,15 +534,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/22/docs/gradle/gradle-zhi-shi-dian-hui-zong/" target="_self">
-          Gradle知识点汇总
+        <a href="/2023/08/22/docs/gradle/gradle-huo-qu-flavor/" target="_self">
+          Gradle获取flavor
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/22/docs/gradle/gradle-zhi-shi-dian-hui-zong/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/22/docs/gradle/gradle-huo-qu-flavor/" target="_self">
         <div>
-          依赖项配置   配置 说明    implementation Gradle 会将依赖项添加到编译类路径，并将依赖项打包到编译输出。不过，当模块配置 implementation 依赖项时，其他模块只有在运行时才能使用该依赖项。   api Gradle 会将依赖项添加到编译类路径和编译输出。当一个模块包含 api 依赖项时，会让 Gradle 了解该模块要以传递方式将该依赖项导出到其他模块，以便
+          123456789101112131415161718192021222324def getCurrentFlavor() {    Gradle gradle = getGradle()    String tskReqStr = gradle.getStartParameter().getTaskRequests().toString()    Pattern pattern    print
         </div>
       </a>
 
@@ -534,15 +595,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/22/docs/gradle/gradle-huo-qu-flavor/" target="_self">
-          Gradle获取flavor
+        <a href="/2023/08/22/docs/gradle/shi-yong-fat-aar-da-bao-yi-lai-ku-dao-aar/" target="_self">
+          使用fat-aar 打包依赖库到aar
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/22/docs/gradle/gradle-huo-qu-flavor/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/22/docs/gradle/shi-yong-fat-aar-da-bao-yi-lai-ku-dao-aar/" target="_self">
         <div>
-          123456789101112131415161718192021222324def getCurrentFlavor() {    Gradle gradle = getGradle()    String tskReqStr = gradle.getStartParameter().getTaskRequests().toString()    Pattern pattern    print
+          https://github.com/kezong/fat-aar-android 项目根目录 build.gradle 添加 12345678buildscript {    repositories {        maven { url "https://plugins.gradle.org/m2/" }    }    dependencies {        classpath 'c
         </div>
       </a>
 
@@ -665,67 +726,6 @@
       <a class="index-excerpt index-excerpt__noimg" href="/2023/08/22/docs/gradle/cang-ku-zhong-you-mou-ge-ku-yi-ran-bao-cuo-zhao-bu-dao-mou-ge-yi-lai-ku/" target="_self">
         <div>
           gradle同步时提示找不到某个依赖库 先排除是不是网络有问题，或者这个库是不是真的不存在 但是大部分情况下上面这两个都是没问题的，还是会提示找不到某个依赖库，类似这样 1234567891011121314151617Where:    Build file xxx build.gradle.kts' line: 4    * What went wrong:    Plugin [id:"xx
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-08-22 20:00" pubdate>
-              2023-08-22
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Gradle/" class="category-chain-item">Gradle</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Gradle/">#Gradle</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/08/22/docs/gradle/shi-yong-fat-aar-da-bao-yi-lai-ku-dao-aar/" target="_self">
-          使用fat-aar 打包依赖库到aar
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/22/docs/gradle/shi-yong-fat-aar-da-bao-yi-lai-ku-dao-aar/" target="_self">
-        <div>
-          https://github.com/kezong/fat-aar-android 项目根目录 build.gradle 添加 12345678buildscript {    repositories {        maven { url "https://plugins.gradle.org/m2/" }    }    dependencies {        classpath 'c
         </div>
       </a>
 
@@ -902,15 +902,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/21/docs/java/java-zhi-shi-dian-hui-zong/" target="_self">
-          Java知识点汇总
+        <a href="/2023/08/21/docs/kotlin/kotlin-xie-cheng-pian/" target="_self">
+          Kotlin 协程篇
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/21/docs/java/java-zhi-shi-dian-hui-zong/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/21/docs/kotlin/kotlin-xie-cheng-pian/" target="_self">
         <div>
-          JVM JVM 工作流程 运行时数据区（Runtime Data Area） 程序计数器 Java 虚拟机栈 本地方法栈 Java 堆 方法区   方法指令 类加载器 垃圾回收 gc 对象存活判断 垃圾收集算法 垃圾收集器 内存模型与回收策略     Object equals 方法 hashCode 方法   static final String、StringBuffer、StringBui
+          [TOC] CoroutineScope 作用域指定协程执行的范围 CoroutineScope 应该在生命周期明确的实体上实现（或用作字段），这些实体负责启动子协程。例如在Activity中使用协程： 1234567891011class MyActivity : AppCompatActivity(), CoroutineScope by MainScope() {	override fun
         </div>
       </a>
 
@@ -934,7 +934,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Java/" class="category-chain-item">Java</a>
+  <a href="/categories/Kotlin/" class="category-chain-item">Kotlin</a>
   
   
 
@@ -949,7 +949,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Java/">#Java</a>
+              <a href="/tags/Kotlin/">#Kotlin</a>
             
           </div>
         
